@@ -35,9 +35,9 @@ task :install_formulas do
   # assumes homebrew is installed, if installation fails
   # this acts as a list of the packages I always use
   #
-  # manual: wkhtmltopdf, qt, pianobar, postgres, node, redis, macvim
+  # manual: wkhtmltopdf, qt, postgres, node, redis
   #
-  %w(wget git mysql imagemagick ack proctools fortune htop watch lynx gcal).each do |formula_name|
+  %w(wget git mysql imagemagick ack proctools fortune htop watch lynx gcal tmux macvim).each do |formula_name|
     system "brew install #{package_name}"
   end
 end
