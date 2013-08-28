@@ -1,0 +1,89 @@
+function p { cd ~/Projects/$1; }
+
+alias reload='. ~/.bash_profile'
+
+# cd
+alias ..='cd ..'
+alias u='cd ..'
+alias c='clear'
+
+# ls
+alias ls="ls -laAFGh"
+alias ll="ls -l"
+alias la='ls -A'
+
+# git
+alias g='git'
+alias gl='git pull'
+alias glr='git pull --rebase'
+alias gp='git push'
+alias gpom='git push origin master'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gco='git checkout'
+alias gb='git branch'
+alias gba='git branch -a -v'
+alias gbd='git branch -d'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gwho='git log | grep Author | sort | uniq'
+alias gcl='git clone'
+alias grp='git remote prune origin'
+alias gls='git log --stat'
+alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
+alias gbrecent="git for-each-ref --sort=-committerdate refs/heads/"
+
+
+# rails
+alias sc='script/console'
+alias ss='script/server'
+alias ssd='script/server --debugger'
+alias sg='script/generate'
+alias tlog='tail -f log/development.log'
+
+alias gems='yard server --gems &; sleep 2s; open http://localhost:8808;'
+
+# commands starting with % for pasting from web
+alias %=' '
+
+alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+alias checkspace='du -csh *'
+
+# misc OS X
+alias da='~/Projects/dotfiles/bash/domainavailable'
+alias fline="for file (*(ND-.)) IFS= read -re < $file" # cat first line for all files in this dir
+alias mute='osascript -e "set Volume 0"'
+alias lowvol='osascript -e "set Volume 0.01"'
+alias cal="gcal" # gcal highlights the current day
+alias dimensions="sips -g pixelHeight -g pixelWidth " # specify path/to/image after alias
+
+# have to install the openvpn applescript
+alias openvpn="/usr/local/bin/pgrep racoon | xargs sudo kill -9; osascript ~/Projects/applescripts/openvpn.scpt"
+
+alias pserver="open http://localhost:8080/ && python -m SimpleHTTPServer 8080"
+alias whatsrunning="lsof -i"
+alias myip='ifconfig|grep -A 4 "en0"|grep -oe "[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}[[:space:]]"|pbcopy;echo "copied IP to clipboard: ";pbpaste'
+alias cleannastydesktop="rm ~/Desktop/Screen\ shot\ *"
+alias dirsize="du -ksh ."
+alias loghead="for file in log/*; do; echo "$file\n--"; head $file; echo "--\n"; done | more"
+
+# nginx
+alias nstop="pgrep nginx | xargs sudo kill -9"
+alias nrestart="pgrep nginx | xargs sudo kill -9 && sudo /usr/local/sbin/nginx"
+alias nlog="tail -f /usr/local/Cellar/nginx/0.8.53/logs/access.log" # make this dynamic
+
+# memcached
+alias mcd='memcached -d -l 127.0.0.1 -p 11211'
+alias mck='killall memcached'
+alias mcst='ps ax | grep memcached | grep -v grep'
+
+# postgres
+alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+
+
+alias vim="mvim -v"
