@@ -61,7 +61,7 @@ alias cal="gcal" # gcal highlights the current day
 alias dimensions="sips -g pixelHeight -g pixelWidth " # specify path/to/image after alias
 
 # have to install the openvpn applescript
-alias openvpn="/usr/local/bin/pgrep racoon | xargs sudo kill -9; osascript ~/Projects/applescripts/openvpn.scpt"
+alias openvpn="/usr/local/bin/pgrep racoon | xargs sudo kill -9; osascript ~/Projects/applescripts/openvpn.applescript"
 
 alias pserver="open http://localhost:8080/ && python -m SimpleHTTPServer 8080"
 alias whatsrunning="lsof -i"
