@@ -89,3 +89,4 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias vim="mvim -v"
 
 alias dns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+alias rubyscript='printf "#!/usr/bin/env ruby \n\nprint \"Hello from a Ruby script!\"\n" >> ruby_script; chmod +x ruby_script; ./ruby_script'
