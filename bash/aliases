@@ -87,3 +87,5 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 
 alias vim="mvim -v"
+
+alias dns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
