@@ -2,10 +2,12 @@ function p { cd ~/Projects/$1; }
 
 alias reload='. ~/.bash_profile'
 
-# cd
-alias ..='cd ..'
-alias u='cd ..'
-alias c='clear'
+# all the single ladies...all the single ladies...I mean letters, single letters
+alias b="bundle"
+alias f="foreman start"
+alias g="git"
+alias c="clear"
+alias u="cd .."
 
 # ls
 alias ls="ls -laAFGh"
@@ -13,7 +15,6 @@ alias ll="ls -l"
 alias la='ls -A'
 
 # git
-alias g='git'
 alias gl='git pull'
 alias glr='git pull --rebase'
 alias gp='git push'
@@ -36,7 +37,6 @@ alias gls='git log --stat'
 alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
 alias gbrecent="git for-each-ref --sort=-committerdate refs/heads/"
 
-
 # rails
 alias sc='script/console'
 alias ss='script/server'
@@ -57,10 +57,10 @@ alias da='~/Projects/dotfiles/bash/domainavailable'
 alias fline="for file (*(ND-.)) IFS= read -re < $file" # cat first line for all files in this dir
 alias mute='osascript -e "set Volume 0"'
 alias lowvol='osascript -e "set Volume 0.01"'
-alias cal="gcal" # gcal highlights the current day
+alias cal="gcal" # gcal highlights the current day, install gcal via homebrew
 alias dimensions="sips -g pixelHeight -g pixelWidth " # specify path/to/image after alias
 
-# have to install the openvpn applescript
+# have to install the openvpn applescript from my applescripts project
 alias openvpn="/usr/local/bin/pgrep racoon | xargs sudo kill -9; osascript ~/Projects/applescripts/openvpn.applescript"
 
 alias pserver="open http://localhost:8080/ && python -m SimpleHTTPServer 8080"
@@ -73,7 +73,7 @@ alias loghead="for file in log/*; do; echo "$file\n--"; head $file; echo "--\n";
 # nginx
 alias nstop="pgrep nginx | xargs sudo kill -9"
 alias nrestart="pgrep nginx | xargs sudo kill -9 && sudo /usr/local/sbin/nginx"
-alias nlog="tail -f /usr/local/Cellar/nginx/0.8.53/logs/access.log" # make this dynamic
+alias nginx_error_log="tail -f /usr/local/Cellar/nginx/$(nginx -v 2>&1 | sed -En 's/.*([0-9]{1}\.[0-9]{1}\.[0-9]{1}$)/\1/p')/logs/error.log"
 
 # memcached
 alias mcd='memcached -d -l 127.0.0.1 -p 11211'
@@ -85,8 +85,6 @@ alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 
 
-
 alias vim="mvim -v"
-
-alias dns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+alias dnsflush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias rubyscript='printf "#!/usr/bin/env ruby \n\nprint \"Hello from a Ruby script!\"\n" >> ruby_script; chmod +x ruby_script; ./ruby_script'
