@@ -19,7 +19,6 @@ alias gl='git pull'
 alias glr='git pull --rebase'
 alias gp='git push'
 alias gpom='git push origin master'
-alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gcm='git commit -m'
@@ -36,8 +35,12 @@ alias grp='git remote prune origin'
 alias gls='git log --stat'
 alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
 alias gbrecent="git for-each-ref --sort=-committerdate refs/heads/"
-alias gds="git diff master --stat"
-alias gdss="git diff master --shortstat"
+
+# git diff
+alias gd="git diff"
+alias gdm="git diff master"
+alias gdms="git diff master --stat"
+alias gdmss="git diff master --shortstat"
 
 # rails
 alias sc='script/console'
