@@ -1,0 +1,13 @@
+--color
+
+# https://gist.github.com/kevinold/4749656
+# make sure ack knows how to search common filetypes used in rails projects
+--type-add=css=scss
+--type-add=ruby=.haml,.rselm,.feature,.ru,.lock
+--type-set=coffeescript=.coffee
+--type-set=coffee=.coffee
+
+# show a line before and after of context
+# more like Textmate's Ack in project
+--before-context=1
+--after-context=1
