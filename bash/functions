@@ -1,0 +1,4 @@
+# export GITHUB_USERNAME=andyatkinson
+# export GITHUB_HOST=github.com
+
+function open_branch { open http://$GITHUB_HOST/$GITHUB_USERNAME/$(basename $PWD)/tree/$(git branch | sed -n '/\* /s///p'); }
