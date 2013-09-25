@@ -7,3 +7,4 @@ function git_remote_name { git ls-remote --get-url | sed -En 's/.*:([0-9a-zA-Z]+
 function open_branch { open http://$GITHUB_HOST/$GITHUB_USERNAME/$(basename $PWD)/tree/$(current_git_branch); }
 function new_pr { open http://$GITHUB_HOST/$GITHUB_USERNAME/$(basename $PWD)/pull/new/$(current_git_branch); }
 function my_prs { open http://$GITHUB_HOST/$(git_remote_name)/$(basename $PWD)/pulls/$GITHUB_USERNAME; }
+function last_commit { open http://$GITHUB_HOST/$GITHUB_USERNAME/$(basename PWD)/commit/$(cat .git/refs/remotes/origin/$(current_git_branch)); }
