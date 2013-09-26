@@ -9,5 +9,14 @@
 
 # show a line before and after of context
 # more like Textmate's Ack in project
---before-context=1
---after-context=1
+# --before-context=1
+# --after-context=1
+#
+# The --context flag looks a little better than one line above/below
+--context
+
+# ignore some dirs
+--ignore-dir=.bundle
+--ignore-dir=vendor/bundle
+--ignore-dir=tmp
+--ignore-dir=log
