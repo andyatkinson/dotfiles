@@ -1,12 +1,13 @@
-# export GITHUB_USERNAME=andyatkinson
-# export GITHUB_HOST=github.com
+# export GH_USER=andyatkinson
+# export GH_HOST=github.com
 
 function current_git_branch { git branch | sed -n '/\* /s///p'; }
 function git_remote_name { git ls-remote --get-url | sed -En 's/.*:([0-9a-zA-Z-]+).*/\1/p'; } 
 
-function open_branch { open http://$GITHUB_HOST/$(git_remote_name)/$(basename $PWD)/tree/$(current_git_branch); }
-function new_pr { open http://$GITHUB_HOST/$(git_remote_name)/$(basename $PWD)/pull/new/$(current_git_branch); }
-function my_prs { open http://$GITHUB_HOST/$(git_remote_name)/$(basename $PWD)/pulls/$GITHUB_USERNAME; }
+function gh_branch_origin { open http://$GH_HOST/$(git_remote_name)/$(basename $PWD)/tree/$(current_git_branch); }
+function gh_branch_my_fork { open http://$GH_HOST/$GH_USER/$(basename $PWD)/tree/$(current_git_branch); }
+function gh_new_pr { open http://$GH_HOST/$GH_USER/$(basename $PWD)/pull/new/$(current_git_branch); }
+function gh_my_prs { open http://$GH_HOST/$(git_remote_name)/$(basename $PWD)/pulls/$GH_USER; }
 
 # open the last pushed commit on my fork
-function my_last_commit { open http://$GITHUB_HOST/$GITHUB_USERNAME/$(basename $PWD)/commit/$(git rev-parse HEAD); }
+function gh_my_last_commit { open http://$GH_HOST/$GH_USER/$(basename $PWD)/commit/$(git rev-parse HEAD); }
