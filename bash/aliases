@@ -97,3 +97,6 @@ alias rubyscript='printf "#!/usr/bin/env ruby \n\nprint \"Hello from a Ruby scri
 # https://github.com/fcambus/ansiweather
 # https://news.ycombinator.com/item?id=6587234
 alias weather="~/Projects/ansiweather/ansiweather"
+
+# use OS X QuickLook to open files from terminal
+alias qlf='qlmanage -p "$@" >> /dev/null'
