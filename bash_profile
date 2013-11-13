@@ -9,10 +9,6 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-if [ -f ~/.localrc ]; then
-  . ~/.localrc
-fi
-
 if [ -f ~/.workrc ]; then
   . ~/.workrc
 fi
