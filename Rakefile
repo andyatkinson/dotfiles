@@ -51,3 +51,8 @@ def link_file(file)
   puts "linking ~/.#{file}"
   system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
 end
+
+def os_x_change_defaults
+  # defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+  # defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+end
