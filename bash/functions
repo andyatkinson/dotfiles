@@ -1,5 +1,5 @@
-# export GH_USER=andyatkinson
-# export GH_HOST=github.com
+export GH_USER=andyatkinson
+export GH_HOST=github.com
 
 function current_git_branch { git branch | sed -n '/\* /s///p'; }
 function git_remote_name { git ls-remote --get-url | sed -En 's/.*:([0-9a-zA-Z-]+).*/\1/p'; } 
