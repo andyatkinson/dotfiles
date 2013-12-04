@@ -41,3 +41,5 @@
 	lineNumber = true
 [core]
 	excludesfile = ~/.gitignore
+[web]
+	browser = open

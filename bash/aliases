@@ -2,7 +2,7 @@ function p { cd ~/Projects/$1; }
 
 alias reload='. ~/.bash_profile'
 
-# all the single ladies...all the single ladies...I mean letters, single letters
+# Single letters, use them wisely.
 alias b="bundle"
 alias f="foreman start"
 alias g="git"
@@ -19,6 +19,9 @@ alias gl='git pull'
 alias glr='git pull --rebase'
 alias gp='git push'
 alias gpom='git push origin master'
+alias gpoh='git push origin head'
+alias grm='git rebase master'
+alias griom="git rebase -i origin/master"
 alias gc='git commit'
 alias gca='git commit -a'
 alias gcm='git commit -m'
@@ -28,7 +31,6 @@ alias gb='git branch'
 alias gba='git branch -a -v'
 alias gbd='git branch -d'
 alias gs='git status'
-alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gwho='git log | grep Author | sort | uniq'
 alias gcl='git clone'
 alias grp='git remote prune origin'
@@ -48,6 +50,9 @@ alias ss='script/server'
 alias ssd='script/server --debugger'
 alias sg='script/generate'
 alias tlog='tail -f log/development.log'
+alias rc='rails console'
+alias rg='rails generate'
+alias rs='rails server'
 
 alias gems='yard server --gems &; sleep 2s; open http://localhost:8808;'
 
