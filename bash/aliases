@@ -37,7 +37,6 @@ alias grp='git remote prune origin'
 alias gls='git log --stat'
 alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
 alias gbrecent="git for-each-ref --sort=-committerdate refs/heads/"
-alias gmm="b=$(git rev-parse --abbrev-ref HEAD) && git co master && git merge $b"
 
 # git diff
 alias gd="git diff"
