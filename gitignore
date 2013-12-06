@@ -41,3 +41,5 @@ Thumbs.db
 .cap_tasks~
 tags
 .bundle
+vendor/bundle
+.DS_Store

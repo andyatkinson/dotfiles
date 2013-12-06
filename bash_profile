@@ -18,3 +18,5 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 eval "$(rbenv init -)"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
