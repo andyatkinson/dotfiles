@@ -1,13 +1,13 @@
 function p { cd ~/Projects/$1; }
 
-alias reload='. ~/.bash_profile'
-
 # Single letters, use them wisely.
 alias b="bundle"
 alias f="foreman start"
 alias g="git"
 alias c="clear"
 alias u="cd .."
+alias r="rake"
+alias s="source ~/.bash_profile"
 
 # ls
 alias ls="ls -laAFGh"
@@ -54,10 +54,8 @@ alias rc='rails console'
 alias rg='rails generate'
 alias rs='rails server'
 
+# gem install yard
 alias gems='yard server --gems &; sleep 2s; open http://localhost:8808;'
-
-# commands starting with % for pasting from web
-alias %=' '
 
 alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 alias checkspace='du -csh *'
