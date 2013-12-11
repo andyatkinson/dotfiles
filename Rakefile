@@ -1,7 +1,7 @@
 require 'rake'
 
-desc "install the dot files into user's home directory"
-task :install do
+desc "install the dotfiles into home directory"
+task :dotfiles do
   replace_all = false
   Dir['*'].each do |file|
     next if %w[Rakefile README LICENSE].include? file
@@ -31,13 +31,14 @@ end
 
 
 desc "install homebrew formulas"
-task :install_formulas do
-  # assumes homebrew is installed, if installation fails
+task :homebrew do
   # this acts as a list of the packages I always use
   #
   # manual: wkhtmltopdf, qt, postgres, node, redis
   #
-  %w(wget git mysql imagemagick ack proctools fortune htop watch lynx gcal tmux macvim reattach-to-user-namespace bash-completion ctags dos2unix jq mplayer rbenv).each do |formula_name|
+  %w(wget git mysql imagemagick ack proctools fortune htop watch lynx 
+     gcal tmux macvim reattach-to-user-namespace bash-completion ctags
+     dos2unix jq mplayer rbenv).each do |formula_name|
     system "brew install #{package_name}"
   end
 end
@@ -52,7 +53,31 @@ def link_file(file)
   system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
 end
 
-def os_x_change_defaults
-  # defaults write -g InitialKeyRepeat -int 15 # normal minimum is 15 (225 ms)
-  # defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+desc "replace OS X defaults"
+task :os_x_defaults do
+  # thanks! https://gist.github.com/saetia/1623487
+  puts "changing delay value before key repeat. normal minimum is 15 (225ms)"
+  system %Q{defaults write -g InitialKeyRepeat -int 15}
+
+  puts "changing key repeat rate. normal minimum is 2 (30ms)"
+  system %Q{defaults write -g KeyRepeat -int 1}
+
+  puts "disable sound effect when changing volume. Requires log-out/log-in to take effect."
+  system %Q{defaults write -g com.apple.sound.beep.feedback -integer 0}
+
+  puts "Show path bar in finder"
+  system %Q{defaults write com.apple.finder ShowPathbar -bool true}
+
+  puts "enable safari developer menu, debugger, etc."
+  system %Q{defaults write com.apple.Safari IncludeInternalDebugMenu -bool true}
+  system %Q{defaults write com.apple.Safari IncludeDevelopMenu -bool true &&
+  defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true &&
+  defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true &&
+  defaults write NSGlobalDomain WebKitDeveloperExtras -bool true}
+
+  puts "show the ~/Library folder"
+  system %Q{chflags nohidden ~/Library}
+
+  puts "show the absolute path in Finders title bar"
+  system %Q{defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES}
 end
