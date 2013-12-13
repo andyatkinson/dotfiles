@@ -60,7 +60,7 @@ task :os_x_defaults do
   system %Q{defaults write -g InitialKeyRepeat -int 15}
 
   puts "changing key repeat rate. normal minimum is 2 (30ms)"
-  system %Q{defaults write -g KeyRepeat -int 1}
+  system %Q{defaults write -g KeyRepeat -int 2}
 
   puts "disable sound effect when changing volume. Requires log-out/log-in to take effect."
   system %Q{defaults write -g com.apple.sound.beep.feedback -integer 0}
