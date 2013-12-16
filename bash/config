@@ -7,6 +7,7 @@ reset=$(tput sgr0)
 
 PS1='\w\[$blue\]$(__git_ps1)\[$reset\] \$ '
 
+export EDITOR="vim"
 
 
 
