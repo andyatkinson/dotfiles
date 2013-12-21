@@ -7,7 +7,8 @@ alias g="git"
 alias c="clear"
 alias u="cd .."
 alias r="rake"
-alias s="source ~/.bash_profile"
+alias t="tmux"
+alias v="vim ."
 
 # ls
 alias ls="ls -laAFGh"
@@ -96,6 +97,7 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias vim="mvim -v"
 alias dnsflush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias rubyscript='printf "#!/usr/bin/env ruby \n\nprint \"Hello from a Ruby script!\"\n" >> ruby_script; chmod +x ruby_script; ./ruby_script'
+alias reload="source ~/.bash_profile"
 
 # https://github.com/fcambus/ansiweather
 # https://news.ycombinator.com/item?id=6587234
@@ -103,3 +105,7 @@ alias weather="~/Projects/ansiweather/ansiweather"
 
 # use OS X QuickLook to open files from terminal
 alias qlf='qlmanage -p "$@" >> /dev/null'
+
+# tmux aliases
+alias ta="tmux attach"
+alias tls="tmux ls"
