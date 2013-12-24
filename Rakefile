@@ -43,6 +43,15 @@ task :homebrew do
   end
 end
 
+desc "install npm packages"
+task :npm do
+  # should add /usr/local/bin/coffee
+  npm_packages = %w[ coffee-script ]
+  npm_packages.each do |package|
+    system "npm install -g #{package}"
+  end
+end
+
 def replace_file(file)
   system %Q{rm "$HOME/.#{file}"}
   link_file(file)
