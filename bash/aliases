@@ -107,5 +107,6 @@ alias weather="~/Projects/ansiweather/ansiweather"
 alias qlf='qlmanage -p "$@" >> /dev/null'
 
 # tmux aliases
+alias tmux="TERM=screen-256color-bce tmux"
 alias ta="tmux attach"
 alias tls="tmux ls"
