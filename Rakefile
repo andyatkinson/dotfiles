@@ -46,7 +46,7 @@ end
 desc "install npm packages"
 task :npm do
   # should add /usr/local/bin/coffee
-  npm_packages = %w[ coffee-script ]
+  npm_packages = %w[ coffee-script grunt-cli ]
   npm_packages.each do |package|
     system "npm install -g #{package}"
   end
