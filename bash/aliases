@@ -9,6 +9,7 @@ alias u="cd .."
 alias r="rake"
 alias t="tmux"
 alias v="vim ."
+alias j="jobs"
 
 # ls
 alias ls="ls -laAFGh"
