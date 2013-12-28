@@ -23,9 +23,8 @@ alias gp='git push'
 alias gpom='git push origin master'
 alias gpoh='git push origin head'
 alias gc='git commit'
-alias gca='git commit -a'
-alias gcm='git commit -m'
 alias gcam='git commit -a -m'
+alias gcm='git checkout master'
 alias gco='git checkout'
 alias gb='git branch'
 alias gba='git branch -a -v'
@@ -36,7 +35,7 @@ alias gcl='git clone'
 alias grp='git remote prune origin'
 alias gls='git log --stat'
 alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
-alias gbrecent="git for-each-ref --sort=-committerdate refs/heads/"
+alias gbl="echo $(gbr) | head -n1"
 
 # git diff
 alias gd="git diff"

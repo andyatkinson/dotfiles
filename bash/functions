@@ -11,3 +11,6 @@ function gh_my_prs { open http://$GH_HOST/$(git_remote_name)/$(basename $PWD)/pu
 
 # open the last pushed commit on my fork
 function gh_my_last_commit { open http://$GH_HOST/$GH_USER/$(basename $PWD)/commit/$(git rev-parse HEAD); }
+
+# last branches ordered by commit
+function gbr { git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/; }
