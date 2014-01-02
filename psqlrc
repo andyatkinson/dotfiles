@@ -1,0 +1,3 @@
+\encoding latin1
+\set PROMPT1 '%n@%M:%>%x %/# '
+\set PROMPT2 ''
