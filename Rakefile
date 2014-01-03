@@ -52,16 +52,6 @@ task :npm do
   end
 end
 
-def replace_file(file)
-  system %Q{rm "$HOME/.#{file}"}
-  link_file(file)
-end
-
-def link_file(file)
-  puts "linking ~/.#{file}"
-  system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
-end
-
 desc "replace OS X defaults"
 task :os_x_defaults do
   # thanks! https://gist.github.com/saetia/1623487
@@ -90,3 +80,15 @@ task :os_x_defaults do
   puts "show the absolute path in Finders title bar"
   system %Q{defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES}
 end
+
+
+private
+  def replace_file(file)
+    system %Q{rm "$HOME/.#{file}"}
+    link_file(file)
+  end
+
+  def link_file(file)
+    puts "linking ~/.#{file}"
+    system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
+  end
