@@ -107,3 +107,6 @@ alias qlf='qlmanage -p "$@" >> /dev/null'
 alias tmux="TERM=screen-256color-bce tmux"
 alias ta="tmux attach"
 alias tls="tmux ls"
+
+# bounce wi-fi (ifconfig showed it is en0 on MBP)
+alias wifi="sudo ifconfig en0 down && sudo ifconfig en0 up"
