@@ -82,6 +82,9 @@ set statusline=%<%F\ %h%m%r\ %y%=%{v:register}\ %-14.(%l,%c%V%)\ %P
 " [s, ]s to navigate misspellings, "z=" to display lists of suggestions, "1z=" to accept first suggestion
 nmap <silent> <leader>s :set spell!<CR>
 set spelllang=en_us
+" automatically enable spelling for markdown files
+" http://robots.thoughtbot.com/vim-spell-checking
+autocmd BufRead,BufNewFile *.md,*.markdown setlocal spell
  
 " ctags: $ ctags -R . to build the tags file, echo tags >> .gitignore to ignore it, C-], C-o to navigate back and forth
 " C-t jump back up the tag list
