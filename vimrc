@@ -170,6 +170,7 @@ nmap ,f :CtrlPFunky<CR>
 " jj to exit insert mode, common mapping
 " http://stackoverflow.com/questions/1276403/simple-vim-commands-you-wish-youd-known-earlier
 map! jj <ESC>
+map! jjj <ESC>:w<CR>
 
 " coffeescript
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
