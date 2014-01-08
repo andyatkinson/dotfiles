@@ -191,3 +191,6 @@ nnoremap <silent> <leader>z :Goyo<cr>
 
 " disable automatic comment prefix
 set formatoptions-=or
+
+" enable top status line buffer list with vim-airline
+let g:airline#extensions#tabline#enabled = 1
