@@ -1,5 +1,3 @@
-function p { cd ~/Projects/$1; }
-
 # Single letters, use them wisely.
 alias b="bundle"
 alias f="foreman start"
