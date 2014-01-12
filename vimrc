@@ -22,7 +22,8 @@ Bundle 'tpope/vim-bundler'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'tpope/vim-rails'
-Bundle 'https://github.com/jpo/vim-railscasts-theme.git'
+Bundle 'jpo/vim-railscasts-theme.git'
+Bundle 'int3/vim-extradite'
 
 set number
 set hlsearch
