@@ -30,10 +30,8 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
   today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
-  next = "!git add . && git rebase --continue"
-  ir = !git rebase -i origin/master
-  done = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake && git push
   me = log --committer="Andy Atkinson"
+  ri = !git co master && git pull --rebase && git co - && git rebase -i origin/master
 	g = grep --break --heading --line-number
 [rerere]
 	enabled = true
