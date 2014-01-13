@@ -3,5 +3,5 @@
 
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:$MANPATH"
-export CDPATH=.:~/Projects
+export CDPATH=.:~/Projects:~/Dropbox
 export HISTIGNORE="&:ls:ls :[bf]g:exit"
