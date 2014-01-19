@@ -24,6 +24,7 @@ Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'tpope/vim-rails'
 Bundle 'jpo/vim-railscasts-theme.git'
 Bundle 'int3/vim-extradite'
+Bundle 'terryma/vim-multiple-cursors'
 
 set number
 set hlsearch
