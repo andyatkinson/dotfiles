@@ -17,3 +17,7 @@ rake homebrew       # install homebrew formulas
 rake npm            # install npm packages
 rake os_x_defaults  # replace OS X defaults
 ```
+
+## Extras
+
+ * [ansiweather](https://github.com/fcambus/ansiweather) should be cloned to `/Projects`, alias `weather` is configured via `ansiweatherrc` to fetch weather data.
