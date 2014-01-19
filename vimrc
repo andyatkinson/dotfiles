@@ -29,7 +29,7 @@ Bundle 'terryma/vim-multiple-cursors'
 set number
 set hlsearch
 set incsearch 
-set guifont=Consolas\ 10
+set anti enc=utf-8 gfn=Source\ Code\ Pro:h16,Menlo:h14,Monaco:h14
 set nowrap " don't wrap the text, :set wrap to reverse it
 set textwidth=0
 set wrapmargin=0
@@ -130,12 +130,6 @@ set cursorline
 
 " set cursor in middle of the screen when searching
 set scrolloff=9999
-
-" trying this out as a easier way to copy and paste
-" between instances of vim
-" http://stackoverflow.com/a/11052783/126688
-" This does not use the system clipboard, it is an alternative way to copy and
-" paste between vim instances.
 
 " copy to buffer
 vmap <C-c> :w! ~/.vimbuffer<CR>

@@ -22,4 +22,14 @@ rake os_x_defaults  # replace OS X defaults
 
 ## Extras
 
- * [ansiweather](https://github.com/fcambus/ansiweather) should be cloned to `~/Projects` so that alias `weather` works. Configuration is done with the `ansiweatherrc` file.
+  * Download [Source Code Pro](https://github.com/adobe/source-code-pro) and set iTerm preferences to use it
+  * [ansiweather](https://github.com/fcambus/ansiweather) should be cloned to `~/Projects` so that alias `weather` works. Configuration is done with the `ansiweatherrc` file.
+
+## OS X
+
+  * Remap caps lock to control
+
+## iTerm
+
+  * Use Source Code Pro font
+  * Profile > Keys > Left option key acts as "+Esc"
