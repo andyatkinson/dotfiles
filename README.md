@@ -1,11 +1,13 @@
 # dotfiles
 
+This is how I set up my mac for development.
+
  * dotfiles (vim with Vundle-managed plugins, tmux, mysql, postgresql, etc.)
  * homebrew formulas (OS X packages)
  * [npm](https://npmjs.org/) (node packages)
  * OS X [defaults](http://en.wikipedia.org/wiki/Defaults_(software) (user preferences plist files)
 
-The `bash` directory has various bash shell scripts and configuration.
+The bash directory has various bash shell scripts and configuration.
 
 ## Installation
 Clone this directory and run one or more of the following rake tasks.
@@ -20,4 +22,4 @@ rake os_x_defaults  # replace OS X defaults
 
 ## Extras
 
- * [ansiweather](https://github.com/fcambus/ansiweather) should be cloned to `/Projects`, alias `weather` is configured via `ansiweatherrc` to fetch weather data.
+ * [ansiweather](https://github.com/fcambus/ansiweather) should be cloned to `~/Projects` so that alias `weather` works. Configuration is done with the `ansiweatherrc` file.
