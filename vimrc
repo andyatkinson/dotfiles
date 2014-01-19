@@ -25,6 +25,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'jpo/vim-railscasts-theme.git'
 Bundle 'int3/vim-extradite'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'reedes/vim-colors-pencil'
 
 set number
 set hlsearch
