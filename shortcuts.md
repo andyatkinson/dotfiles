@@ -6,7 +6,7 @@
     leader-z # goyo writing mode
     ctrl-n # on top of a word, enable multiple cursors match
     ctrl-p # next match with multiple cursors, ctrl-x to skip a match
-    F8 # tagbar
+    F8 # tagbar :TagbarToggle
     ctrl-c # in normal mode, writes to ~/.vimbuffer (copy and paste between instances)
     ctrl-v v # paste from ~/.vimbuffer
     ctrl-p # normal mode, CtrlP find
@@ -24,8 +24,12 @@
     :Rlog # rails.vim, open rails log file in a split window
     :ctags -R ! # generate tags file for project
     Ctrl-] # navigate via tags to item under cursor
+    Ctrl-T # navigate back after jumping with ctags
     :AV # rails.vim, edit the alternate file in a vertical split
     dap # delete around paragraph
+    :ta # navigate list of tags
+    leader-c # regenerate ctags file
+    :ls # view buffers
 
 ## shell
 
@@ -38,6 +42,9 @@
     Ctrl-w # delete one word
     option-b # back one word
     option-f # forward one word
+    Ctrl-z # background the process
+    jobs # view backgrounded processes
+    fg # bring a backgrounded process to the foreground
 
 ## Google Chrome
 

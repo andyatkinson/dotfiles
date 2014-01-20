@@ -71,8 +71,8 @@ nmap <leader>w :w!<cr>
 nmap <leader>q :q<cr>
 
 " NERDTree
-nmap ,n :NERDTreeFind<CR>
-nmap ,m :NERDTreeToggle<CR>
+nmap <leader>n :NERDTreeFind<CR>
+nmap <leader>m :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
 " jump back to previous file in same location: http://stackoverflow.com/questions/7832369/go-to-last-file-with-rails-vim
@@ -88,9 +88,6 @@ set spelllang=en_us
 " automatically enable spelling for markdown files
 " http://robots.thoughtbot.com/vim-spell-checking
 autocmd BufRead,BufNewFile *.md,*.markdown setlocal spell
- 
-" ctags: $ ctags -R . to build the tags file, echo tags >> .gitignore to ignore it, C-], C-o to navigate back and forth
-" C-t jump back up the tag list
 
 " Automatically enable soft wrap for text file types
 " https://gist.github.com/nelstrom/372671
@@ -104,7 +101,7 @@ endif
 " skip the annoying message for unsaved buffers, this keeps them in the background hidden, unsaved, type :ls to view buffers
 set hidden
 
-"make < > shifts keep selection like TextMate
+" make < > shifts keep selection like TextMate
 nmap <D-[> <<
 nmap <D-]> >>
 vmap <D-[> <gv
@@ -162,7 +159,7 @@ set splitright
 
 " Ctrlp-funky function matching, ctrl-p plugin
 " https://github.com/tacahiroy/ctrlp-funky
-nmap ,f :CtrlPFunky<CR>
+nmap <leader>f :CtrlPFunky<CR>
 
 " jj to exit insert mode, common mapping
 " http://stackoverflow.com/questions/1276403/simple-vim-commands-you-wish-youd-known-earlier
@@ -188,3 +185,6 @@ nnoremap <silent> <leader>z :Goyo<cr>
 
 " disable automatic comment prefix
 set formatoptions-=or
+
+" call ctags to re-index project
+map <leader>c :!ctags -R .<CR>
