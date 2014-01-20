@@ -28,8 +28,6 @@
     :AV # rails.vim, edit the alternate file in a vertical split
     dap # delete around paragraph
     :ta # navigate list of tags
-    leader-c # regenerate ctags file
-    :ls # view buffers
 
 ## shell
 
@@ -42,9 +40,6 @@
     Ctrl-w # delete one word
     option-b # back one word
     option-f # forward one word
-    Ctrl-z # background the process
-    jobs # view backgrounded processes
-    fg # bring a backgrounded process to the foreground
 
 ## Google Chrome
 
