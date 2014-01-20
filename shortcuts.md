@@ -1,5 +1,6 @@
 ## vim 
 
+    gf # jump to code under cursor, rails.vim adds more
     jj # insert mode to normal mode
     jjj # insert mode to normal mode and write buffer
     leader-z # goyo writing mode
@@ -19,7 +20,12 @@
     i # in nerdtree, "i" opens in split
     :A # rails.vim, open alternative file
     :Rcontroller # rails.vim, open related controller
-
+    :Rails console # rails.vim, open a console
+    :Rlog # rails.vim, open rails log file in a split window
+    :ctags -R ! # generate tags file for project
+    Ctrl-] # navigate via tags to item under cursor
+    :AV # rails.vim, edit the alternate file in a vertical split
+    dap # delete around paragraph
 
 ## shell
 
