@@ -15,6 +15,10 @@
     ctrl-^ # last buffer
     leader-n # show file in nerdtree
     ctrl-p # insert mode, displays autocomplete suggestions
+    s # in nerdtree, "s" on a file opens it in a vertical split
+    i # in nerdtree, "i" opens in split
+    :A # rails.vim, open alternative file
+    :Rcontroller # rails.vim, open related controller
 
 
 ## shell
