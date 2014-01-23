@@ -46,5 +46,6 @@
 
  * [Chrome keyboard shortcuts](https://developers.google.com/chrome-developer-tools/docs/shortcuts)
 
-    cmd-option-i (toggle web inspector)
+    cmd-option-i # toggle web inspector
+    option-command-u # open page source
 
