@@ -29,6 +29,9 @@
     dap # delete around paragraph
     :ta # navigate list of tags
     "*y # copy to OS X clipboard
+    c-v # in ctrlp buffer list, open buffer in vertical split
+    c-x # in ctrlp buffer list, open buffer in split
+
 
 ## shell
 
