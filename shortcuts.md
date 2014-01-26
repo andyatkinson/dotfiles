@@ -4,18 +4,18 @@
     jj # insert mode to normal mode
     jjj # insert mode to normal mode and write buffer
     leader-z # goyo writing mode
-    ctrl-n # on top of a word, enable multiple cursors match
-    ctrl-p # next match with multiple cursors, ctrl-x to skip a match
+    Ctrl-n # on top of a word, enable multiple cursors match
+    Ctrl-p # next match with multiple cursors, ctrl-x to skip a match
     F8 # tagbar :TagbarToggle
-    ctrl-c # in normal mode, writes to ~/.vimbuffer (copy and paste between instances)
-    ctrl-v v # paste from ~/.vimbuffer
-    ctrl-p # normal mode, CtrlP find
-    ctrl-b # CtrlP MRU buffer list
-    ctrl-f # CtrlP function matching
-    ctrl-h/j/k/l # navigate between panes
-    ctrl-^ # last buffer
+    Ctrl-c # in normal mode, writes to ~/.vimbuffer (copy and paste between instances)
+    Ctrl-v v # paste from ~/.vimbuffer
+    Ctrl-p # normal mode, CtrlP find
+    Ctrl-b # CtrlP MRU buffer list
+    Ctrl-f # CtrlP function matching
+    Ctrl-h/j/k/l # navigate between panes
+    Ctrl-^ # last buffer
     leader-n # show file in nerdtree
-    ctrl-p # insert mode, displays autocomplete suggestions
+    Ctrl-p # insert mode, displays autocomplete suggestions
     s # in nerdtree, "s" on a file opens it in a vertical split
     i # in nerdtree, "i" opens in split
     :A # rails.vim, open alternative file
@@ -30,13 +30,20 @@
     dap # delete around paragraph
     :ta # navigate list of tags
     "*y # copy to OS X clipboard
-    c-v # in ctrlp buffer list, open buffer in vertical split
-    c-x # in ctrlp buffer list, open buffer in split
+    Ctrl-v # in ctrlp buffer list, open buffer in vertical split
+    Ctrl-x # in ctrlp buffer list, open buffer in split
     leader-w # write buffer
     leader-q # quit buffer
-    shift-^ # jump to first character of line
+    ^ # jump to first character of line
     leader-s # toggle spellchecking
-    ctrl-w # toggle panes
+    Ctrl-w # toggle panes
+    gU # make uppercase, plus motion (w, k etc.)
+    ~ # swap case
+    Ctrl-o # jump back
+    Ctrl-i # jump forward
+    nG # jump to line n
+    Ctrl-u # in insert mode, delete line before cursor
+    Ctrl-w # in insert mode, delete word before cursor
 
 
 ## bash
