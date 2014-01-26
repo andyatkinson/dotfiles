@@ -39,7 +39,7 @@
     ctrl-w # toggle panes
 
 
-## shell
+## bash
 
     Ctrl-u # delete line
     Ctrl-y # restore before delete
@@ -50,6 +50,9 @@
     Ctrl-w # delete one word
     option-b # back one word
     option-f # forward one word
+    jobs # list jobs
+    jobs -p # list backgrounded jobs process IDs
+    fg 1 # bring background job 1 to the foreground
 
 ## Google Chrome
 
@@ -57,4 +60,3 @@
 
     cmd-option-i # toggle web inspector
     option-command-u # open page source
-
