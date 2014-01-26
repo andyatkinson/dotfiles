@@ -23,6 +23,7 @@
     :Rails console # rails.vim, open a console
     :Rlog # rails.vim, open rails log file in a split window
     :ctags -R ! # generate tags file for project
+    leader-c # call ctags on project
     Ctrl-] # navigate via tags to item under cursor
     Ctrl-T # navigate back after jumping with ctags
     :AV # rails.vim, edit the alternate file in a vertical split
@@ -31,6 +32,11 @@
     "*y # copy to OS X clipboard
     c-v # in ctrlp buffer list, open buffer in vertical split
     c-x # in ctrlp buffer list, open buffer in split
+    leader-w # write buffer
+    leader-q # quit buffer
+    shift-^ # jump to first character of line
+    leader-s # toggle spellchecking
+    ctrl-w # toggle panes
 
 
 ## shell

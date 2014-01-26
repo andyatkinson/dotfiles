@@ -46,10 +46,9 @@ set history=1000
 set undolevels=1000
 set wildignore=*.swp,*.bak
 set title
-
-" never ever let Vim write a backup file! http://nvie.com/posts/how-i-boosted-my-vim/
-set nobackup
+set nobackup " never let Vim write a backup file! http://nvie.com/posts/how-i-boosted-my-vim/
 set noswapfile
+set hidden
 
 " highlight whitespace chars, tabs, hidden spaces
 set list
@@ -64,19 +63,11 @@ filetype plugin indent on
 let mapleader = ","
 let g:mapleader = ","
 
-" Fast saving
 nmap <leader>w :w!<cr>
-
-" Fast quit
 nmap <leader>q :q<cr>
-
-" NERDTree
 nmap <leader>n :NERDTreeFind<CR>
 nmap <leader>m :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
-
-" jump back to previous file in same location: http://stackoverflow.com/questions/7832369/go-to-last-file-with-rails-vim
-map <Leader>p <C-^> 
 
 set laststatus=2
 set statusline=%<%F\ %h%m%r\ %y%=%{v:register}\ %-14.(%l,%c%V%)\ %P
@@ -97,9 +88,6 @@ if has("autocmd")
   " Enable soft-wrapping for text files
   autocmd FileType text,markdown,html,erb setlocal wrap linebreak nolist
 endif
-
-" skip the annoying message for unsaved buffers, this keeps them in the background hidden, unsaved, type :ls to view buffers
-set hidden
 
 " make < > shifts keep selection like TextMate
 nmap <D-[> <<

@@ -1,11 +1,13 @@
 # Single letters, use them wisely.
 alias b="bundle"
+alias c="clear"
+alias d="cd ~/Projects/dotfiles && vim ."
 alias f="foreman start"
 alias g="git"
-alias c="clear"
-alias u="cd .."
+alias p="cd ~/Projects && ls"
 alias r="rake"
 alias t="tmux"
+alias u="cd .."
 alias v="vim ."
 
 # ls
@@ -20,15 +22,13 @@ alias gp='git push'
 alias gpom='git push origin master'
 alias gpoh='git push origin head'
 alias gc='git commit'
-alias gcam='git commit -a -m'
+alias gcam='git commit --all -m'
 alias gcm='git checkout master'
 alias gco='git checkout'
 alias gb='git branch'
-alias gba='git branch -a -v'
 alias gbd='git branch -d'
 alias gs='git status'
 alias gwho='git log | grep Author | sort | uniq'
-alias gcl='git clone'
 alias grp='git remote prune origin'
 alias gls='git log --stat'
 alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
