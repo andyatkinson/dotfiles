@@ -174,5 +174,4 @@ nnoremap <silent> <leader>z :Goyo<cr>
 " disable automatic comment prefix
 set formatoptions-=or
 
-" call ctags to re-index project
-map <leader>c :!ctags -R .<CR>
+nnoremap <leader><leader> <c-^>
