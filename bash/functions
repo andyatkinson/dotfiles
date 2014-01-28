@@ -25,3 +25,5 @@ ff () { /usr/bin/find . -name "$@" ; }
 ffs () { /usr/bin/find . -name "$@"'*' ; }
 # ffe: to find a file whose name ends with a given string
 ffe () { /usr/bin/find . -name '*'"$@" ; }
+
+dict () { open dict:///"$@" ; }
