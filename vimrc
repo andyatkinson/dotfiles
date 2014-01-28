@@ -22,7 +22,6 @@ Bundle 'tpope/vim-bundler'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'tpope/vim-rails'
-Bundle 'jpo/vim-railscasts-theme.git'
 Bundle 'int3/vim-extradite'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'reedes/vim-colors-pencil'
@@ -55,7 +54,7 @@ set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 syntax enable
 set t_Co=256
-colorscheme railscasts
+colorscheme desert
 set nrformats=
 syntax on
 filetype plugin indent on
