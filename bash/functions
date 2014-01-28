@@ -14,3 +14,14 @@ function gh_my_last_commit { open http://$GH_HOST/$GH_USER/$(basename $PWD)/comm
 
 # last branches ordered by commit
 function gbr { git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/; }
+
+# http://hayne.net/MacDev/Bash/aliases.bash
+#-----------
+# Searching:
+#-----------
+# ff:  to find a file under the current directory
+ff () { /usr/bin/find . -name "$@" ; }
+# ffs: to find a file whose name starts with a given string
+ffs () { /usr/bin/find . -name "$@"'*' ; }
+# ffe: to find a file whose name ends with a given string
+ffe () { /usr/bin/find . -name '*'"$@" ; }
