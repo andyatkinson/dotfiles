@@ -44,6 +44,7 @@
     nG # jump to line n
     Ctrl-u # in insert mode, delete line before cursor
     Ctrl-w # in insert mode, delete word before cursor
+    Ctrl-w H/J/K/L # re-configure split panes
 
 
 ## bash
