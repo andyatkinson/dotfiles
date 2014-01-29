@@ -32,6 +32,7 @@
   today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
   me = log --committer="Andy Atkinson"
   ir = !git co master && git pull --rebase && git co - && git rebase -i origin/master
+  cp = cherry-pick
 	g = grep --break --heading --line-number
 [rerere]
 	enabled = true
