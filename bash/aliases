@@ -39,6 +39,7 @@ alias gd="git diff"
 alias gdm="git diff master"
 alias gdms="git diff master --stat"
 alias gdmss="git diff master --shortstat"
+alias gdmx="git diff master | gitx"
 
 # rails
 alias sc='script/console'
