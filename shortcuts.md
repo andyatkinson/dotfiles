@@ -46,6 +46,7 @@
     Ctrl-w # in insert mode, delete word before cursor
     Ctrl-w H/J/K/L # re-configure split panes
     leader-p F5 # refresh ctrlp contents
+    :30winc > # add 30 characters of width to vertical split
 
 
 ## bash
