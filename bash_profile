@@ -28,6 +28,9 @@ fi
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# make sure homebrew paths are first
+export PATH=/usr/local/bin:$PATH
+
 # http://mywiki.wooledge.org/BashFAQ/088
 HISTFILESIZE=400000000
 HISTSIZE=10000
