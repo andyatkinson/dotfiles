@@ -48,6 +48,9 @@
     leader-p F5 # refresh ctrlp contents
     :30winc > # add 30 characters of width to vertical split
     v # with ack.vim, browsing results, "v" to open result in vertical split
+    ? # how to toggle pane fullscreen
+    ? # way to make vim font size get smaller with more panes (maintain proportions?)
+    ctrl-w = # resize all panes
 
 
 ## bash

@@ -174,3 +174,9 @@ nnoremap <silent> <leader>z :Goyo<cr>
 set formatoptions-=or
 
 nnoremap <leader><leader> <c-^>
+
+" don't open man page
+nnoremap K <Nop>
+
+nmap <leader>a :Ack<space>
+map <silent> <leader>g :Gblame<cr>
