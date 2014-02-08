@@ -8,7 +8,6 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'mileszs/ack.vim'
 Bundle 'fishman/ctags'
-Bundle 'vim-scripts/tComment'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'junegunn/goyo.vim'
@@ -25,6 +24,8 @@ Bundle 'tpope/vim-rails'
 Bundle 'int3/vim-extradite'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'reedes/vim-colors-pencil'
+Bundle 'benmills/vimux'
+Bundle 'jgdavey/vim-turbux'
 
 set number
 set hlsearch

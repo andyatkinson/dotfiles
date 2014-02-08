@@ -51,6 +51,8 @@
     ? # how to toggle pane fullscreen
     ? # way to make vim font size get smaller with more panes (maintain proportions?)
     ctrl-w = # resize all panes
+    ,t # with vimux and turbux, run test in tmux pane
+    ,T # run focused unit test in tmux pane with vimux and turbux
 
 
 ## bash
