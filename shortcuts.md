@@ -45,14 +45,16 @@
     Ctrl-u # in insert mode, delete line before cursor
     Ctrl-w # in insert mode, delete word before cursor
     Ctrl-w H/J/K/L # re-configure split panes
-    leader-p F5 # refresh ctrlp contents
+    leader-p F5 # refresh ctrlp buffer list
     :30winc > # add 30 characters of width to vertical split
     v # with ack.vim, browsing results, "v" to open result in vertical split
-    ? # how to toggle pane fullscreen
-    ? # way to make vim font size get smaller with more panes (maintain proportions?)
+    Ctrl-w _ # maximize a pane vertically
+    Ctrl-w | # maximize a pane horizontally
+    Ctrl-w = # make the pane sizes equal
     ctrl-w = # resize all panes
-    ,t # with vimux and turbux, run test in tmux pane
-    ,T # run focused unit test in tmux pane with vimux and turbux
+    leader-t # with vimux and turbux, run test in tmux pane
+    leader-T # run focused unit test in tmux pane with vimux and turbux
+    :vs # # open the last buffer in a vertical split
 
 
 ## bash

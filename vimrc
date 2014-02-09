@@ -29,7 +29,7 @@ Bundle 'jgdavey/vim-turbux'
 
 set number
 set hlsearch
-set incsearch 
+set incsearch
 set anti enc=utf-8 gfn=Source\ Code\ Pro:h16,Menlo:h14,Monaco:h14
 set nowrap " don't wrap the text, :set wrap to reverse it
 set textwidth=0
@@ -49,14 +49,24 @@ set title
 set nobackup " never let Vim write a backup file! http://nvie.com/posts/how-i-boosted-my-vim/
 set noswapfile
 set hidden
-
-" highlight whitespace chars, tabs, hidden spaces
-set list
+set list " highlight whitespace chars, tabs, hidden spaces
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
-syntax enable
-set t_Co=256
-colorscheme desert
 set nrformats=
+set t_Co=256
+set laststatus=2
+set statusline=%<%F\ %h%m%r\ %y%=%{v:register}\ %-14.(%l,%c%V%)\ %P
+set spelllang=en_us
+set wildmode=longest,list " set up bash-style tab-completion
+set grepprg=ack
+set cursorline " highlight the current line
+set scrolloff=9999 " set cursor in middle of the screen when searching
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
+set splitbelow " http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
+set splitright
+set formatoptions-=or " disable automatic comment prefix
+
+syntax enable
+colorscheme desert
 syntax on
 filetype plugin indent on
 
@@ -69,13 +79,9 @@ nmap <leader>n :NERDTreeFind<CR>
 nmap <leader>m :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 
-set laststatus=2
-set statusline=%<%F\ %h%m%r\ %y%=%{v:register}\ %-14.(%l,%c%V%)\ %P
-
 " Toggle spell checking on and off with `,s`
 " [s, ]s to navigate misspellings, "z=" to display lists of suggestions, "1z=" to accept first suggestion
 nmap <silent> <leader>s :set spell!<CR>
-set spelllang=en_us
 " automatically enable spelling for markdown files
 " http://robots.thoughtbot.com/vim-spell-checking
 autocmd BufRead,BufNewFile *.md,*.markdown setlocal spell
@@ -99,30 +105,14 @@ vmap <D-]> >gv
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
-"set up bash-style tab-completion
-set wildmode=longest,list
-
-" set the grep program
-set grepprg=ack
-
 " recognize .md files as markdown files
 au BufRead,BufNewFile *.md set filetype=markdown
 
-" for the tagbar plugin, toggle the tagbar right pane area
 nmap <F8> :TagbarToggle<CR>
 
-" highlight the current line
-set cursorline
-
-" set cursor in middle of the screen when searching
-set scrolloff=9999
-
-" copy to buffer
+" use ~/.vimbuffer file to copy and paste between vim instances
 vmap <C-c> :w! ~/.vimbuffer<CR>
 nmap <C-c> :.w! ~/.vimbuffer<CR>
-" Off-limits: Ctrl-I (jumps forward), Ctrl-P (autocomplete suggestions)
-" Ctrl-V (visual line selection), Ctrl-w (toggle panes), Ctrl-D (down half
-" page)
 map <C-v><C-v> :r ~/.vimbuffer<CR>
 
 " http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
@@ -133,24 +123,18 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_show_hidden = 1
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 nmap <leader>p :CtrlP<cr>
 nmap <leader>b :CtrlPBuffer<cr>
 " Re-use the nerdtree window
 let g:ctrlp_dont_split = 'nerdtree'
 
-" split panes, open differently
-" http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
-set splitbelow
-set splitright
 
 " Ctrlp-funky function matching, ctrl-p plugin
 " https://github.com/tacahiroy/ctrlp-funky
 nmap <leader>f :CtrlPFunky<CR>
 
 " jj to exit insert mode, common mapping
-" http://stackoverflow.com/questions/1276403/simple-vim-commands-you-wish-youd-known-earlier
 map! jj <ESC>
 map! jjj <ESC>:w<ESC>
 
@@ -170,9 +154,6 @@ nmap <C-l> <C-w>l
 
 " goyo https://github.com/junegunn/goyo.vim
 nnoremap <silent> <leader>z :Goyo<cr>
-
-" disable automatic comment prefix
-set formatoptions-=or
 
 nnoremap <leader><leader> <c-^>
 
