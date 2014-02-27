@@ -78,3 +78,7 @@
 
     cmd-option-i # toggle web inspector
     option-command-u # open page source
+
+## iTerm
+
+  Cmd-/ # show cursor
