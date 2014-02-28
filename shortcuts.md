@@ -82,3 +82,7 @@
 ## iTerm
 
   Cmd-/ # show cursor
+
+## tmux
+
+  reset # reset, useful when text stops showing up
