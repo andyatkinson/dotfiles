@@ -55,6 +55,8 @@
     leader-t # with vimux and turbux, run test in tmux pane
     leader-T # run focused unit test in tmux pane with vimux and turbux
     :vs # # open the last buffer in a vertical split
+    - # first non-blank character previous line
+    _ # first non-blank character current line
 
 
 ## bash
