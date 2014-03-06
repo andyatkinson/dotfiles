@@ -65,7 +65,6 @@ set splitbelow " http://robots.thoughtbot.com/vim-splits-move-faster-and-more-na
 set splitright
 set formatoptions-=or " disable automatic comment prefix
 set iskeyword-=_ " navigate by underscores, useful in Ruby
-set re=1 " set old regex engine, solved sluggishness issue, http://stackoverflow.com/questions/16902317/vim-slow-with-ruby-syntax-highlighting/16920294#16920294
 
 syntax enable
 colorscheme desert
