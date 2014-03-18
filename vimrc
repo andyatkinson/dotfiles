@@ -84,16 +84,16 @@ let NERDTreeShowHidden=1
 nmap <silent> <leader>s :set spell!<CR>
 " automatically enable spelling for markdown files
 " http://robots.thoughtbot.com/vim-spell-checking
-autocmd BufRead,BufNewFile *.md,*.markdown setlocal spell
+"autocmd BufRead,BufNewFile *.md,*.markdown setlocal spell
 
 " Automatically enable soft wrap for text file types
 " https://gist.github.com/nelstrom/372671
-if has("autocmd")
-  " Set File type to 'text' for files ending in .txt
-  autocmd BufNewFile,BufRead *.txt setfiletype text
-  " Enable soft-wrapping for text files
-  autocmd FileType text,markdown,html,erb setlocal wrap linebreak nolist
-endif
+" if has("autocmd")
+"   " Set File type to 'text' for files ending in .txt
+"   autocmd BufNewFile,BufRead *.txt setfiletype text
+"   " Enable soft-wrapping for text files
+"   autocmd FileType text,markdown,html,erb setlocal wrap linebreak nolist
+" endif
 
 " make < > shifts keep selection like TextMate
 nmap <D-[> <<
@@ -106,7 +106,7 @@ nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
 
 " recognize .md files as markdown files
-au BufRead,BufNewFile *.md set filetype=markdown
+" au BufRead,BufNewFile *.md set filetype=markdown
 
 nmap <F8> :TagbarToggle<CR>
 
@@ -139,7 +139,7 @@ map! jj <ESC>
 map! jjj <ESC>:w<ESC>
 
 " coffeescript
-autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+" autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 " mustache and handlebars vim plugin
 " https://github.com/mustache/vim-mustache-handlebars
