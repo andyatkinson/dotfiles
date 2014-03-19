@@ -58,13 +58,15 @@ set statusline=%<%F\ %h%m%r\ %y%=%{v:register}\ %-14.(%l,%c%V%)\ %P
 set spelllang=en_us
 set wildmode=longest,list " set up bash-style tab-completion
 set grepprg=ack
-set cursorline " highlight the current line
 set scrolloff=9999 " set cursor in middle of the screen when searching
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
 set splitbelow " http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
 set splitright
 set formatoptions-=or " disable automatic comment prefix
 set scrolljump=5
+set nocursorline
+set nocursorcolumn
+syntax sync minlines=256 " http://stackoverflow.com/a/7187629/126688
 
 syntax enable
 colorscheme desert
