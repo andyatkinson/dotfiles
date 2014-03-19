@@ -64,6 +64,7 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
 set splitbelow " http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
 set splitright
 set formatoptions-=or " disable automatic comment prefix
+set scrolljump=5
 
 syntax enable
 colorscheme desert
