@@ -26,6 +26,7 @@ Bundle 'terryma/vim-multiple-cursors'
 Bundle 'reedes/vim-colors-pencil'
 Bundle 'benmills/vimux'
 Bundle 'jgdavey/vim-turbux'
+Bundle 'motemen/git-vim'
 
 set number
 set hlsearch

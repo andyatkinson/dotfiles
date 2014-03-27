@@ -1,5 +1,6 @@
 ## vim 
 
+    Ctrl-e # execute vim-sparkup
     gf # jump to code under cursor, rails.vim adds more
     jj # insert mode to normal mode
     jjj # insert mode to normal mode and write buffer
@@ -88,3 +89,6 @@
 ## tmux
 
   reset # reset, useful when text stops showing up
+  tmux attach-session -t 0 # attach to session 0
+  mux commands # tmuxinator commands list
+  mux list # tmuxinator list
