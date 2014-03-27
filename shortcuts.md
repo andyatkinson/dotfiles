@@ -58,6 +58,7 @@
     :vs # # open the last buffer in a vertical split
     - # first non-blank character previous line
     _ # first non-blank character current line
+    Ctrl-w r # rotate split panes
 
 
 ## bash
@@ -92,3 +93,4 @@
   tmux attach-session -t 0 # attach to session 0
   mux commands # tmuxinator commands list
   mux list # tmuxinator list
+  ctrl-b space # switch to next tmux pane layout
