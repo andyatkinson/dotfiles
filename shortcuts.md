@@ -45,7 +45,7 @@
     nG # jump to line n
     Ctrl-u # in insert mode, delete line before cursor
     Ctrl-w # in insert mode, delete word before cursor
-    Ctrl-w H/J/K/L # re-configure split panes
+    Ctrl-w H/J/K/L # re-configure split panes, cycle the splits layout
     leader-p F5 # refresh ctrlp buffer list
     :30winc > # add 30 characters of width to vertical split
     v # with ack.vim, browsing results, "v" to open result in vertical split
