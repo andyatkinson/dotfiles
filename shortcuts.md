@@ -1,4 +1,4 @@
-## vim 
+## vim
 
     Ctrl-e # execute vim-sparkup
     gf # jump to code under cursor, rails.vim adds more
@@ -59,7 +59,9 @@
     - # first non-blank character previous line
     _ # first non-blank character current line
     Ctrl-w r # rotate split panes
-
+    daw # delete around word
+    fx # jump to first x, ; char repeats motion
+    i and a # text objects, select inside, or select everything including delimited
 
 ## bash
 
