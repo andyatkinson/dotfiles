@@ -104,10 +104,6 @@ nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
 
-" cycle forward and backward through buffers
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
-
 " recognize .md files as markdown files
 " au BufRead,BufNewFile *.md set filetype=markdown
 
