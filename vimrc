@@ -71,6 +71,7 @@ syntax enable
 colorscheme desert
 syntax on
 filetype plugin indent on
+runtime macros/matchit.vim
 
 let mapleader = ","
 let g:mapleader = ","
@@ -130,7 +131,6 @@ nmap <leader>p :CtrlP<cr>
 nmap <leader>b :CtrlPBuffer<cr>
 " Re-use the nerdtree window
 let g:ctrlp_dont_split = 'nerdtree'
-
 
 " Ctrlp-funky function matching, ctrl-p plugin
 " https://github.com/tacahiroy/ctrlp-funky

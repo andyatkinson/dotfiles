@@ -61,7 +61,14 @@
     Ctrl-w r # rotate split panes
     daw # delete around word
     fx # jump to first x, ; char repeats motion
-    i and a # text objects, select inside, or select everything including delimited
+    i and a # text objects, select inside, or select everything including delimiter, e.g. cit
+    is # inside sentence
+    ip # inside paragraph
+    t{char} # before the char, f{char} puts cursor on the char
+    mm # set a mark, with char m, m{a-zA-Z}
+    `m # jump to mark m
+    `. # last change
+    `< # and `> start and end of last visual selection
 
 ## bash
 
