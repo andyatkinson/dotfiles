@@ -68,7 +68,12 @@
     mm # set a mark, with char m, m{a-zA-Z}
     `m # jump to mark m
     `. # last change
+    g; # similar to `., can be repeated
     `< # and `> start and end of last visual selection
+    dd # cut the current line, ddp to transpose current next lines
+    yyp # yank yank paste, duplicates line
+    Ctrl-r{register} # e.g. Ctrl-r" or C-r0
+    "+p # put from the Plus register, to avoid toggling paste option
 
 ## bash
 

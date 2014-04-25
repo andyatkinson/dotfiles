@@ -5,7 +5,7 @@ task :dotfiles do
   replace_all = false
   Dir['*'].each do |file|
     next if %w[Rakefile README.md shortcuts.md].include? file
-    
+
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all
         replace_file(file)
