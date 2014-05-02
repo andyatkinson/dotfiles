@@ -100,6 +100,8 @@
 ## iTerm
 
   Cmd-/ # show cursor
+  Cmd-shift-d # split the window horizontally
+  Cmd-option-arrow # move between the split panes
 
 ## tmux
 
