@@ -26,6 +26,7 @@ Bundle 'reedes/vim-colors-pencil'
 Bundle 'benmills/vimux'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'jnwhiteh/vim-golang'
 
 set number
 set hlsearch
