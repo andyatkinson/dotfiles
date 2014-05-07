@@ -134,9 +134,8 @@ let g:ctrlp_dont_split = 'nerdtree'
 " https://github.com/tacahiroy/ctrlp-funky
 nmap <leader>f :CtrlPFunky<CR>
 
-" jj to exit insert mode, common mapping
-map! jj <ESC>
-map! jjj <ESC>:w<ESC>
+map! jk <ESC>
+map! jkl <ESC>:w<ESC>
 
 " coffeescript
 " autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
