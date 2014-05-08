@@ -13,7 +13,6 @@ Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'junegunn/goyo.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'danro/rename.vim'
-Bundle 'tristen/vim-sparkup'
 Bundle 'majutsushi/tagbar'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-bundler'
@@ -28,6 +27,10 @@ Bundle 'jgdavey/vim-turbux'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
+Bundle 'honza/vim-snippets'
 
 set number
 set hlsearch

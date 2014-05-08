@@ -110,3 +110,17 @@
   mux commands # tmuxinator commands list
   mux list # tmuxinator list
   ctrl-b space # switch to next tmux pane layout
+
+## snippets
+
+Snippets directory ~/.vim/bundle/vim-snippets/snippets
+
+  =<tab> # puts in Erb expression tags (requires snipmate)
+  %<tab> # puts in Erb expression tags (requires snipmate)
+  def<tab> # start a ruby method
+  div # can use this for markup too
+
+## tig
+
+  git log | tig
+  git diff master | tig
