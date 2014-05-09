@@ -38,7 +38,7 @@ task :homebrew do
   #
   %w(wget git mysql imagemagick ack proctools fortune htop watch lynx 
      gcal tmux macvim reattach-to-user-namespace bash-completion ctags
-     dos2unix jq mplayer rbenv tree markdown gpg node tig).each do |formula_name|
+     dos2unix jq mplayer rbenv tree markdown gpg node tig hg).each do |formula_name|
     system "brew install #{formula_name}"
   end
 end

@@ -37,3 +37,7 @@ HISTSIZE=10000
 PROMPT_COMMAND="history -a"
 export HISTSIZE PROMPT_COMMAND
 shopt -s histappend
+
+# for golang
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
