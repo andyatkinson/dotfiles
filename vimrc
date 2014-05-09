@@ -169,3 +169,13 @@ syntax enable
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+
+" for cscope
+if filereadable("cscope.out")
+  cs add cscope.out
+  " else add database pointed to by environment
+ elseif $CSCOPE_DB != ""
+   cs add $CSCOPE_DB
+endif
+nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>

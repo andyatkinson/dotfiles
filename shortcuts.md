@@ -26,7 +26,7 @@
     :ctags -R ! # generate tags file for project
     leader-c # call ctags on project
     Ctrl-] # navigate via tags to item under cursor
-    Ctrl-T # navigate back after jumping with ctags
+    Ctrl-t # navigate back after jumping with ctags
     :AV # rails.vim, edit the alternate file in a vertical split
     dap # delete around paragraph
     :ta # navigate list of tags
