@@ -74,6 +74,7 @@
     yyp # yank yank paste, duplicates line
     Ctrl-r{register} # e.g. Ctrl-r" or C-r0
     "+p # put from the Plus register, to avoid toggling paste option
+    C-\s # on top of a method, cscope query, to find caller of a method
 
 ## bash
 
