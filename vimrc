@@ -26,11 +26,11 @@ Bundle 'benmills/vimux'
 Bundle 'jgdavey/vim-turbux'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'jnwhiteh/vim-golang'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
+Bundle 'Lokaltog/vim-distinguished'
 
 set number
 set hlsearch
@@ -72,7 +72,9 @@ set scrolljump=5
 set nocursorline
 set nocursorcolumn
 syntax sync minlines=256 " http://stackoverflow.com/a/7187629/126688
+syntax enable
 syntax on
+colorscheme distinguished
 
 filetype plugin indent on
 runtime macros/matchit.vim
@@ -163,12 +165,6 @@ nnoremap K <Nop>
 
 nmap <leader>a :Ack<space>
 map <silent> <leader>g :Gblame<cr>
-
-" for solarized
-syntax enable
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
 
 " for cscope
 if filereadable("cscope.out")
