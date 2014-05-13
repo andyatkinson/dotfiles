@@ -138,8 +138,7 @@ let g:ctrlp_dont_split = 'nerdtree'
 " https://github.com/tacahiroy/ctrlp-funky
 nmap <leader>f :CtrlPFunky<CR>
 
-map! jk <ESC>
-map! jkl <ESC>:w<ESC>
+map! jk <ESC>:w<ESC>
 
 " coffeescript
 " autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
