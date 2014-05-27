@@ -31,6 +31,7 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 Bundle 'Lokaltog/vim-distinguished'
+Bundle 'scrooloose/syntastic'
 
 set number
 set hlsearch
