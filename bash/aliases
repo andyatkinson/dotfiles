@@ -85,6 +85,7 @@ alias nginx_error_log="tail -f /usr/local/Cellar/nginx/$(nginx -v 2>&1 | sed -En
 alias mcd='memcached -d -l 127.0.0.1 -p 11211'
 alias mck='killall memcached'
 alias mcst='ps ax | grep memcached | grep -v grep'
+alias mf="echo 'flush_all' | nc localhost 11211"
 
 # postgres
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
