@@ -138,6 +138,7 @@ let g:ctrlp_dont_split = 'nerdtree'
 " Ctrlp-funky function matching, ctrl-p plugin
 " https://github.com/tacahiroy/ctrlp-funky
 nmap <leader>f :CtrlPFunky<CR>
+set wildignore+=*/lib/ext/*
 
 map! jk <ESC>:w<ESC>
 
