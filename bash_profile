@@ -38,6 +38,10 @@ PROMPT_COMMAND="history -a"
 export HISTSIZE PROMPT_COMMAND
 shopt -s histappend
 
+# http://oinopa.com/2010/10/24/laptop-driven-development.html
+export HISTIGNORE="fg*"
+bind '"\C-f": "fg %-\n"'
+
 # for golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
