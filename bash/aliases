@@ -35,12 +35,13 @@ alias grp='git remote prune origin'
 alias gls='git log --stat'
 alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
 
-# git diff
+# git diff, depends on gitx and tig being installed
 alias gd="git diff"
 alias gdm="git diff master"
 alias gdms="git diff master --stat"
 alias gdmss="git diff master --shortstat"
 alias gdmx="git diff master | gitx"
+alias gdmt="git diff master | gitx"
 
 # rails
 alias sc='script/console'
