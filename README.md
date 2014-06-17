@@ -108,6 +108,8 @@ yyp # yank yank paste, duplicates line
 Ctrl-r{register} # e.g. Ctrl-r" or C-r0
 "+p # put from the Plus register, to avoid toggling paste option
 C-\s # on top of a method, cscope query, to find caller of a method
+:so ~/.vimrc # reload the ~/.vimrc
+visual selection + S (capital "s") # type HTML tag like <p> to surround visual selection in <p> tag, depends on surround.vim
 ```
 
 ## bash

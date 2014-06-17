@@ -32,6 +32,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-surround.git'
 
 set number
 set hlsearch
