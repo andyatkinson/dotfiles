@@ -46,7 +46,7 @@ end
 desc "install npm packages"
 task :npm do
   # should add /usr/local/bin/coffee
-  npm_packages = %w[ coffee-script grunt grunt-cli grunt-ember-templates ]
+  npm_packages = %w[ coffee-script grunt grunt-cli grunt-ember-templates bower ]
   npm_packages.each do |package|
     system "npm install -g #{package}"
   end
