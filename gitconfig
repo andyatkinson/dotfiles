@@ -30,10 +30,10 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
   today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
-  me = log --committer="Andy Atkinson"
+  mine = log -n 5 --author=$(whoami)
   ir = !git co master && git pull --rebase && git co - && git rebase -i origin/master
   cp = cherry-pick
-	g = grep --break --heading --line-number
+  g = grep --break --heading --line-number
 [rerere]
 	enabled = true
 [grep]
