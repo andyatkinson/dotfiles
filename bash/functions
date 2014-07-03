@@ -27,3 +27,5 @@ ffs () { /usr/bin/find . -name "$@"'*' ; }
 ffe () { /usr/bin/find . -name '*'"$@" ; }
 
 dict () { open dict:///"$@" ; }
+
+killit() { pgrep $1 | sudo xargs kill -9; }
