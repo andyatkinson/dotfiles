@@ -128,6 +128,7 @@ option-f # forward one word
 jobs # list jobs
 jobs -p # list backgrounded jobs process IDs
 fg 1 # bring background job 1 to the foreground
+Ctrl-x Ctrl-e # edit command line command in $EDITOR
 ```
 
 ## Google Chrome

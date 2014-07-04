@@ -29,3 +29,5 @@ ffe () { /usr/bin/find . -name '*'"$@" ; }
 dict () { open dict:///"$@" ; }
 
 killit() { pgrep $1 | sudo xargs kill -9; }
+
+function dff { diff --side-by-side $1 $2 | more; }
