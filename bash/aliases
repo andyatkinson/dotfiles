@@ -90,6 +90,7 @@ alias mcst='ps ax | grep memcached | grep -v grep'
 alias mf="echo 'flush_all' | nc localhost 11211"
 
 # postgres
+# run launchctl commands from Terminal.app, outside of screen or tmux https://github.com/Homebrew/homebrew/wiki/Common-Issues
 alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 # e.g. change log_statement to 'all' to see everything
