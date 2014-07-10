@@ -4,6 +4,7 @@ source ~/.bash/paths
 source ~/.bash/config
 source ~/.bash/domainavailable
 source ~/.bash/functions
+source ~/.localrc
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   source $(brew --prefix)/etc/bash_completion
