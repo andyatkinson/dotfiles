@@ -35,6 +35,7 @@ alias gwho='git log | grep Author | sort | uniq'
 alias grp='git remote prune origin'
 alias gls='git log --stat'
 alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
+alias gca="git commit --amend"
 
 # git diff, depends on gitx and tig being installed
 alias gd="git diff"
