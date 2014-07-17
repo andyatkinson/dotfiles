@@ -1,6 +1,6 @@
 [user]
   name = Andy Atkinson
-	email = andyatkinson@gmail.com
+  email = andyatkinson@gmail.com
 [color]
   ui = auto
 [color "branch"]
@@ -15,7 +15,7 @@
 [color "status"]
   added = yellow
   changed = green
-  untracked = cyan	
+  untracked = cyan
 [color]
   diff = auto
   status = auto
@@ -35,11 +35,13 @@
   cp = cherry-pick
   g = grep --break --heading --line-number
 [rerere]
-	enabled = true
+  enabled = true
 [grep]
-	extendRegexp = true
-	lineNumber = true
+  extendRegexp = true
+  lineNumber = true
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [web]
-	browser = open
+  browser = open
+[help]
+  autocorrect = 1
