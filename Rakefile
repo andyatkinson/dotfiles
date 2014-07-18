@@ -29,20 +29,6 @@ task :dotfiles do
   end
 end
 
-
-desc "install homebrew formulas"
-task :homebrew do
-  # this acts as a list of the packages I always use
-  #
-  # manual: wkhtmltopdf, qt, postgres, redis
-  #
-  %w(wget git mysql imagemagick ack proctools fortune htop watch lynx 
-     gcal tmux macvim reattach-to-user-namespace bash-completion ctags
-     dos2unix jq mplayer rbenv tree markdown gpg node tig hg ranger).each do |formula_name|
-    system "brew install #{formula_name}"
-  end
-end
-
 desc "install npm packages"
 task :npm do
   # should add /usr/local/bin/coffee
