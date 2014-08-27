@@ -35,6 +35,7 @@
   cp = cherry-pick
   g = grep --break --heading --line-number
   rc = rebase --continue
+  ur = !git co master && git push andy head -f && git co -
 [rerere]
   enabled = true
 [grep]
