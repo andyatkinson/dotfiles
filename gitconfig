@@ -34,6 +34,7 @@
   ir = !git co master && git pull --rebase && git co - && git rebase -i origin/master
   cp = cherry-pick
   g = grep --break --heading --line-number
+  rc = rebase --continue
 [rerere]
   enabled = true
 [grep]
