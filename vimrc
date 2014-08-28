@@ -177,3 +177,6 @@ if filereadable("cscope.out")
 endif
 nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
 nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+
+" ctags
+nnoremap <silent> ct :!ctags -R .<CR>
