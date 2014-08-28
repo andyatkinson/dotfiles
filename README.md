@@ -91,7 +91,7 @@ leader-T # run focused unit test in tmux pane with vimux and turbux
 :vs # # open the last buffer in a vertical split
 - # first non-blank character previous line
 _ # first non-blank character current line
-Ctrl-w r # rotate split panes
+Ctrl-w r # rotate/swap/cycle/switch split panes
 daw # delete around word
 fx # jump to first x, ; char repeats motion
 i and a # text objects, select inside, or select everything including delimiter, e.g. cit
@@ -159,6 +159,7 @@ tmux attach-session -t 0 # attach to session 0
 mux commands # tmuxinator commands list
 mux list # tmuxinator list
 ctrl-b space # switch to next tmux pane layout
+leader + h # terminate a stuck SSH session
 ```
 
 ## snippets
