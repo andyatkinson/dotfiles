@@ -29,3 +29,4 @@ install node
 install tig
 install hg
 install ranger
+install ngrok

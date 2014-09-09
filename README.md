@@ -15,10 +15,11 @@ Clone this directory and run one or more of the following rake tasks.
 ``` bash
 $ rake -T
 rake dotfiles       # install the dotfiles into home directory
-rake homebrew       # install homebrew formulas
 rake npm            # install npm packages
 rake os_x_defaults  # replace OS X defaults
 ```
+
+Note: `brew bundle` has been deprecated. For now the `Brewfile` serves as a list of packages.
 
 ## Extras
 
