@@ -174,9 +174,17 @@ def<tab> # start a ruby method
 div # can use this for markup too
 ```
 
-## tig
+## [tig](https://github.com/jonas/tig)
 
 ``` bash
 git log | tig
 git diff master | tig
+```
+
+## [ngrok](https://ngrok.com/)
+
+``` bash
+ngrok 3000 # serve a rails app on the default port
+ngrok -help
+open http://localhost:4040 # real-time interface to inbound requests
 ```
