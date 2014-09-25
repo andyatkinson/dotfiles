@@ -114,6 +114,7 @@ C-\s # on top of a method, cscope query, to find caller of a method
 :so ~/.vimrc # reload the ~/.vimrc
 visual selection + S (capital "s") # type HTML tag like <p> to surround visual selection in <p> tag, depends on surround.vim
 ctrl-r " # paste from insert mode
+d/ # hit enter after typing the selection, delete until the selection
 ```
 
 ## bash
