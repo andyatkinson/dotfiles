@@ -116,6 +116,7 @@ visual selection + S (capital "s") # type HTML tag like <p> to surround visual s
 ctrl-r " # paste from insert mode
 d/ # hit enter after typing the selection, delete until the selection
 f [space] # ";" will repeat the motion
+pry [tab] # in a ruby file, will insert a pry binding statement, part of the built-in ruby snippets file
 ```
 
 ## bash
