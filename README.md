@@ -193,3 +193,12 @@ ngrok 3000 # serve a rails app on the default port
 ngrok -help
 open http://localhost:4040 # real-time interface to inbound requests
 ```
+
+## [jrnl](http://maebert.github.io/jrnl/)
+
+``` bash
+jrnl # enter compose mode
+jrnl @tag # list entries that include tag
+jrnl -n10 # list last 10 entries
+jrnl --edit # edit old entries (unencryted file)
+```

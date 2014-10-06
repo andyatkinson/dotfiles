@@ -30,3 +30,4 @@ install tig
 install hg
 install ranger
 install ngrok
+install jrnl
