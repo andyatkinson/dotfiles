@@ -8,6 +8,6 @@
   "timeformat": "%Y-%m-%d %H:%M", 
   "highlight": true, 
   "journals": {
-    "default": "/Users/andy/journal.txt"
+    "default": "/Users/andy/Dropbox/journal.txt"
   }
 }
