@@ -118,3 +118,5 @@ alias tls="tmux ls"
 
 # bounce wi-fi (ifconfig showed it is en0 on MBP)
 alias wifi="sudo ifconfig en0 down && sudo ifconfig en0 up"
+
+alias du="du -h" # human readable size
