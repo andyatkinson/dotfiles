@@ -1,11 +1,12 @@
 # dotfiles
 
-This is how I set up my mac for development.
+This is how I set up my mac for development. Primarily Ruby on Rails web development. Other environments that are supported are Python, Node, Go.
 
- * dotfiles (vim with Vundle-managed plugins, tmux, mysql, postgresql, etc.)
- * homebrew formulas (OS X packages)
+ * dotfiles (vim with plugins, tmux, mysql, postgresql, etc.)
+ * bash, iTerm
+ * homebrew formulas in Brewfile.
  * [npm](https://npmjs.org/) (node packages)
- * OS X <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>
+ * OS X <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>. Customize OS X.
 
 The bash directory has various bash shell scripts and configuration.
 
@@ -119,6 +120,12 @@ f [space] # ";" will repeat the motion
 pry [tab] # in a ruby file, will insert a pry binding statement, part of the built-in ruby snippets file
 ```
 
+## Vundle
+
+``` bash
+:BundleInstall
+```
+
 ## bash
 
 ``` bash
@@ -202,3 +209,11 @@ jrnl @tag # list entries that include tag
 jrnl -n10 # list last 10 entries
 jrnl --edit # edit old entries (unencryted file)
 ```
+
+## [nltk](http://www.nltk.org/)
+
+See installation instructions.
+
+## Haskell
+
+[Download OS X installer](https://www.haskell.org/platform/)

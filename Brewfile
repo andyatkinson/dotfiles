@@ -1,3 +1,4 @@
+install python
 install wkhtmltopdf
 install qt
 install postgres

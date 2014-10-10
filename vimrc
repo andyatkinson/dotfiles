@@ -32,7 +32,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-surround.git'
+Bundle 'tpope/vim-surround'
 
 set number
 set hlsearch
@@ -180,3 +180,5 @@ nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
 
 " ctags
 nnoremap <silent> ct :!ctags -R .<CR>
+
+let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*.wsz,*.xap,*.docx,*.docm,*.dotx,*.dotm,*.potx,*.potm,*.ppsx,*.ppsm,*.pptx,*.pptm,*.ppam,*.sldx,*.thmx,*.crtx,*.vdw,*.glox,*.gcsx,*.gqsx'
