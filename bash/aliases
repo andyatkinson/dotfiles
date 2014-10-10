@@ -46,14 +46,11 @@ alias gdmx="git diff master | gitx"
 alias gdmt="git diff master | tig"
 
 # rails
-alias sc='script/console'
-alias ss='script/server'
-alias ssd='script/server --debugger'
-alias sg='script/generate'
-alias tlog='tail -f log/development.log'
 alias rc='rails console'
-alias rg='rails generate'
 alias rs='rails server'
+alias rg='rails generate'
+alias tlog='tail -f log/development.log'
+alias rr='rails runner'
 
 # gem install yard
 alias gems='yard server --gems &; sleep 2s; open http://localhost:8808;'
@@ -97,7 +94,6 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 # e.g. change log_statement to 'all' to see everything
 alias pgconfig="vim /usr/local/var/postgres/postgresql.conf"
 alias pglog="tail -f /usr/local/var/postgres/server.log"
-
 
 alias vim="mvim -v"
 alias dnsflush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
