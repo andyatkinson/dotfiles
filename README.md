@@ -13,6 +13,8 @@ The bash directory has various bash shell scripts and configuration.
 ## Installation
 Clone this directory and run one or more of the following rake tasks.
 
+Install Vundle. [instructions](https://github.com/gmarik/Vundle.vim)
+
 ``` bash
 $ rake -T
 rake dotfiles       # install the dotfiles into home directory
@@ -124,8 +126,10 @@ y$ # yank until the end of the line without the newline
 
 ## Vundle
 
+Clone Vundle.
+
 ``` bash
-:BundleInstall
+:PluginInstall
 ```
 
 ## bash

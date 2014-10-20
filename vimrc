@@ -1,38 +1,41 @@
 set nocompatible              " be iMproved
 filetype off                  " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'mileszs/ack.vim'
-Bundle 'fishman/ctags'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tacahiroy/ctrlp-funky'
-Bundle 'junegunn/goyo.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'danro/rename.vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-bundler'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'mustache/vim-mustache-handlebars'
-Bundle 'tpope/vim-rails'
-Bundle 'int3/vim-extradite'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'reedes/vim-colors-pencil'
-Bundle 'benmills/vimux'
-Bundle 'jgdavey/vim-turbux'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
-Bundle 'Lokaltog/vim-distinguished'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-surround'
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-fugitive'
+Plugin 'mileszs/ack.vim'
+Plugin 'fishman/ctags'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'junegunn/goyo.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'danro/rename.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-bundler'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'tpope/vim-rails'
+Plugin 'int3/vim-extradite'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'reedes/vim-colors-pencil'
+Plugin 'benmills/vimux'
+Plugin 'jgdavey/vim-turbux'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'Lokaltog/vim-distinguished'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+
+call vundle#end()
+filetype plugin indent on
 
 set number
 set hlsearch
