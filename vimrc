@@ -33,6 +33,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
+Plugin 'slim-template/vim-slim'
 
 call vundle#end()
 filetype plugin indent on
