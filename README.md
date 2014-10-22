@@ -223,3 +223,9 @@ See installation instructions.
 ## Haskell
 
 [Download OS X installer](https://www.haskell.org/platform/)
+
+## [spectacle](http://spectacleapp.com/)
+
+``` bash
+option-command-right arrow # right half
+```
