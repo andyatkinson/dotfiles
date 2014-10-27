@@ -197,6 +197,8 @@ div # can use this for markup too
 ``` bash
 git log | tig
 git diff master | tig
+h # help
+m # toggle main view (useful to jump back and forth between code details and commit titles)
 ```
 
 ## [ngrok](https://ngrok.com/)
