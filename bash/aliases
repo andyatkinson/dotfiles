@@ -38,6 +38,7 @@ alias gls='git log --stat'
 alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname)' | cut -d / -f 3-"
 alias gca="git commit --amend"
 alias gra="git rebase --abort"
+alias grc="git rebase --continue"
 
 # git diff, depends on gitx and tig being installed
 alias gd="git diff"

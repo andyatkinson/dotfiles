@@ -179,6 +179,8 @@ mux commands # tmuxinator commands list
 mux list # tmuxinator list
 ctrl-b space # switch to next tmux pane layout
 leader + h # terminate a stuck SSH session
+prefix + c # new window
+prefix + , # rename a window
 ```
 
 ## snippets
