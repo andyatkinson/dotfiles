@@ -16,7 +16,7 @@ Bundler.setup
 require "haml2erb"
 
 VIEW_DIRS = ["layouts", "articles", "comments", "pages", "projects", "sessions", "sites", "tags"]
-  
+
 def copy_haml_files_to_erb_files_and_convert_them
   VIEW_DIRS.each do |view_directory|
     Dir["app/views/#{view_directory}/*"].each do |filename|
