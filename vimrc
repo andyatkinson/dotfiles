@@ -186,3 +186,13 @@ nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
 nnoremap <silent> ct :!ctags -R .<CR>
 
 let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*.wsz,*.xap,*.docx,*.docm,*.dotx,*.dotm,*.potx,*.potm,*.ppsx,*.ppsm,*.pptx,*.pptm,*.ppam,*.sldx,*.thmx,*.crtx,*.vdw,*.glox,*.gcsx,*.gqsx'
+
+" http://blog.joncairns.com/2014/10/evaluate-ruby-or-any-command-and-insert-into-vim-buffers/
+function! InsertCommand(command)
+  redir => output
+  silent execute a:command
+  redir END
+  call feedkeys('i'.substitute(output, '^[\n]*\(.\{-}\)[\n]*$', '\1', 'gm'))
+endfunction
+command -nargs=+ Iruby call InsertCommand("ruby " . <q-args>)
+command -nargs=+ I call InsertCommand(<q-args>)
