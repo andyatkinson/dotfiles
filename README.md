@@ -233,3 +233,12 @@ See installation instructions.
 ``` bash
 option-command-right arrow # right half
 ```
+
+## rbenv
+
+``` bash
+rbenv install -l # list installable versions
+rbenv install 2.1.4 # install specific version
+rbenv version
+brew upgrade --HEAD ruby-build
+```
