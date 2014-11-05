@@ -23,4 +23,4 @@
 --ignore-dir=benchmarks
 --ignore-dir=doc
 --ignore-file=is:tags
---ignore-dir=lib/models/stanford
+--ignore-dir=coverage
