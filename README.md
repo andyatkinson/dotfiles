@@ -232,6 +232,7 @@ See installation instructions.
 
 ``` bash
 option-command-right arrow # right half
+option-command-f # full screen
 ```
 
 ## rbenv
