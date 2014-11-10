@@ -11,6 +11,7 @@ alias r="rake"
 alias t="tmux"
 alias u="cd .."
 alias v="vim ."
+alias j="jrnl"
 
 # ls
 alias ls="ls -laAFGh"
@@ -116,7 +117,8 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias ta="tmux attach"
 alias tls="tmux ls"
 
+# misc
 # bounce wi-fi (ifconfig showed it is en0 on MBP)
 alias wifi="sudo ifconfig en0 down && sudo ifconfig en0 up"
-
 alias du="du -h" # human readable size
+alias jl="jrnl -n10"
