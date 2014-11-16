@@ -197,3 +197,6 @@ function! InsertCommand(command)
 endfunction
 command -nargs=+ Iruby call InsertCommand("ruby " . <q-args>)
 command -nargs=+ I call InsertCommand(<q-args>)
+
+" toggle paste auto indent
+set pastetoggle=<F2>
