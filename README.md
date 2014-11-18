@@ -252,9 +252,10 @@ option-arrow # move between channels
 command-left/right bracket # move between channels
 ```
 
-## Xcode
+## Xcode and simulator
 
 ``` bash
 command-shift-o # fuzzy find files by name (open quickly)
 command-b # build
+command-1 # etc. to resize the simulator
 ```
