@@ -7,6 +7,7 @@ This is how I set up my mac for development. Primarily Ruby on Rails web develop
  * homebrew formulas in Brewfile.
  * [npm](https://npmjs.org/) (node packages)
  * OS X <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>. Customize OS X.
+ * gems that are used system wide, are in `gems`
 
 The bash directory has various bash shell scripts and configuration.
 
