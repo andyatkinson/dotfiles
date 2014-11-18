@@ -250,3 +250,10 @@ brew upgrade --HEAD ruby-build
 option-arrow # move between channels
 command-left/right bracket # move between channels
 ```
+
+## Xcode
+
+``` bash
+command-shift-o # fuzzy find files by name (open quickly)
+command-b # build
+```
