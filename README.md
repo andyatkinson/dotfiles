@@ -258,4 +258,6 @@ command-left/right bracket # move between channels
 command-shift-o # fuzzy find files by name (open quickly)
 command-b # build
 command-1 # etc. to resize the simulator
+ctrl-command-left/right # move back and forth between windows
+command-click # jump to method definition
 ```
