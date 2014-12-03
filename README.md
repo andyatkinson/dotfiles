@@ -255,9 +255,10 @@ command-left/right bracket # move between channels
 ## Xcode and simulator
 
 ``` bash
-command-shift-o # fuzzy find files by name (open quickly)
+command-shift-o # fuzzy find files by name (open quickly), colon line number (e.g. ":42" to open line 42)
 command-b # build
 command-1 # etc. to resize the simulator
 ctrl-command-left/right # move back and forth between windows
 command-click # jump to method definition
+ctrl-command-up # switch between header and implementation file
 ```
