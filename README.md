@@ -261,4 +261,5 @@ command-1 # etc. to resize the simulator
 ctrl-command-left/right # move back and forth between windows
 command-click # jump to method definition
 ctrl-command-up # switch between header and implementation file
+command-shift-j # show file in project navigator
 ```
