@@ -32,3 +32,4 @@ install hg
 install ranger
 install ngrok
 install jrnl
+install httpie

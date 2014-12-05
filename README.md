@@ -263,3 +263,5 @@ command-click # jump to method definition
 ctrl-command-up # switch between header and implementation file
 command-shift-j # show file in project navigator
 ```
+
+## [Httpie](https://github.com/jakubroztocil/httpie)
