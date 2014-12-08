@@ -56,6 +56,8 @@ alias rs='rails server'
 alias rg='rails generate'
 alias tlog='tail -f log/development.log'
 alias rr='rails runner'
+rails rdm="rake db:migrate"
+alias rdr="rake db:rollback"
 
 # gem install yard
 alias gems='yard server --gems &; sleep 2s; open http://localhost:8808;'
