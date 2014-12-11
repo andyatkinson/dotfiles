@@ -136,15 +136,17 @@ Clone Vundle.
 ## bash
 
 ``` bash
-Ctrl-u # delete line
+ctrl-l # clear line
+Ctrl-u # cut line
+ctrl-y # paste line
 Ctrl-y # restore before delete
 Ctrl-a # move cursor, front of line
 Ctrl-e # move cursor, end of line
 Esc-b  # move cursor, back one word
 Esc-f  # move cursor, forward one word
 Ctrl-w # delete one word
-option-b # back one word
-option-f # forward one word
+option-b # back one word (OS X?)
+option-f # forward one word (OS X?)
 jobs # list jobs
 jobs -p # list backgrounded jobs process IDs
 fg 1 # bring background job 1 to the foreground
