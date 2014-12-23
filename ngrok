@@ -1,0 +1,8 @@
+auth_token: tNGT4Stju7akpUd8VdBK
+tunnels:
+  orderup-andy:
+    proto:
+      http: "3000"
+  orderupf-andy:
+    proto:
+      http: "5000"
