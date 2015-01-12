@@ -57,6 +57,7 @@ alias rg='rails generate'
 alias tlog='tail -f log/development.log'
 alias rr='rails runner'
 alias rdm="rake db:migrate"
+alias mig="rake db:migrate"
 alias rdr="rake db:rollback"
 
 # gem install yard
