@@ -103,7 +103,7 @@ alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias pgconfig="vim /usr/local/var/postgres/postgresql.conf"
 alias pglog="tail -f /usr/local/var/postgres/server.log"
 # installed postgres.app on OS X
-alias pgrestart="pg_ctl restart -D '/Users/andy/Library/Application Support/Postgres/var-9.3'"
+alias pgrestart="pg_ctl restart -D '/Users/andy/Library/Application Support/Postgres/var-9.3' -m fast"
 
 alias vim="mvim -v"
 alias dnsflush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
