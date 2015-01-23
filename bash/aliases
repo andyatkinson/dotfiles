@@ -52,7 +52,7 @@ alias gdmt="git diff master | tig"
 # rails
 alias rc='rails console'
 alias rd='rails dbconsole'
-alias rs='rails server'
+alias rs='rails server -p 5000'
 alias rg='rails generate'
 alias tlog='tail -f log/development.log'
 alias rr='rails runner'
