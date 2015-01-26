@@ -127,5 +127,6 @@ alias tls="tmux ls"
 alias wifi="sudo ifconfig en0 down && sudo ifconfig en0 up"
 alias du="du -h" # human readable size
 alias jl="jrnl -n10"
+alias dbox="cd ~/Dropbox"
 
 alias readme="cd ~/Projects/dotfiles && vim README.md"
