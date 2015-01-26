@@ -176,6 +176,7 @@ Cmd-option-arrow # move between the split panes
 ## tmux
 
 ``` bash
+tmux new-session -s dev_logs # start a new session named dev_logs
 reset # reset, useful when text stops showing up
 tmux attach-session -t 0 # attach to session 0
 mux commands # tmuxinator commands list
