@@ -268,3 +268,11 @@ command-shift-j # show file in project navigator
 ```
 
 ## [Httpie](https://github.com/jakubroztocil/httpie)
+
+## [showterm](http://showterm.io/)
+
+Terminal screencasting!
+
+``` bash
+showterm [command]
+```
