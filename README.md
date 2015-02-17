@@ -248,11 +248,12 @@ rbenv version
 brew upgrade --HEAD ruby-build
 ```
 
-## slack
+## Slack
 
 ``` bash
 option-arrow # move between channels
 command-left/right bracket # move between channels
+Command-t # jump to another channel
 ```
 
 ## Xcode and simulator
