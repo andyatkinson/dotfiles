@@ -200,3 +200,7 @@ command -nargs=+ I call InsertCommand(<q-args>)
 
 " toggle paste auto indent
 set pastetoggle=<F2>
+
+" allow misspelling of command
+cabbrev Qa qa
+cabbrev QA qa
