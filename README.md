@@ -210,6 +210,7 @@ m # toggle main view (useful to jump back and forth between code details and com
 ## [ngrok](https://ngrok.com/)
 
 ``` bash
+ngrok start <server> # where <server> is defined in ~/.ngrok
 ngrok 3000 # serve a rails app on the default port
 ngrok -help
 open http://localhost:4040 # real-time interface to inbound requests
