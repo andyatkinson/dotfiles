@@ -255,6 +255,8 @@ brew upgrade --HEAD ruby-build
 option-arrow # move between channels
 command-left/right bracket # move between channels
 Command-t # jump to another channel
+/remind # create a reminder, type date and time naturally
+/leave # leave a channel
 ```
 
 ## Xcode and simulator
