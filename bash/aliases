@@ -58,6 +58,7 @@ alias tlog='tail -f log/development.log'
 alias rr='rails runner'
 alias rdm="rake db:migrate"
 alias mig="rake db:migrate"
+alias migco='rake db:migrate && git co db/structure.sql'
 alias rdr="rake db:rollback"
 
 # gem install yard
