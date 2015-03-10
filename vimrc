@@ -35,6 +35,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'slim-template/vim-slim'
 Plugin 'AndrewRadev/vim-eco'
+Plugin 'mtscout6/vim-cjsx'
 
 call vundle#end()
 filetype plugin indent on
