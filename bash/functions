@@ -13,7 +13,7 @@ function gh_my_prs { open http://$GH_HOST/$(git_remote_name)/$(basename $PWD)/pu
 function gh_my_last_commit { open http://$GH_HOST/$GH_USER/$(basename $PWD)/commit/$(git rev-parse HEAD); }
 
 # delete branch locally and from the remote named origin
-function gdel { git branch -D $1; git push origin :$1; }
+function gdel { git branch -D $1; git push origin --delete $1; }
 
 # http://hayne.net/MacDev/Bash/aliases.bash
 #-----------
