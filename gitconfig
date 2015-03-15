@@ -39,8 +39,8 @@
   ur = !git co master && git push andy head -f && git co -
   bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
   new = !sh -c 'git log $1@{1}..$1@{0} "$@"'
-  gbr = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
-  branchdates = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:relative) %09 %(refname:short)'
+  brs = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
+  bds = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:relative) %09 %(refname:short)'
   old = for-each-ref --sort=committerdate --format='%(refname:short)' refs/heads/
 [rerere]
   enabled = true
