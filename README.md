@@ -37,6 +37,10 @@ Note: `brew bundle` has been deprecated. For now the `Brewfile` serves as a list
 
   * Remap caps lock to control
 
+``` bash
+command-alt-h # hide other applications' windows, alt is fn+opt
+```
+
 ## vim
 
 ``` bash
