@@ -53,3 +53,5 @@
   browser = open
 [help]
   autocorrect = 1
+[branch]
+  autosetuprebase = always
