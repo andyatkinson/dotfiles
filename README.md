@@ -155,6 +155,7 @@ jobs # list jobs
 jobs -p # list backgrounded jobs process IDs
 fg 1 # bring background job 1 to the foreground
 Ctrl-x Ctrl-e # edit command line command in $EDITOR
+less +F path/to/log # "follow" the log file, ctrl-c to go in to search mode, "F" to return to following
 ```
 
 ## Google Chrome
@@ -283,4 +284,14 @@ Terminal screencasting!
 
 ``` bash
 showterm [command]
+```
+
+## [lnav](http://lnav.org)
+
+Fancy log file viewer with cool features: http://lnav.org/features/
+
+```bash
+brew install lnav
+lnav path/to/log
+? # help
 ```

@@ -40,3 +40,5 @@ bind '"\C-f": "fg %-\n"'
 # for golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+export LESS="-r -n" # skip line numbers and do color output
