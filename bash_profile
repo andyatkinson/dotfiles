@@ -42,3 +42,6 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 export LESS="-r -n" # skip line numbers and do color output
+
+# http://stackoverflow.com/a/791800/126688
+stty -ixon
