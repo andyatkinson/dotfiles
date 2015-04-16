@@ -36,7 +36,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'slim-template/vim-slim'
 Plugin 'AndrewRadev/vim-eco'
 Plugin 'mtscout6/vim-cjsx'
-Plugin 'vim-airline'
+Plugin 'bling/vim-airline'
+Plugin 'chrisbra/csv.vim'
 
 call vundle#end()
 filetype plugin indent on
