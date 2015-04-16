@@ -43,6 +43,9 @@ command-alt-h # hide other applications' windows, alt is fn+opt
 
 ## vim
 
+Interesting help:
+`:help opening-window`
+
 ``` bash
 Ctrl-e # execute vim-sparkup
 gf # jump to code under cursor, rails.vim adds more
