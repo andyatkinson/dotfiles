@@ -36,7 +36,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'slim-template/vim-slim'
 Plugin 'AndrewRadev/vim-eco'
 Plugin 'mtscout6/vim-cjsx'
-Plugin 'bling/vim-airline'
 Plugin 'chrisbra/csv.vim'
 
 call vundle#end()
