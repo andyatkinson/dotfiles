@@ -1,3 +1,2 @@
-source ~/.bash/completion_scripts/git_completion
 # make sure you have the right chmod (755):
 complete -C ~/.bash/completion_scripts/rake-completion.rb -o default rake

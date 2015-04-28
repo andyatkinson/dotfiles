@@ -25,6 +25,12 @@ rake os_x_defaults  # replace OS X defaults
 
 Note: `brew bundle` has been deprecated. For now the `Brewfile` serves as a list of packages.
 
+### Release notes
+
+2015-04-28
+
+Switch from git bash completion script to a homebrew version
+
 ## Extras
 
   * Download [Source Code Pro](https://github.com/adobe/source-code-pro) and set iTerm preferences to use it
