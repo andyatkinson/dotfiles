@@ -33,3 +33,4 @@ install ranger
 install ngrok
 install jrnl
 install httpie
+install pgcli
