@@ -21,7 +21,7 @@
   status = auto
   branch = auto
 [apply]
-  whitespace = warn
+  whitespace = nowarn
 [alias]
   co = checkout
   st = status
