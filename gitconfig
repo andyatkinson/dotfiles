@@ -42,6 +42,7 @@
   brs = for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/
   bds = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:relative) %09 %(refname:short)'
   old = for-each-ref --sort=committerdate --format='%(refname:short)' refs/heads/
+  dfw = diff --ignore-space-change
 [rerere]
   enabled = true
 [grep]
