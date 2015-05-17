@@ -37,6 +37,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'AndrewRadev/vim-eco'
 Plugin 'mtscout6/vim-cjsx'
 Plugin 'chrisbra/csv.vim'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 filetype plugin indent on
