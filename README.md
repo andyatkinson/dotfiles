@@ -201,6 +201,9 @@ prefix + c # new window
 prefix + , # rename a window
 ```
 
+Tmux plugin manager
+https://github.com/tmux-plugins/tpm
+
 ## snippets
 
 Snippets directory ~/.vim/bundle/vim-snippets/snippets
