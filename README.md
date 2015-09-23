@@ -136,6 +136,7 @@ f [space] # ";" will repeat the motion
 pry [tab] # in a ruby file, will insert a pry binding statement, part of the built-in ruby snippets file
 "_d # black hole register, e.g. "_dw to delete a word without storing the result in a register
 y$ # yank until the end of the line without the newline
+gui # switch to GUI
 ```
 
 ## Vundle
