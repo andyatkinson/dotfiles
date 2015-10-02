@@ -207,3 +207,6 @@ set pastetoggle=<F2>
 " allow misspelling of command
 cabbrev Qa qa
 cabbrev QA qa
+
+" mapping for copy to clipboard
+vmap <leader>y "*y<CR>
