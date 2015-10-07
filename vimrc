@@ -216,3 +216,6 @@ vmap <leader>y "*y<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
+
+" redraw the screen!
+nmap <leader>r :redraw!<CR>
