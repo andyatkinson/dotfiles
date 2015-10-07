@@ -210,3 +210,9 @@ cabbrev QA qa
 
 " mapping for copy to clipboard
 vmap <leader>y "*y<CR>
+
+" http://vim.wikia.com/wiki/VimTip906
+" Show the status of paste mode
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
