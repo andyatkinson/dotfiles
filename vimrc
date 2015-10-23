@@ -219,3 +219,6 @@ set showmode
 
 " redraw the screen!
 nmap <leader>r :redraw!<CR>
+
+" copy file path to clipboard! http://stackoverflow.com/a/954336/126688
+noremap <silent> <F4> :let @+=expand("%:p")<CR>
