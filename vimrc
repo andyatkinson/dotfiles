@@ -226,3 +226,7 @@ noremap <silent> <F4> :let @+=expand("%:p")<CR>
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 let g:syntastic_javascript_checkers = ['eslint']
+
+" https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
+let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
