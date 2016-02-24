@@ -1,10 +1,17 @@
+# critcal
+install git
+install bash-completion
+install macvim
+install tmux
+install reattach-to-user-namespace
+install ctags
+
+# less critical
 install python
 install wkhtmltopdf
 install qt
-install postgres
 install redis
 install wget
-install git
 install mysql
 install imagemagick
 install ack
@@ -14,11 +21,6 @@ install htop
 install watch
 install lynx
 install gcal
-install tmux
-install macvim
-install reattach-to-user-namespace
-install bash-completion
-install ctags
 install dos2unix
 install jq
 install mplayer
@@ -26,7 +28,6 @@ install rbenv
 install tree
 install markdown
 install gpg
-install node
 install tig
 install hg
 install ranger

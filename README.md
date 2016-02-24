@@ -3,8 +3,10 @@
 This is how I set up my mac for development. Primarily Ruby on Rails web development. Other environments that are supported are Python, Node, Go.
 
  * dotfiles (vim with plugins, tmux, mysql, postgresql, etc.)
- * bash, iTerm
+ * bash, iTerm, tmux, installed tmux plugin manager manually
  * homebrew formulas in Brewfile.
+ * Node installed from their website
+ * Postgres installed as the OS X tray app
  * [npm](https://npmjs.org/) (node packages)
  * OS X <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>. Customize OS X.
  * gems that are used system wide, are in `gems`
@@ -203,8 +205,10 @@ prefix + c # new window
 prefix + , # rename a window
 ```
 
-Tmux plugin manager
+Tmux plugin manager (install this manually)
 https://github.com/tmux-plugins/tpm
+
+Inside of tmux, run `Prefix-I` (capital "I") to install plugins.
 
 ## snippets
 
