@@ -5,15 +5,16 @@ install macvim
 install tmux
 install reattach-to-user-namespace
 install ctags
+install gpg
+install qt
+install imagemagick
 
 # less critical
 install python
 install wkhtmltopdf
-install qt
 install redis
 install wget
 install mysql
-install imagemagick
 install ack
 install proctools
 install fortune
@@ -24,7 +25,6 @@ install gcal
 install dos2unix
 install jq
 install mplayer
-install rbenv
 install tree
 install markdown
 install gpg
