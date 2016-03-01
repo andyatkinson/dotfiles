@@ -11,7 +11,10 @@ This is how I set up my mac for development. Primarily Ruby on Rails web develop
  * OS X <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>. Customize OS X.
  * gems that are used system wide, are in `gems`
 
-The bash directory has various bash shell scripts and configuration.
+The bash directory has various bash shell scripts and configuration. Make sure to install the dotfiles.
+
+`xcode-select --install` will need to be run manually before any gem native extensions can be built, for example, the Nokogiri gem.
+
 
 ## Installation
 Clone this directory and run one or more of the following rake tasks.
@@ -32,6 +35,15 @@ Note: `brew bundle` has been deprecated. For now the `Brewfile` serves as a list
 2015-04-28
 
 Switch from git bash completion script to a homebrew version
+
+2016-03-01
+
+Link homebrew openssl explicitly on El Capitan OS X, before installing the eventmachine 1.0.5
+https://github.com/eventmachine/eventmachine/issues/602
+
+Puma 2.9.1 (specify opt-dir or can configure bundler)
+https://github.com/puma/puma/issues/783
+gem install puma -v '2.9.1' -- --with-opt-dir=/usr/local/opt/openssl
 
 ## Extras
 
