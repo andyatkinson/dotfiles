@@ -265,6 +265,8 @@ option-command-f # full screen
 
 ## rbenv
 
+Installed `rbenv` from github, but then `brew install ruby-build` for the `rbenv install` command.
+
 ``` bash
 rbenv install -l # list installable versions
 rbenv install 2.1.4 # install specific version
