@@ -8,6 +8,7 @@ install ctags
 install gpg
 install qt
 install imagemagick
+install phantomjs
 
 # less critical
 install python
