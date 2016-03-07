@@ -9,11 +9,11 @@ install gpg
 install qt
 install imagemagick
 install phantomjs
+install redis
 
 # less critical
 install python
 install wkhtmltopdf
-install redis
 install wget
 install mysql
 install ack
