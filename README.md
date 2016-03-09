@@ -21,6 +21,8 @@ Clone this directory and run one or more of the following rake tasks.
 
 Install Vundle. [instructions](https://github.com/gmarik/Vundle.vim)
 
+To reinstall vim plugins, delete `~/.vim/bundle` and clone vundle, then run `vim +PluginInstall +qall` on the command line.
+
 ``` bash
 $ rake -T
 rake dotfiles       # install the dotfiles into home directory
