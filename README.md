@@ -154,6 +154,7 @@ pry [tab] # in a ruby file, will insert a pry binding statement, part of the bui
 y$ # yank until the end of the line without the newline
 gui # switch to GUI
 redraw! # redraw the screen when it goes black http://stackoverflow.com/a/1117742/126688
+e %:h (tab) # expands current directory. supply filename to create a new file at that point on disk.
 ```
 
 ## Vundle
