@@ -39,3 +39,6 @@ export LESS="-r -n" # skip line numbers and do color output
 
 # http://stackoverflow.com/a/791800/126688
 stty -ixon
+
+# postgres.app CLI tools
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
