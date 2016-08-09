@@ -254,6 +254,10 @@ ngrok -help
 open http://localhost:4040 # real-time interface to inbound requests
 ```
 
+Symlink the file in to the following location: `~/.ngrok2/ngrok.yml`
+
+`ln -s "$PWD/ngrok.yml" "$HOME/.ngrok2/ngrok.yml"`
+
 ## [jrnl](http://maebert.github.io/jrnl/)
 
 ``` bash
