@@ -34,6 +34,9 @@ Note: `brew bundle` has been deprecated. For now the `Brewfile` serves as a list
 
 ### Release notes
 
+2017-03-24
+`:PluginUpdate` was run to update all plugins. Should convert this setup to native plugin management soon.
+
 2015-04-28
 
 Switch from git bash completion script to a homebrew version
