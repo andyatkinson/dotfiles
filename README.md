@@ -296,6 +296,7 @@ rbenv install -l # list installable versions
 rbenv install 2.1.4 # install specific version
 rbenv version
 brew upgrade --HEAD ruby-build
+rbenv versions # list installed rubies
 ```
 
 ## Slack
