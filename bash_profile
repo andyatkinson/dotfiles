@@ -42,3 +42,5 @@ stty -ixon
 
 # postgres.app CLI tools
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/
