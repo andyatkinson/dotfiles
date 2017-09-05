@@ -340,3 +340,8 @@ brew install lnav
 lnav path/to/log
 ? # help
 ```
+
+```sidekiq
+Sidekiq.redis { |conn| conn.flushdb }
+redis-cli flushdb # dump everything in redis
+```
