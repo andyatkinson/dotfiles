@@ -74,6 +74,7 @@ alias mute='osascript -e "set Volume 0"'
 alias lowvol='osascript -e "set Volume 0.01"'
 alias cal="gcal" # gcal highlights the current day, install gcal via homebrew
 alias dimensions="sips -g pixelHeight -g pixelWidth " # specify path/to/image after alias
+alias camera="sudo killall VDCAssistant"
 
 # have to install the openvpn applescript from my applescripts project
 alias openvpn="/usr/local/bin/pgrep racoon | xargs sudo kill -9; osascript ~/Projects/applescripts/openvpn.applescript"
