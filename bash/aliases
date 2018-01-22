@@ -132,3 +132,4 @@ alias jl="jrnl -n10"
 alias dbox="cd ~/Dropbox"
 
 alias readme="cd ~/Projects/dotfiles && vim README.md"
+alias js="jekyll serve"
