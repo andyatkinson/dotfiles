@@ -109,6 +109,7 @@ alias pgrestart="pg_ctl restart -D '/Users/andy/Library/Application Support/Post
 
 alias vim="mvim -v"
 alias dnsflush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
+alias flushdns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias rubyscript='printf "#!/usr/bin/env ruby \n\nprint \"Hello from a Ruby script!\"\n" >> ruby_script; chmod +x ruby_script; ./ruby_script'
 alias reload="source ~/.bash_profile"
 
