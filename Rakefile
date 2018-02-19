@@ -65,6 +65,9 @@ task :os_x_defaults do
 
   puts "show the absolute path in Finders title bar"
   system %Q{defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES}
+
+  puts "allow key repeat in intellij idea editor"
+  system %Q{defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false}
 end
 
 
