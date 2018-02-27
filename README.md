@@ -348,7 +348,11 @@ redis-cli flushdb # dump everything in redis
 
 ## IntelliJ
 
+I use the Vim IntelliJ plugin which is a mixed bag.
+
 command-shift-t # jump to corresponding test
 command-shift-a # action or option name
 command-shift-o # Enter file name
 command-[ or command-] # jump backward and forward in history
+
+:action Run # run the current file
