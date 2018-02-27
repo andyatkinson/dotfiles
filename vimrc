@@ -42,6 +42,7 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'artur-shaik/vim-javacomplete2'
+Plugin 'udalov/kotlin-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
