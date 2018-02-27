@@ -345,3 +345,10 @@ lnav path/to/log
 Sidekiq.redis { |conn| conn.flushdb }
 redis-cli flushdb # dump everything in redis
 ```
+
+## IntelliJ
+
+command-shift-t # jump to corresponding test
+command-shift-a # action or option name
+command-shift-o # Enter file name
+command-[ or command-] # jump backward and forward in history
