@@ -40,6 +40,7 @@ alias gwtf="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --form
 alias gca="git commit --amend"
 alias gra="git rebase --abort"
 alias grc="git rebase --continue"
+alias glsha='git rev-list --no-merges -n 1 HEAD' # latest non-merge commit SHA
 
 # git diff, depends on gitx and tig being installed
 alias gd="git diff"

@@ -360,3 +360,7 @@ command-[ or command-] # jump backward and forward in history
 
 `brew install javarepl`
 $ javarepl
+
+## Kotlin
+
+`kotlinc` # REPL
