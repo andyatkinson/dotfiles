@@ -42,6 +42,6 @@ function tables { psql -c "SELECT * FROM pg_catalog.pg_tables"; }
 # export ZOOM_BASE_URL=my-company
 #
 # zoom meetings
-function zms { icalBuddy eventsToday | egrep -o 'https:\/\/groupon.zoom.us\/j\/([0-9]+)'; }
-# zoom meeting now
-function zmn { icalBuddy eventsToday | egrep -o 'https:\/\/groupon.zoom.us\/j\/([0-9]+)' | head -n1 | open $(xargs); }
+function zms { url=$(echo "$ZOOM_BASE_URL"); icalBuddy eventsToday | egrep -o "https:\/\/$url.zoom.us\/j\/([0-9]+)"; }
+# zoom meeting now open
+function zmn { url=$(echo "$ZOOM_BASE_URL"); icalBuddy eventsToday | egrep -o "https:\/\/$url.zoom.us\/j\/([0-9]+)" | head -n1 | open $(xargs); }
