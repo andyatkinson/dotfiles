@@ -364,3 +364,7 @@ $ javarepl
 ## Kotlin
 
 `kotlinc` # REPL
+
+## Man pages
+
+`tldr` as an improvement or supplement to `man`, with examples, e.g. `tldr curl`
