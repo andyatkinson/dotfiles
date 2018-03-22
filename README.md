@@ -365,6 +365,11 @@ $ javarepl
 
 `kotlinc` # REPL
 
+## Zoom
+
+command-shift-a # toggle audio
+command-shift-v # toggle video
+
 ## Man pages
 
 `tldr` as an improvement or supplement to `man`, with examples, e.g. `tldr curl`
