@@ -41,7 +41,11 @@ function tables { psql -c "SELECT * FROM pg_catalog.pg_tables"; }
 #
 # export ZOOM_BASE_URL=my-company
 #
-# zoom meetings
-function zms { url=$(echo "$ZOOM_BASE_URL"); icalBuddy eventsToday | egrep -o "https:\/\/$url.zoom.us\/j\/([0-9]+)"; }
-# zoom meeting now open
-function zmn { url=$(echo "$ZOOM_BASE_URL"); icalBuddy eventsToday | egrep -o "https:\/\/$url.zoom.us\/j\/([0-9]+)" | head -n1 | open $(xargs); }
+# zoom meetings, icalBuddy options used
+# -ea exclude all day events
+# -n only upcoming events
+# -b ">>" TODO: implement splitting on a custom delimiter, to present title and URL
+#
+function zms { url=$(echo "$ZOOM_BASE_URL"); icalBuddy -ea eventsToday | egrep -o "https:\/\/$url.zoom.us\/j\/([0-9]+)"; }
+# zoom meeting next
+function zmn { url=$(echo "$ZOOM_BASE_URL"); icalBuddy -n eventsToday | egrep -o "https:\/\/$url.zoom.us\/j\/([0-9]+)" | head -n1 | open $(xargs); }
