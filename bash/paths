@@ -4,4 +4,4 @@
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:$MANPATH"
 export CDPATH=.:~/Projects:~/Dropbox
-export HISTIGNORE="&:ls:ls :[bf]g:exit"
+export HISTIGNORE="&:ls:ls :[bf]g:exit:cd:ls:gs:c:gd:pbpaste:pbcopy:p:exit"
