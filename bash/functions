@@ -49,3 +49,6 @@ function tables { psql -c "SELECT * FROM pg_catalog.pg_tables"; }
 function zms { url=$(echo "$ZOOM_BASE_URL"); icalBuddy -ea eventsToday | egrep -o "https:\/\/$url.zoom.us\/j\/([0-9]+)"; }
 # zoom meeting next
 function zmn { url=$(echo "$ZOOM_BASE_URL"); icalBuddy -n eventsToday | egrep -o "https:\/\/$url.zoom.us\/j\/([0-9]+)" | head -n1 | open $(xargs); }
+
+# function "decode cookie"
+function dc { node -e 'console.log(JSON.parse(decodeURIComponent(process.argv[1])).token)' `pbpaste` | pbcopy; }
