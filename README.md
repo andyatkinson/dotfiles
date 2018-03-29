@@ -373,3 +373,8 @@ command-shift-v # toggle video
 ## Man pages
 
 `tldr` as an improvement or supplement to `man`, with examples, e.g. `tldr curl`
+
+## Hipchat
+
+Command-slash # bring up keyboard shortcuts
+command-option-arrow down # use command+option and arrow keys to navigate between chats
