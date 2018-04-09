@@ -355,6 +355,9 @@ command-shift-a # action or option name
 command-shift-o # Enter file name
 command-[ or command-] # jump backward and forward in history
 :action Run # run the current file
+:action "Split Vertically" # vertical split
+<C-W> + h/j/k/l # move between splits
+Ctrl + ww # switch between windows
 
 ## Java
 
