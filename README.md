@@ -346,7 +346,7 @@ Sidekiq.redis { |conn| conn.flushdb }
 redis-cli flushdb # dump everything in redis
 ```
 
-## IntelliJ
+## IntelliJ OS X
 
 IdeaVim action list: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
 
@@ -358,6 +358,9 @@ command-[ or command-] # jump backward and forward in history
 :action "Split Vertically" # vertical split
 <C-W> + h/j/k/l # move between splits
 Ctrl + ww # switch between windows
+command-shift-c # copy current filepath to clipboard
+
+Plugin: Key Promoter
 
 ## Java
 
