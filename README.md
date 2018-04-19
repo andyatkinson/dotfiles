@@ -359,6 +359,7 @@ command-[ or command-] # jump backward and forward in history
 <C-W> + h/j/k/l # move between splits
 Ctrl + ww # switch between windows
 command-shift-c # copy current filepath to clipboard
+command+F12 # file structure popup
 
 Plugin: Key Promoter
 
