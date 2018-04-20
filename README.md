@@ -360,6 +360,10 @@ command-[ or command-] # jump backward and forward in history
 Ctrl + ww # switch between windows
 command-shift-c # copy current filepath to clipboard
 command+F12 # file structure popup
+command+e # view recent files
+ctrl-space # basic code completion
+ctrl-shift-space # smart code completion
+command-1 # show/hide project view
 
 Plugin: Key Promoter
 
