@@ -62,6 +62,9 @@ gem install puma -v '2.9.1' -- --with-opt-dir=/usr/local/opt/openssl
 
   * Remap caps lock to control
 
+`softwareupdate --list` # find available things to install
+`softwareupdate --install <product name>` # update the software you named.
+
 ``` bash
 command-alt-h # hide other applications' windows, alt is fn+opt
 ```
