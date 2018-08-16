@@ -163,6 +163,7 @@ redraw! # redraw the screen when it goes black http://stackoverflow.com/a/111774
 e %:h (tab) # expands current directory. supply filename to create a new file at that point on disk.
 cc # delete entire line and enter insert mode
 ciB # change inner block (inside of {} braces)
+comment out # ctrl-slash-slash
 ```
 
 ## Vundle
