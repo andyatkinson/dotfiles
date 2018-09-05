@@ -37,3 +37,6 @@ install jrnl
 install httpie
 install pgcli
 install ical-buddy
+
+# cask
+cask install postman
