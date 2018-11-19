@@ -165,6 +165,7 @@ e %:h (tab) # expands current directory. supply filename to create a new file at
 cc # delete entire line and enter insert mode
 ciB # change inner block (inside of {} braces)
 comment out # ctrl-slash-slash
+pgrep -f # -f is to match against full argument list, typically need this for a backgrounded rails console process name
 ```
 
 ## Vundle
