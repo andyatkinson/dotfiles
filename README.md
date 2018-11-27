@@ -166,6 +166,7 @@ cc # delete entire line and enter insert mode
 ciB # change inner block (inside of {} braces)
 comment out # ctrl-slash-slash
 pgrep -f # -f is to match against full argument list, typically need this for a backgrounded rails console process name
+ctrl-o-o # open last location https://dev.to/jovica/3-little-known-but-useful-vim-tips-1pbg
 ```
 
 ## Vundle
