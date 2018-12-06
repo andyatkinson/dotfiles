@@ -52,3 +52,6 @@ function zmn { url=$(echo "$ZOOM_BASE_URL"); icalBuddy -n eventsToday | egrep -o
 
 # function "decode cookie"
 function dc { node -e 'console.log(JSON.parse(decodeURIComponent(process.argv[1])).token)' `pbpaste` | pbcopy; }
+
+# function "list file extension for changed files on branch compared with master"
+function gdfe { git diff master --name-only | xargs | sed 's/.*\.//'; }
