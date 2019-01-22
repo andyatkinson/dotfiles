@@ -309,11 +309,16 @@ rbenv versions # list installed rubies
 ## Slack
 
 ``` bash
-option-arrow # move between channels
-command-left/right bracket # move between channels
++:... # plus sign plus "colon" to pull up Emoji reactions, will react to most recent post
+up arrow key # edit last message
 Command-t # jump to another channel
+Command-1/2/3... # Jump to multiple workspaces in OS X desktop client app
+option-arrow up/down # move up/down between channels
+command-left/right bracket # move between channels
 /remind # create a reminder, type date and time naturally
 /leave # leave a channel
+/ # find out more slash options available
+`` # or triple backticks code fence
 ```
 
 ## Xcode and simulator
