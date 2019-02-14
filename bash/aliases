@@ -82,6 +82,7 @@ alias openvpn="/usr/local/bin/pgrep racoon | xargs sudo kill -9; osascript ~/Pro
 
 alias pserver="open http://localhost:8080/ && python -m SimpleHTTPServer 8080"
 alias whatsrunning="lsof -i"
+alias ports='sudo lsof -iTCP -sTCP:LISTEN -P'
 alias myip='ifconfig|grep -A 4 "en0"|grep -oe "[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}[[:space:]]"|pbcopy;echo "copied IP to clipboard: ";pbpaste'
 alias cleannastydesktop="rm ~/Desktop/Screen\ shot\ *"
 alias dirsize="du -ksh ."
