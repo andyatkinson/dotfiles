@@ -1,3 +1,14 @@
+# Horribly broken
+# Bugs:
+# - If multiple versions of gems are installed, the output is counted, ideally the dependencies from the latest installed version are counter
+# - Includes line counts that are not gem names
+# - Doesn't intelligently exclude gems that are part of standard ruby
+# - Matches for multiple gems that share a substring in their name, e.g. activeadmin and activeadmin_addons, and they should be distinct
+#
+# Please fix all the bugs! :P
+#
+# P.S. should probably take in a input of the gemfile path, and probably send the output to a file!
+#
 # Order and display Gemfile gems by number of dependencies (descending)
 class GemfileProcessor
   GEM_NAME_REGEXP = /gem\s(\'|\")(\S*)(\'|\")/
