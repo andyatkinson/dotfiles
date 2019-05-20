@@ -365,6 +365,7 @@ IdeaVim action list: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
 ```bash
 command-shift-t # jump to corresponding test
 command-shift-a # action or option name
+command-shift-a, type "select in project view" # view file in project view
 command-shift-o # Enter file name
 command-[ or command-] # jump backward and forward in history
 :action Run # run the current file
