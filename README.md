@@ -362,6 +362,7 @@ redis-cli flushdb # dump everything in redis
 
 IdeaVim action list: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
 
+```bash
 command-shift-t # jump to corresponding test
 command-shift-a # action or option name
 command-shift-o # Enter file name
@@ -376,6 +377,7 @@ command+e # view recent files
 ctrl-space # basic code completion
 ctrl-shift-space # smart code completion
 command-1 # show/hide project view
+```
 
 Plugin: Key Promoter
 
