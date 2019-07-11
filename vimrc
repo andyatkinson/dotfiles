@@ -121,6 +121,7 @@ nmap <silent> <leader>s :set spell!<CR>
 " automatically enable spelling for markdown files
 " http://robots.thoughtbot.com/vim-spell-checking
 "autocmd BufRead,BufNewFile *.md,*.markdown setlocal spell
+set complete+=kspell
 
 " Automatically enable soft wrap for text file types
 " https://gist.github.com/nelstrom/372671
