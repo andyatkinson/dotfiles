@@ -378,6 +378,7 @@ command+e # view recent files
 ctrl-space # basic code completion
 ctrl-shift-space # smart code completion
 command-1 # show/hide project view
+open -a "IntelliJ IDEA" # open application when running Docker
 ```
 
 Plugin: Key Promoter
