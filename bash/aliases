@@ -118,7 +118,8 @@ alias reload="source ~/.bash_profile"
 
 # https://github.com/fcambus/ansiweather
 # https://news.ycombinator.com/item?id=6587234
-alias weather="~/Projects/ansiweather/ansiweather"
+# Update 2019: https://dev.to/mrtnrdl/my-favourite-aliases-39nn?utm_source=additional_box&utm_medium=internal&utm_campaign=regular&booster_org=
+alias weather="curl http://wttr.in/Minneapolis"
 
 # use OS X QuickLook to open files from terminal
 alias qlf='qlmanage -p "$@" >> /dev/null'
@@ -139,4 +140,6 @@ alias isodate='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 alias readme="cd ~/Projects/dotfiles && vim README.md"
 alias js="jekyll serve"
 alias today='icalBuddy -f -iep "title,datetime" -po "datetime,title" -df "%RD" eventsToday'
+
+# OS X Back Up Photobooth Pics
 alias photobooth="cp ~/Pictures/Photo\ Booth\ Library/Pictures/* ~/Dropbox/photobooth-pics/" # set up ~/Dropbox/photobooth-pics/
