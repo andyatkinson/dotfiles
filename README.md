@@ -4,9 +4,9 @@ This is how I set up my mac for development. Primarily Ruby on Rails web develop
 
  * dotfiles (vim with plugins, tmux, mysql, postgresql, etc.)
  * bash, iTerm, tmux, installed tmux plugin manager manually
- * homebrew formulas in Brewfile.
+ * homebrew formulas in `Brewfile`
  * Node installed from their website
- * Postgres installed as the OS X tray app
+ * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
  * [npm](https://npmjs.org/) (node packages)
  * OS X <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>. Customize OS X.
  * gems that are used system wide, are in `gems`
@@ -17,13 +17,14 @@ The bash directory has various bash shell scripts and configuration. Make sure t
 
 
 ## Installation
+
 Clone this directory and run one or more of the following rake tasks.
 
 Install Vundle. [instructions](https://github.com/gmarik/Vundle.vim)
 
 To reinstall vim plugins, delete `~/.vim/bundle` and clone vundle, then run `vim +PluginInstall +qall` on the command line.
 
-``` bash
+```sh
 $ rake -T
 rake dotfiles       # install the dotfiles into home directory
 rake npm            # install npm packages
@@ -32,7 +33,7 @@ rake os_x_defaults  # replace OS X defaults
 
 Note: `brew bundle` has been deprecated. For now the `Brewfile` serves as a list of packages.
 
-### Release notes
+## Release notes
 
 2017-03-24
 `:PluginUpdate` was run to update all plugins. Should convert this setup to native plugin management soon.
@@ -44,11 +45,12 @@ Switch from git bash completion script to a homebrew version
 2016-03-01
 
 Link homebrew openssl explicitly on El Capitan OS X, before installing the eventmachine 1.0.5
-https://github.com/eventmachine/eventmachine/issues/602
+<https://github.com/eventmachine/eventmachine/issues/602>
 
 Puma 2.9.1 (specify opt-dir or can configure bundler)
-https://github.com/puma/puma/issues/783
-gem install puma -v '2.9.1' -- --with-opt-dir=/usr/local/opt/openssl
+<https://github.com/puma/puma/issues/783>
+`gem install puma -v '2.9.1' -- --with-opt-dir=/usr/local/opt/openssl`
+
 
 ## Extras
 
@@ -62,13 +64,13 @@ gem install puma -v '2.9.1' -- --with-opt-dir=/usr/local/opt/openssl
 
   * Remap caps lock to control
 
-`softwareupdate --list` # find available things to install
-`softwareupdate --install <product name>` # update the software you named.
-ctrl-arrow key # move between spaces
-
-``` bash
-command-alt-h # hide other applications' windows, alt is fn+opt
-```
+| Command      | Description |
+| ----------- | ----------- |
+|  softwareupdate --list     | find available things to install |
+|  `softwareupdate --install <product name> |  update the software you named |
+|  `softwareupdate --install <product name> |  update the software you named |
+| ctrl-arrow key  | ctrl-arrow key |
+| command-alt-h | hide other applications' windows, alt is fn+opt |
 
 ## vim
 
@@ -180,24 +182,24 @@ Clone Vundle.
 
 ## bash
 
-``` bash
-ctrl-l # clear line
-Ctrl-u # cut line
-ctrl-y # paste line
-Ctrl-y # restore before delete
-Ctrl-a # move cursor, front of line
-Ctrl-e # move cursor, end of line
-Esc-b  # move cursor, back one word
-Esc-f  # move cursor, forward one word
-Ctrl-w # delete one word
-option-b # back one word (OS X?)
-option-f # forward one word (OS X?)
-jobs # list jobs
-jobs -p # list backgrounded jobs process IDs
-fg 1 # bring background job 1 to the foreground
-Ctrl-x Ctrl-e # edit command line command in $EDITOR
-less +F path/to/log # "follow" the log file, ctrl-c to go in to search mode, "F" to return to following
-```
+| Command      | Description |
+| ----------- | ----------- |
+| ctrl-l | clear line
+| Ctrl-u | cut line
+| ctrl-y | paste line
+| Ctrl-y | restore before delete
+| Ctrl-a | move cursor, front of line
+| Ctrl-e | move cursor, end of line
+| Esc-b  | move cursor, back one word
+| Esc-f  | move cursor, forward one word
+| Ctrl-w | delete one word
+| option-b | back one word (OS X?)
+| option-f | forward one word (OS X?)
+| jobs | list jobs
+| jobs -p | list backgrounded jobs process IDs
+| fg 1 | bring background job 1 to the foreground
+| Ctrl-x Ctrl-e | edit command line command in $EDITOR
+| less +F path/to/log | "follow" the log file, ctrl-c to go in to search mode, "F" to return to following
 
 ## Google Chrome
 
@@ -408,5 +410,6 @@ Command-slash # bring up keyboard shortcuts
 command-option-arrow down # use command+option and arrow keys to navigate between chats
 
 ## Maven
+
 mvn -Dtest=com.andy.AwesomeTest test # run specific test
 mvn clean compile exec:java # compile & boot app
