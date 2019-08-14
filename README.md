@@ -75,99 +75,100 @@ command-alt-h # hide other applications' windows, alt is fn+opt
 Interesting help:
 `:help opening-window`
 
-``` bash
-Ctrl-e # execute vim-sparkup
-gf # jump to code under cursor, rails.vim adds more
-jj # insert mode to normal mode
-jjj # insert mode to normal mode and write buffer
-leader-z # goyo writing mode
-Ctrl-n # on top of a word, enable multiple cursors match
-Ctrl-p # next match with multiple cursors, ctrl-x to skip a match
-F8 # tagbar :TagbarToggle
-Ctrl-c # in normal mode, writes to ~/.vimbuffer (copy and paste between instances)
-Ctrl-v v # paste from ~/.vimbuffer
-Ctrl-p # normal mode, CtrlP find
-Ctrl-b # CtrlP MRU buffer list
-Ctrl-f # CtrlP function matching
-Ctrl-h/j/k/l # navigate between panes
-Ctrl-^ # last buffer
-leader-n # show file in nerdtree
-Ctrl-p # insert mode, displays autocomplete suggestions
-s # in nerdtree, "s" on a file opens it in a vertical split
-i # in nerdtree, "i" opens in split
-:A # rails.vim, open alternative file
-:Rcontroller # rails.vim, open related controller
-:Rails console # rails.vim, open a console
-:Rlog # rails.vim, open rails log file in a split window
-:ctags -R ! # generate tags file for project
-leader-c # call ctags on project
-Ctrl-] # navigate via tags to item under cursor
-Ctrl-t # navigate back after jumping with ctags
-:AV # rails.vim, edit the alternate file in a vertical split
-dap # delete around paragraph
-:ta # navigate list of tags
-"*y # copy to OS X clipboard
-Ctrl-v # in ctrlp buffer list, open buffer in vertical split
-Ctrl-x # in ctrlp buffer list, open buffer in split
-leader-w # write buffer
-leader-q # quit buffer
-^ # jump to first character of line
-leader-s # toggle spellchecking
-Ctrl-w # toggle panes
-gU # make uppercase, plus motion (w, k etc.)
-~ # swap case
-Ctrl-o # jump back
-Ctrl-i # jump forward
-nG # jump to line n
-Ctrl-u # in insert mode, delete line before cursor
-Ctrl-w # in insert mode, delete word before cursor
-Ctrl-w H/J/K/L # re-configure split panes, cycle the splits layout
-leader-p F5 # refresh ctrlp buffer list
-:30winc > # add 30 characters of width to vertical split
-v # with ack.vim, browsing results, "v" to open result in vertical split
-Ctrl-w _ # maximize a pane vertically
-Ctrl-w | # maximize a pane horizontally
-Ctrl-w = # make the pane sizes equal
-ctrl-w = # resize all panes
-leader-t # with vimux and turbux, run test in tmux pane
-leader-T # run focused unit test in tmux pane with vimux and turbux
-:vs # # open the last buffer in a vertical split
-- # first non-blank character previous line
-_ # first non-blank character current line
-Ctrl-w r # rotate/swap/cycle/switch split panes
-daw # delete around word
-fx # jump to first x, ; char repeats motion
-i and a # text objects, select inside, or select everything including delimiter, e.g. cit
-is # inside sentence
-ip # inside paragraph
-t{char} # before the char, f{char} puts cursor on the char
-mm # set a mark, with char m, m{a-zA-Z}
-`m # jump to mark m
-`. # last change
-g; # similar to `., can be repeated
-`< # and `> start and end of last visual selection
-dd # cut the current line, ddp to transpose current next lines
-yyp # yank yank paste, duplicates line
-Ctrl-r{register} # e.g. Ctrl-r" or C-r0
-"+p # put from the Plus register, to avoid toggling paste option
-C-\s # on top of a method, cscope query, to find caller of a method
-:so ~/.vimrc # reload the ~/.vimrc
-visual selection + S (capital "s") # type HTML tag like <p> to surround visual selection in <p> tag, depends on surround.vim
-ctrl-r " # paste from insert mode
-d/ # hit enter after typing the selection, delete until the selection
-f [space] # ";" will repeat the motion
-pry [tab] # in a ruby file, will insert a pry binding statement, part of the built-in ruby snippets file
-"_d # black hole register, e.g. "_dw to delete a word without storing the result in a register
-y$ # yank until the end of the line without the newline
-gui # switch to GUI
-redraw! # redraw the screen when it goes black http://stackoverflow.com/a/1117742/126688
-e %:h (tab) # expands current directory. supply filename to create a new file at that point on disk.
-cc # delete entire line and enter insert mode
-ciB # change inner block (inside of {} braces)
-comment out # ctrl-slash-slash
-pgrep -f # -f is to match against full argument list, typically need this for a backgrounded rails console process name
-ctrl-o-o # open last location https://dev.to/jovica/3-little-known-but-useful-vim-tips-1pbg
-```
+
+| Command      | Description |
+| ----------- | ----------- |
+| Ctrl-e      | execute vim-sparkup       |
+| gf | jump to code under cursor, rails.vim adds more
+| jj | insert mode to normal mode
+| jjj | insert mode to normal mode and write buffer
+| leader-z | goyo writing mode
+| Ctrl-n | on top of a word, enable multiple cursors match
+| Ctrl-p | next match with multiple cursors, ctrl-x to skip a match
+| F8 | tagbar :TagbarToggle
+| Ctrl-c | in normal mode, writes to ~/.vimbuffer (copy and paste between instances)
+| Ctrl-v v | paste from ~/.vimbuffer
+| Ctrl-p | normal mode, CtrlP find
+| Ctrl-b | CtrlP MRU buffer list
+| Ctrl-f | CtrlP function matching
+| Ctrl-h/j/k/l | navigate between panes
+| Ctrl-^ | last buffer
+| leader-n | show file in nerdtree
+| Ctrl-p | insert mode, displays autocomplete suggestions
+| s | in nerdtree, "s" on a file opens it in a vertical split
+| i | in nerdtree, "i" opens in split
+| :A | rails.vim, open alternative file
+| :Rcontroller | rails.vim, open related controller
+| :Rails console | rails.vim, open a console
+| :Rlog | rails.vim, open rails log file in a split window
+| :ctags -R ! | generate tags file for project
+| leader-c | call ctags on project
+| Ctrl-] | navigate via tags to item under cursor
+| Ctrl-t | navigate back after jumping with ctags
+| :AV | rails.vim, edit the alternate file in a vertical split
+| dap | delete around paragraph
+| :ta | navigate list of tags
+| "*y | copy to OS X clipboard
+| Ctrl-v | in ctrlp buffer list, open buffer in vertical split
+| Ctrl-x | in ctrlp buffer list, open buffer in split
+| leader-w | write buffer
+| leader-q | quit buffer
+| ^ | jump to first character of line
+| leader-s | toggle spellchecking
+| Ctrl-w | toggle panes
+| gU | make uppercase, plus motion (w, k etc.)
+| ~ | swap case
+| Ctrl-o | jump back
+| Ctrl-i | jump forward
+| nG | jump to line n
+| Ctrl-u | in insert mode, delete line before cursor
+| Ctrl-w | in insert mode, delete word before cursor
+| Ctrl-w H/J/K/L | re-configure split panes, cycle the splits layout
+| leader-p F5 | refresh ctrlp buffer list
+| :30winc > | add 30 characters of width to vertical split
+| v | with ack.vim, browsing results, "v" to open result in vertical split
+| Ctrl-w _ | maximize a pane vertically
+| Ctrl-w | | maximize a pane horizontally
+| Ctrl-w = | make the pane sizes equal
+| ctrl-w = | resize all panes
+| leader-t | with vimux and turbux, run test in tmux pane
+| leader-T | run focused unit test in tmux pane with vimux and turbux
+| :vs | open the last buffer in a vertical split
+| - | first non-blank character previous line
+| _ | first non-blank character current line
+| Ctrl-w r | rotate/swap/cycle/switch split panes
+| daw | delete around word
+| fx | jump to first x, ; char repeats motion
+| i and a | text objects, select inside, or select everything including delimiter, e.g. cit
+| is | inside sentence
+| ip | inside paragraph
+| t{char} | before the char, f{char} puts cursor on the char
+| mm | set a mark, with char m, m{a-zA-Z}
+| `m | jump to mark m
+| `. | last change
+| g; | similar to `., can be repeated
+| `< | and `> start and end of last visual selection
+| dd | cut the current line, ddp to transpose current next lines
+| yyp | yank yank paste, duplicates line
+| Ctrl-r{register} | e.g. Ctrl-r" or C-r0
+| "+p | put from the Plus register, to avoid toggling paste option
+| C-\s | on top of a method, cscope query, to find caller of a method
+| :so ~/.vimrc | reload the ~/.vimrc
+| visual selection + S (capital "s") | type HTML tag like <p> to surround visual selection in <p> tag, depends on surround.vim
+| ctrl-r " | paste from insert mode
+| d/ | hit enter after typing the selection, delete until the selection
+| f [space] | ";" will repeat the motion
+| pry [tab] | in a ruby file, will insert a pry binding statement, part of the built-in ruby snippets file
+| "_d | black hole register, e.g. "_dw to delete a word without storing the result in a register
+| y$ | yank until the end of the line without the newline
+| gui | switch to GUI
+| redraw! | redraw the screen when it goes black http://stackoverflow.com/a/1117742/126688
+| e %:h (tab) | expands current directory. supply filename to create a new file at that point on disk.
+| cc | delete entire line and enter insert mode
+| ciB | change inner block (inside of {} braces)
+| comment out | ctrl-slash-slash
+| pgrep -f | -f is to match against full argument list, typically need this for a backgrounded rails console process name
+| ctrl-o-o | open last location https://dev.to/jovica/3-little-known-but-useful-vim-tips-1pbg
 
 ## Vundle
 
