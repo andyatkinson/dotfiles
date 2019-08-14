@@ -67,8 +67,7 @@ Puma 2.9.1 (specify opt-dir or can configure bundler)
 | Command      | Description |
 | ----------- | ----------- |
 |  softwareupdate --list     | find available things to install |
-|  `softwareupdate --install <product name> |  update the software you named |
-|  `softwareupdate --install <product name> |  update the software you named |
+|  softwareupdate --install <product name> |  update the software you named |
 | ctrl-arrow key  | ctrl-arrow key |
 | command-alt-h | hide other applications' windows, alt is fn+opt |
 
@@ -164,19 +163,19 @@ Interesting help:
 | "_d | black hole register, e.g. "_dw to delete a word without storing the result in a register
 | y$ | yank until the end of the line without the newline
 | gui | switch to GUI
-| redraw! | redraw the screen when it goes black http://stackoverflow.com/a/1117742/126688
+| redraw! | redraw the screen when it goes black <http://stackoverflow.com/a/1117742/126688>
 | e %:h (tab) | expands current directory. supply filename to create a new file at that point on disk.
 | cc | delete entire line and enter insert mode
 | ciB | change inner block (inside of {} braces)
 | comment out | ctrl-slash-slash
 | pgrep -f | -f is to match against full argument list, typically need this for a backgrounded rails console process name
-| ctrl-o-o | open last location https://dev.to/jovica/3-little-known-but-useful-vim-tips-1pbg
+| ctrl-o-o | open last location <https://dev.to/jovica/3-little-known-but-useful-vim-tips-1pbg>
 
 ## Vundle
 
 Clone Vundle.
 
-``` bash
+```sh
 :PluginInstall
 ```
 
@@ -205,7 +204,7 @@ Clone Vundle.
 
   * [Chrome keyboard shortcuts](https://developers.google.com/chrome-developer-tools/docs/shortcuts)
 
-``` bash
+```sh
 cmd-option-i # toggle web inspector
 option-command-u # open page source
 ```
@@ -215,7 +214,7 @@ option-command-u # open page source
   * Use Source Code Pro font
   * Profile > Keys > Left option key acts as "+Esc"
 
-``` bash
+```sh
 Cmd-/ # show cursor
 Cmd-shift-d # split the window horizontally
 Cmd-option-arrow # move between the split panes
@@ -223,7 +222,7 @@ Cmd-option-arrow # move between the split panes
 
 ## tmux
 
-``` bash
+```sh
 tmux new-session -s dev_logs # start a new session named dev_logs
 reset # reset, useful when text stops showing up
 tmux attach-session -t 0 # attach to session 0
@@ -236,15 +235,15 @@ prefix + , # rename a window
 ```
 
 Tmux plugin manager (install this manually)
-https://github.com/tmux-plugins/tpm
+<https://github.com/tmux-plugins/tpm>
 
 Inside of tmux, run `Prefix-I` (capital "I") to install plugins.
 
 ## snippets
 
-Snippets directory ~/.vim/bundle/vim-snippets/snippets
+Snippets directory `~/.vim/bundle/vim-snippets/snippets`
 
-``` bash
+```sh
 =<tab> # puts in Erb expression tags (requires snipmate)
 %<tab> # puts in Erb expression tags (requires snipmate)
 def<tab> # start a ruby method
@@ -253,7 +252,7 @@ div # can use this for markup too
 
 ## [tig](https://github.com/jonas/tig)
 
-``` bash
+```sh
 git log | tig
 git diff master | tig
 h # help
@@ -262,7 +261,7 @@ m # toggle main view (useful to jump back and forth between code details and com
 
 ## [ngrok](https://ngrok.com/)
 
-``` bash
+```sh
 ngrok start <server> # where <server> is defined in ~/.ngrok
 ngrok 3000 # serve a rails app on the default port
 ngrok -help
@@ -275,33 +274,25 @@ Symlink the file in to the following location: `~/.ngrok2/ngrok.yml`
 
 ## [jrnl](http://maebert.github.io/jrnl/)
 
-``` bash
+```sh
 jrnl # enter compose mode
 jrnl @tag # list entries that include tag
 jrnl -n10 # list last 10 entries
-jrnl --edit # edit old entries (unencryted file)
+jrnl --edit # edit old entries (unencrypted file)
 ```
-
-## [nltk](http://www.nltk.org/)
-
-See installation instructions.
-
-## Haskell
-
-[Download OS X installer](https://www.haskell.org/platform/)
 
 ## [spectacle](http://spectacleapp.com/)
 
-``` bash
+```sh
 option-command-right arrow # right half
 option-command-f # full screen
 ```
 
 ## rbenv
 
-Installed `rbenv` from github, but then `brew install ruby-build` for the `rbenv install` command.
+Installed `rbenv` from GitHub, but then `brew install ruby-build` for the `rbenv install` command.
 
-``` bash
+```sh
 rbenv install -l # list installable versions
 rbenv install 2.1.4 # install specific version
 rbenv version
@@ -311,7 +302,7 @@ rbenv versions # list installed rubies
 
 ## Slack
 
-``` bash
+```sh
 +:... # plus sign plus "colon" to pull up Emoji reactions, will react to most recent post
 up arrow key # edit last message
 Command-t # jump to another channel
@@ -326,7 +317,7 @@ command-left/right bracket # move between channels
 
 ## Xcode and simulator
 
-``` bash
+```sh
 command-shift-o # fuzzy find files by name (open quickly), colon line number (e.g. ":42" to open line 42)
 command-b # build
 command-1 # etc. to resize the simulator
@@ -342,30 +333,30 @@ command-shift-j # show file in project navigator
 
 Terminal screencasting!
 
-``` bash
+```sh
 showterm [command]
 ```
 
 ## [lnav](http://lnav.org)
 
-Fancy log file viewer with cool features: http://lnav.org/features/
+Fancy log file viewer with cool features: <http://lnav.org/features/>
 
-```bash
+```sh
 brew install lnav
 lnav path/to/log
 ? # help
 ```
 
-```sidekiq
+```sh
 Sidekiq.redis { |conn| conn.flushdb }
 redis-cli flushdb # dump everything in redis
 ```
 
 ## IntelliJ OS X
 
-IdeaVim action list: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
+IdeaVim action list: <https://gist.github.com/zchee/9c78f91cc5ad771c1f5d>
 
-```bash
+```sh
 command-shift-t # jump to corresponding test
 command-shift-a # action or option name
 command-shift-a, type "select in project view" # view file in project view
@@ -386,30 +377,20 @@ open -a "IntelliJ IDEA" # open application when running Docker
 
 Plugin: Key Promoter
 
-## Java
-
-`brew install javarepl`
-$ javarepl
-
-## Kotlin
-
-`kotlinc` # REPL
-
 ## Zoom
 
+```sh
 command-shift-a # toggle audio
 command-shift-v # toggle video
+```
 
 ## Man pages
 
 `tldr` as an improvement or supplement to `man`, with examples, e.g. `tldr curl`
 
-## Hipchat
-
-Command-slash # bring up keyboard shortcuts
-command-option-arrow down # use command+option and arrow keys to navigate between chats
-
 ## Maven
 
+```sh
 mvn -Dtest=com.andy.AwesomeTest test # run specific test
 mvn clean compile exec:java # compile & boot app
+```
