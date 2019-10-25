@@ -394,3 +394,9 @@ command-shift-v # toggle video
 mvn -Dtest=com.andy.AwesomeTest test # run specific test
 mvn clean compile exec:java # compile & boot app
 ```
+
+## Go lang
+
+```sh
+gore # Go lang REPL
+```
