@@ -79,6 +79,11 @@ Interesting help:
 
 | Command      | Description |
 | ----------- | ----------- |
+| de | delete to the end of the current word, INCLUDING the last character |
+| ce | change until the end of word |
+| 2dd | delete 2 lines |
+| % | place cursor on character like `(` and press `%` to find match |
+| "_d | black hole register, e.g. "_dw to delete a word without storing the result in a register |
 | Ctrl-e      | execute vim-sparkup       |
 | gf | jump to code under cursor, rails.vim adds more
 | jj | insert mode to normal mode
@@ -160,7 +165,6 @@ Interesting help:
 | d/ | hit enter after typing the selection, delete until the selection
 | f [space] | ";" will repeat the motion
 | pry [tab] | in a ruby file, will insert a pry binding statement, part of the built-in ruby snippets file
-| "_d | black hole register, e.g. "_dw to delete a word without storing the result in a register
 | y$ | yank until the end of the line without the newline
 | gui | switch to GUI
 | redraw! | redraw the screen when it goes black <http://stackoverflow.com/a/1117742/126688>
