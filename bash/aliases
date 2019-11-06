@@ -146,3 +146,6 @@ alias today='icalBuddy -f -iep "title,datetime" -po "datetime,title" -df "%RD" e
 
 # OS X Back Up Photobooth Pics
 alias photobooth="cp ~/Pictures/Photo\ Booth\ Library/Pictures/* ~/Dropbox/photobooth-pics/" # set up ~/Dropbox/photobooth-pics/
+
+# Maven / PMD
+alias pmd="mvn pmd:check && cat /Users/andy/Projects/epods/target/pmd.xml"
