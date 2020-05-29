@@ -113,7 +113,7 @@ alias pglog="tail -f /usr/local/var/postgres/server.log"
 # installed postgres.app on OS X
 alias pgrestart="pg_ctl restart -D '/Users/andy/Library/Application Support/Postgres/var-9.3' -m fast"
 
-alias vim="mvim -v"
+alias mvim="mvim -v"
 alias dnsflush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias flushdns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias rubyscript='printf "#!/usr/bin/env ruby \n\nprint \"Hello from a Ruby script!\"\n" >> ruby_script; chmod +x ruby_script; ./ruby_script'
