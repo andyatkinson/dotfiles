@@ -333,6 +333,8 @@ command-shift-j # show file in project navigator
 
 ## [Httpie](https://github.com/jakubroztocil/httpie)
 
+* `tldr httpie` (or just use `curl`)
+
 ## [showterm](http://showterm.io/)
 
 Terminal screencasting!
@@ -405,8 +407,21 @@ mvn clean compile exec:java # compile & boot app
 gore # Go lang REPL
 ```
 
+## Homebrew
+
+* `brew list`
+* `brew cask list` # OS X
+* `brew deps --tree --installed`
+
+## pyenv
+
+* `pyenv versions`
+
 ## Windows
 
+* Windows Terminal. `iTerm` like. `Ctrl-Tab` to switch between tabs.
+* Use WSL 2. Requires a newer Windows build. This link helps debug Windows Update problems via log files and clears a cache. <https://www.howtogeek.com/416169/how-to-fix-what-needs-your-attention-windows-10-setup-errors/>
 * My preference: Remap Caps to Ctrl. This can be done with Keyboard Manager in PowerToys.
 * Currently using Ubuntu 18.04 with WSL 2
   * Use `wsl` commands `--set-version` to convert an existing distribution or `--set-default-version` for all new distributions
+* Chrome with Vimium, AdBlock, 1Password
