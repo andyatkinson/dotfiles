@@ -404,3 +404,8 @@ mvn clean compile exec:java # compile & boot app
 ```sh
 gore # Go lang REPL
 ```
+
+## Windows
+
+* Currently using Ubuntu 18.04 with WSL 2
+  * Use `wsl` commands `--set-version` to convert an existing image or `--set-default-version` for all new distributions
