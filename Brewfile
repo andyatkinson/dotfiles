@@ -49,6 +49,10 @@ install wrk # load testing
 install pssh # parallel ssh
 install gd # git diff
 install go # go lang
+install lnav # log file viewer
 
 # cask
 cask install postman
+
+# Rails
+install unused # <https://github.com/unused-code/unused>
