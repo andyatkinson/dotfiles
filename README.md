@@ -407,5 +407,6 @@ gore # Go lang REPL
 
 ## Windows
 
+* My preference: Remap Caps to Ctrl. This can be done with Keyboard Manager in PowerToys.
 * Currently using Ubuntu 18.04 with WSL 2
-  * Use `wsl` commands `--set-version` to convert an existing image or `--set-default-version` for all new distributions
+  * Use `wsl` commands `--set-version` to convert an existing distribution or `--set-default-version` for all new distributions
