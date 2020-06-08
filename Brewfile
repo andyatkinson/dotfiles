@@ -53,6 +53,7 @@ install lnav # log file viewer
 
 # cask
 cask install postman
+cask install java
 
 # Rails
 install unused # <https://github.com/unused-code/unused>
