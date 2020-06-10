@@ -425,3 +425,8 @@ gore # Go lang REPL
 * Currently using Ubuntu 18.04 with WSL 2
   * Use `wsl` commands `--set-version` to convert an existing distribution or `--set-default-version` for all new distributions
 * Chrome with Vimium, AdBlock, 1Password
+
+## MacDown
+
+Markdown editor for OS X. Workaround for being a unidentified developer:
+https://macdown.uranusjr.com/faq/#unidentified

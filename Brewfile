@@ -54,6 +54,8 @@ install lnav # log file viewer
 # cask
 cask install postman
 cask install java
+cask install gitx
+cask install macdown
 
 # Rails
 install unused # <https://github.com/unused-code/unused>
