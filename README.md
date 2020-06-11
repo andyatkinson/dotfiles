@@ -319,6 +319,14 @@ command-left/right bracket # move between channels
 `` # or triple backticks code fence
 ```
 
+## Teams
+
+```sh
+command-e # search bar on top
+command-shift-m # mute/unmute microphone
+command-1/2/3 # navigate vertically between activity/chat/teams sections
+```
+
 ## Xcode and simulator
 
 ```sh
