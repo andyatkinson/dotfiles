@@ -47,6 +47,7 @@ alias git-pass='ssh-add -t 36000'
 
 # git diff, depends on gitx and tig being installed
 alias gd="git diff"
+alias gds="git diff --staged"
 alias gdm="git diff master"
 alias gdms="git diff master --stat"
 alias gdmss="git diff master --shortstat"
