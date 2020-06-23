@@ -278,6 +278,8 @@ Symlink the file in to the following location: `~/.ngrok2/ngrok.yml`
 
 ## [jrnl](http://maebert.github.io/jrnl/)
 
+Default config file: `~/.config/jrnl/jrnl.yaml`
+
 ```sh
 jrnl # enter compose mode
 jrnl @tag # list entries that include tag
