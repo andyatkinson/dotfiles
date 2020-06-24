@@ -321,12 +321,21 @@ command-left/right bracket # move between channels
 `` # or triple backticks code fence
 ```
 
-## Teams
+## Microsoft Teams
+
+[Keyboard Shortcuts for MS Teams](https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2?ui=en-us&rs=en-us&ad=us)
+
+I use it on Mac OS but swap "command" for "control" on Windows.
 
 ```sh
+command-shift-x # put focus on new message
+command-enter  # send message
 command-e # search bar on top
 command-shift-m # mute/unmute microphone
+command-shift-o # toggle video on/off
 command-1/2/3 # navigate vertically between activity/chat/teams sections
+
+option-arrow up/down # navigate items vertically under org
 ```
 
 ## Xcode and simulator
