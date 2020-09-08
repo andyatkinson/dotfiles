@@ -5,7 +5,6 @@ alias d="cd ~/Projects/dotfiles && vim ."
 alias f="foreman start"
 alias g="git"
 alias h="heroku"
-alias l="cd ~/Projects/tokyo"
 alias p="cd ~/Projects && ls"
 alias r="rake"
 alias t="tmux"
@@ -132,6 +131,7 @@ alias qlf='qlmanage -p "$@" >> /dev/null'
 alias tmux="TERM=screen-256color-bce tmux"
 alias ta="tmux attach"
 alias tls="tmux ls"
+alias tmn="tmux new-session -t stuff"
 
 # misc
 # bounce wi-fi (ifconfig showed it is en0 on MBP)
