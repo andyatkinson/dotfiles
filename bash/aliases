@@ -71,6 +71,9 @@ alias gems='yard server --gems &; sleep 2s; open http://localhost:8808;'
 alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 alias checkspace='du -csh *'
 
+# misc unix
+alias killjobs="kill -9 `jobs -ps`"
+
 # misc OS X
 alias da='~/Projects/dotfiles/bash/domainavailable'
 alias fline="for file (*(ND-.)) IFS= read -re < $file" # cat first line for all files in this dir
