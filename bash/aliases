@@ -43,6 +43,7 @@ alias glsha='git rev-list --no-merges -n 1 HEAD' # latest non-merge commit SHA
 #  To remember the SSH password for 36000 minutes
 #  https://daniele.tech/2019/07/my-git-tips-for-a-better-life-in-your-console/
 alias git-pass='ssh-add -t 36000'
+alias gmc="git merge --continue"
 
 # git diff, depends on gitx and tig being installed
 alias gd="git diff"
