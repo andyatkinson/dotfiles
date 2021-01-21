@@ -402,6 +402,13 @@ open -a "IntelliJ IDEA" # open application when running Docker
 
 Plugin: Key Promoter
 
+## MS Teams
+
+## VS Code
+
+- `Shift-command-V` opens preview but in same window
+- `Command-K + V` opens side by side markdown preview for `.md` file
+
 ## Zoom
 
 ```sh
