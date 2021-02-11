@@ -408,6 +408,7 @@ Plugin: Key Promoter
 
 - `Shift-command-V` opens preview but in same window
 - `Command-K + V` opens side by side markdown preview for `.md` file
+- Column selection: `shift-option` + mouse
 
 ## Zoom
 
