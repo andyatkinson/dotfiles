@@ -40,12 +40,15 @@ end
 
 desc "replace OS X defaults"
 task :os_x_defaults do
-  # thanks! https://gist.github.com/saetia/1623487
-  puts "changing delay value before key repeat. normal minimum is 15 (225ms)"
-  system %Q{defaults write -g InitialKeyRepeat -int 15}
+  #1 thanks! https://gist.github.com/saetia/1623487
+  #1
+  ## Set a shorter Delay until key repeat
+  system %Q{defaults write NSGlobalDomain InitialKeyRepeat -int 12}
 
   puts "changing key repeat rate. normal minimum is 2 (30ms). Set to 0, 1, or 2."
-  system %Q{defaults write -g KeyRepeat -int 1}
+  # Set a blazingly fast keyboard repeat rate
+  system %Q{defaults write NSGlobalDomain KeyRepeat -int 1}
+  #system %Q{defaults write -g KeyRepeat -int 0}
 
   puts "disable sound effect when changing volume. Requires log-out/log-in to take effect."
   system %Q{defaults write -g com.apple.sound.beep.feedback -integer 0}

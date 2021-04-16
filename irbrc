@@ -43,3 +43,5 @@ end
 def paste
   `pbpaste`
 end
+
+IRB.conf[:USE_READLINE] = false

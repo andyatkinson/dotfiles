@@ -16,29 +16,18 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'danro/rename.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
-Plugin 'int3/vim-extradite'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'reedes/vim-colors-pencil'
 Plugin 'benmills/vimux'
 Plugin 'jgdavey/vim-turbux'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'jnwhiteh/vim-golang'
 Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
-Plugin 'mtscout6/vim-cjsx'
-Plugin 'chrisbra/csv.vim'
-Plugin 'mxw/vim-jsx'
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'artur-shaik/vim-javacomplete2'
-Plugin 'udalov/kotlin-vim'
-Plugin 'rhysd/vim-crystal'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -94,6 +83,7 @@ set formatoptions-=or " disable automatic comment prefix
 set scrolljump=5
 set nocursorline
 set nocursorcolumn
+set lazyredraw
 syntax sync minlines=256 " http://stackoverflow.com/a/7187629/126688
 syntax enable
 syntax on
