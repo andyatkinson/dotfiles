@@ -4,7 +4,7 @@ desc "install the dotfiles into home directory"
 task :dotfiles do
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README.md shortcuts.md ngrok.yml chrome_extensions.md].include?(file)
+    next if %w[Rakefile README.md shortcuts.md].include?(file)
 
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all
@@ -26,15 +26,6 @@ task :dotfiles do
     else
       link_file(file)
     end
-  end
-end
-
-desc "install npm packages"
-task :npm do
-  # should add /usr/local/bin/coffee
-  npm_packages = %w[ coffee-script grunt grunt-cli grunt-ember-templates bower browserify tldr ]
-  npm_packages.each do |package|
-    system "npm install -g #{package}"
   end
 end
 
@@ -73,14 +64,14 @@ task :os_x_defaults do
   system %Q{defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false}
 end
 
-
 private
-  def replace_file(file)
-    system %Q{rm "$HOME/.#{file}"}
-    link_file(file)
-  end
 
-  def link_file(file)
-    puts "linking ~/.#{file}"
-    system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
-  end
+def replace_file(file)
+  system %Q{rm "$HOME/.#{file}"}
+  link_file(file)
+end
+
+def link_file(file)
+  puts "linking ~/.#{file}"
+  system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
+end
