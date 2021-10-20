@@ -20,8 +20,6 @@ This is how I set up Mac OS for development.
  * iTerm
  * tmux with plugins
  * [Fish shell](https://fishshell.com/)
-   * Fisher plugins
-     * rbenv
  * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
  * Git
    * Global Git aliases/config in `gitconfig`
