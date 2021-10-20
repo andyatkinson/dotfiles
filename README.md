@@ -2,6 +2,8 @@
 
 This is how I set up Mac OS for development.
 
+## Summary
+
  * Mac OS <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>.
   * Manually remap Caps Lock to Control
   * Enable tap to click on touch pad
@@ -14,7 +16,6 @@ This is how I set up Mac OS for development.
  * homebrew formulas in `Brewfile`
  * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
  * gems that are used system wide, are in `gems`
-
 
 ## Installation
 
@@ -32,6 +33,8 @@ rake os_x_defaults  # replace OS X defaults
 
 Overhaul of setup for 2021 development on a Mac.
 
+Introduction of new things: GH CLI, Fish shell
+
 2017-03-24
 `:PluginUpdate` was run to update all plugins. Should convert this setup to native plugin management soon.
 
@@ -47,7 +50,6 @@ Link homebrew openssl explicitly on El Capitan OS X, before installing the event
 Puma 2.9.1 (specify opt-dir or can configure bundler)
 <https://github.com/puma/puma/issues/783>
 `gem install puma -v '2.9.1' -- --with-opt-dir=/usr/local/opt/openssl`
-
 
 ## Extras
 
@@ -418,3 +420,9 @@ gore # Go lang REPL
 
 Markdown editor for OS X. Workaround for being a unidentified developer:
 https://macdown.uranusjr.com/faq/#unidentified
+
+## GitHub CLI
+
+<https://cli.github.com/>
+
+* `gh pr create [flags]`
