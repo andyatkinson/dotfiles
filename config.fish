@@ -11,3 +11,6 @@ set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
 
 rbenv rehash >/dev/null 2>&1
+
+# postgres.app CLI tools
+fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin

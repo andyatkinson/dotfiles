@@ -155,7 +155,7 @@ nnoremap <leader><leader> <c-^>
 nnoremap K <Nop>
 
 nmap <leader>a :Ack<space>
-map <silent> <leader>g :Gblame<cr>
+map <silent> <leader>g :Git blame<cr>
 
 " for cscope
 if filereadable("cscope.out")
