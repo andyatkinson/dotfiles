@@ -64,7 +64,7 @@ syntax enable
 syntax on
 
 " disable managing this via vundle plugin
-"colorscheme distinguished
+colorscheme distinguished
 
 filetype plugin indent on
 runtime macros/matchit.vim
