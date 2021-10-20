@@ -1,5 +1,6 @@
 # critcal
 install rbenv
+install ack
 install nvm
 install git
 install bash-completion
@@ -7,11 +8,7 @@ install tmux
 install reattach-to-user-namespace
 install ctags
 install gpg
-install qt
-install imagemagick
-install phantomjs
 install redis
-install ack
 install tldr
 install jrnl
 
@@ -20,16 +17,13 @@ install macvim
 
 # less critical
 install nginx
-install ical-buddy
 install python
 install wkhtmltopdf
 install wget
-install mysql
 install proctools
 install fortune
 install htop
 install watch
-install lynx
 install gcal
 install dos2unix
 install jq
@@ -45,17 +39,12 @@ install pgcli
 install ical-buddy
 install readline
 install pyenv # manage python version
-install wrk # load testing
+install wrk # load testing, use wrk2
 install pssh # parallel ssh
-install gd # git diff
-install go # go lang
 install lnav # log file viewer
 
 # cask
-cask install postman
-cask install java
-cask install gitx
-cask install macdown
+cask install macdown # Mac OS Markdown editor
 
 # Rails
-install unused # <https://github.com/unused-code/unused>
+install unused # Detect unused code
