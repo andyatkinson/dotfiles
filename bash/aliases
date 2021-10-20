@@ -89,7 +89,6 @@ alias dropthemic="sudo killall coreaudiod"
 alias openvpn="/usr/local/bin/pgrep racoon | xargs sudo kill -9; osascript ~/Projects/applescripts/openvpn.applescript"
 
 alias pserver="open http://localhost:8080/ && python -m SimpleHTTPServer 8080"
-alias whatsrunning="lsof -i"
 alias ports='sudo lsof -iTCP -sTCP:LISTEN -P'
 alias myip='ifconfig|grep -A 4 "en0"|grep -oe "[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}[[:space:]]"|pbcopy;echo "copied IP to clipboard: ";pbpaste'
 alias cleannastydesktop="rm ~/Desktop/Screen\ shot\ *"
@@ -99,7 +98,8 @@ alias loghead="for file in log/*; do; echo "$file\n--"; head $file; echo "--\n";
 # nginx
 alias nstop="pgrep nginx | xargs sudo kill -9"
 alias nrestart="pgrep nginx | xargs sudo kill -9 && sudo /usr/local/sbin/nginx"
-alias nginx_error_log="tail -f /usr/local/Cellar/nginx/$(nginx -v 2>&1 | sed -En 's/.*([0-9]{1}\.[0-9]{1}\.[0-9]{1}$)/\1/p')/logs/error.log"
+#broken in fish shell 2021-10-20
+#alias nginx_error_log="tail -f /usr/local/Cellar/nginx/$(nginx -v 2>&1 | sed -En 's/.*([0-9]{1}\.[0-9]{1}\.[0-9]{1}$)/\1/p')/logs/error.log"
 
 # memcached
 alias mcd='memcached -d -l 127.0.0.1 -p 11211'
@@ -128,18 +128,15 @@ alias reload="source ~/.bash_profile"
 # Update 2019: https://dev.to/mrtnrdl/my-favourite-aliases-39nn?utm_source=additional_box&utm_medium=internal&utm_campaign=regular&booster_org=
 alias weather="curl http://wttr.in/Minneapolis"
 
-# use OS X QuickLook to open files from terminal
-alias qlf='qlmanage -p "$@" >> /dev/null'
-
 # tmux aliases
-alias tmux="TERM=screen-256color-bce tmux"
+#alias tmux="TERM=screen-256color-bce tmux"
 alias ta="tmux attach"
 alias tls="tmux ls"
-alias tmn="tmux new-session -t stuff"
 
 # misc
 # bounce wi-fi (ifconfig showed it is en0 on MBP)
-alias wifi="sudo ifconfig en0 down && sudo ifconfig en0 up"
+#broken 2021-10-20 fix this one seems useful
+#alias wifi="sudo ifconfig en0 down && sudo ifconfig en0 up"
 alias du="du -h" # human readable size
 alias jl="jrnl -n10"
 alias dbox="cd ~/Dropbox"
