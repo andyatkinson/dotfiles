@@ -2,7 +2,7 @@ source ~/.bash/aliases
 source ~/.bash/completions
 source ~/.bash/paths
 source ~/.bash/config
-source ~/.bash/dsomainavailable
+source ~/.bash/domainavailable
 source ~/.bash/functions
 source ~/.localrc
 

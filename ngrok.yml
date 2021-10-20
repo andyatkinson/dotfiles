@@ -1,8 +1,0 @@
-authtoken: 7WBaRFio7XFPpdrAkyVJQ_5wGDzyL1XJkRAZ9WCQrRP
-tunnels:
-  orderup-andy:
-    addr: 3000
-    proto: http
-  orderupf-andy:
-    addr: 5000
-    proto: http

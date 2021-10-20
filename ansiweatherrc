@@ -1,3 +1,0 @@
-location:Boston,US
-fetch_cmd:ftp -V -o -
-units:imperial

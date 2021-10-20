@@ -35,6 +35,10 @@ Note: `brew bundle` has been deprecated. For now the `Brewfile` serves as a list
 
 ## Release notes
 
+2021-10-20
+
+Overhaul of setup for 2021 development on a Mac.
+
 2017-03-24
 `:PluginUpdate` was run to update all plugins. Should convert this setup to native plugin management soon.
 
@@ -55,10 +59,7 @@ Puma 2.9.1 (specify opt-dir or can configure bundler)
 ## Extras
 
   * Download [Source Code Pro](https://github.com/adobe/source-code-pro) and set iTerm preferences to use it
-  * [ansiweather](https://github.com/fcambus/ansiweather) should be cloned to `~/Projects` so that alias `weather` works. Configuration is done with the `ansiweatherrc` file.
   * [OS X shortcuts](http://mattgemmell.com/mac-keyboard-shortcuts/)
-  * [Sequel Pro](http://www.sequelpro.com/)
-  * [PG Commander](https://eggerapps.at/pgcommander/)
 
 ## OS X
 
@@ -207,6 +208,8 @@ Clone Vundle.
 ## Google Chrome
 
   * [Chrome keyboard shortcuts](https://developers.google.com/chrome-developer-tools/docs/shortcuts)
+  * Vimium plugin
+
 
 ```sh
 cmd-option-i # toggle web inspector
