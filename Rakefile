@@ -4,7 +4,7 @@ desc "install the dotfiles into home directory"
 task :dotfiles do
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README.md shortcuts.md].include?(file)
+    next if %w[Rakefile README.md config.fish].include?(file)
 
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all
@@ -27,6 +27,8 @@ task :dotfiles do
       link_file(file)
     end
   end
+
+  link_fish_config
 end
 
 desc "replace OS X defaults"
@@ -74,4 +76,11 @@ end
 def link_file(file)
   puts "linking ~/.#{file}"
   system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
+end
+
+def link_fish_config
+  local_config = "config.fish"
+  fish_config = File.join(ENV['HOME'], ".config", "fish", "config.fish")
+  puts "linking #{fish_config}"
+  system %Q{ln -sf "$PWD/#{local_config}" #{fish_config}}
 end

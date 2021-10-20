@@ -5,17 +5,27 @@ This is how I set up Mac OS for development.
 ## Summary
 
  * Mac OS <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>.
-  * Manually remap Caps Lock to Control
-  * Enable tap to click on touch pad
-  * Other customizations in this file: e.g. key repeat rata
-  * `xcode-select --install` to install compilation tools
- * Vim with native plugin management
+   * Manually remap Caps Lock to Control
+   * Enable tap to click on touch pad
+   * Other customizations in this file: e.g. key repeat rata
+   * `xcode-select --install` to install compilation tools
+ * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
+   * `ctags` to navigate files
+   * tpope/vim-rails
+   * kien/ctrlp
+   * <https://github.com/tacahiroy/ctrlp-funky>
+   * <git@github.com:tpope/vim-fugitive.git>
+   * <git@github.com:vim-ruby/vim-ruby.git>
+   * tcomment
  * iTerm
  * tmux with plugins
  * [Fish shell](https://fishshell.com/)
- * homebrew formulas in `Brewfile`
+   * Fisher plugins
+     * rbenv
  * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
- * gems that are used system wide, are in `gems`
+ * Git
+   * Global Git aliases/config in `gitconfig`
+   * Global Git ignore in `gitignore`
 
 ## Installation
 
@@ -50,6 +60,56 @@ Link homebrew openssl explicitly on El Capitan OS X, before installing the event
 Puma 2.9.1 (specify opt-dir or can configure bundler)
 <https://github.com/puma/puma/issues/783>
 `gem install puma -v '2.9.1' -- --with-opt-dir=/usr/local/opt/openssl`
+
+## Homebrew
+
+```
+# critcal
+rbenv
+ack
+nvm
+git
+bash-completion
+tmux
+reattach-to-user-namespace
+ctags
+gpg
+redis
+tldr
+jrnl
+
+# less critical
+nginx
+python
+wkhtmltopdf
+wget
+proctools
+fortune
+htop
+watch
+gcal
+dos2unix
+jq
+mplayer
+tree
+markdown
+tig
+hg
+ranger
+ngrok
+httpie
+pgcli
+ical-buddy
+readline
+pyenv # manage python version
+wrk # load testing, use wrk2
+pssh # parallel ssh
+lnav # log file viewer
+
+# cask
+cask install macdown # Mac OS Markdown editor
+```
+
 
 ## Extras
 

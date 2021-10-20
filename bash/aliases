@@ -77,11 +77,11 @@ alias killjobs="kill -9 `jobs -ps`"
 
 # misc OS X
 alias da='~/Projects/dotfiles/bash/domainavailable'
-alias fline="for file (*(ND-.)) IFS= read -re < $file" # cat first line for all files in this dir
+
+# TODO convert to function, problematic in fish shell
+#alias fline="for file (*(ND-.)) IFS= read -re < $file" # cat first line for all files in this dir
 alias mute='osascript -e "set Volume 0"'
 alias lowvol='osascript -e "set Volume 0.01"'
-alias cal="gcal" # gcal highlights the current day, install gcal via homebrew
-alias dimensions="sips -g pixelHeight -g pixelWidth " # specify path/to/image after alias
 alias camera="sudo killall VDCAssistant"
 alias dropthemic="sudo killall coreaudiod"
 
@@ -117,16 +117,8 @@ alias pglog="tail -f /usr/local/var/postgres/server.log"
 # installed postgres.app on OS X
 alias pgrestart="pg_ctl restart -D '/Users/andy/Library/Application Support/Postgres/var-9.3' -m fast"
 
-alias mvim="mvim -v"
 alias dnsflush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias flushdns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias rubyscript='printf "#!/usr/bin/env ruby \n\nprint \"Hello from a Ruby script!\"\n" >> ruby_script; chmod +x ruby_script; ./ruby_script'
-alias reload="source ~/.bash_profile"
-
-# https://github.com/fcambus/ansiweather
-# https://news.ycombinator.com/item?id=6587234
-# Update 2019: https://dev.to/mrtnrdl/my-favourite-aliases-39nn?utm_source=additional_box&utm_medium=internal&utm_campaign=regular&booster_org=
-alias weather="curl http://wttr.in/Minneapolis"
 
 # tmux aliases
 #alias tmux="TERM=screen-256color-bce tmux"
@@ -139,13 +131,13 @@ alias tls="tmux ls"
 #alias wifi="sudo ifconfig en0 down && sudo ifconfig en0 up"
 alias du="du -h" # human readable size
 alias jl="jrnl -n10"
-alias dbox="cd ~/Dropbox"
 alias isodate='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 
 alias readme="cd ~/Projects/dotfiles && vim README.md"
 alias js="jekyll serve"
 alias today='icalBuddy -f -iep "title,datetime" -po "datetime,title" -df "%RD" eventsToday'
 
+# TODO convert this to a function
 # OS X Back Up Photobooth Pics
 alias photobooth="cp ~/Pictures/Photo\ Booth\ Library/Pictures/* ~/Dropbox/photobooth-pics/" # set up ~/Dropbox/photobooth-pics/
 

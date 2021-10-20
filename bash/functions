@@ -32,8 +32,8 @@ killit() { pgrep $1 | sudo xargs kill -9; }
 
 function dff { diff --side-by-side $1 $2 | more; }
 
-function columns { psql -c "select column_name from information_schema.columns where table_schema = 'public' and table_name = '$1' order by column_name ASC"; }
-function tables { psql -c "SELECT * FROM pg_catalog.pg_tables"; }
+#function columns { psql -c "select column_name from information_schema.columns where table_schema = 'public' and table_name = '$1' order by column_name ASC"; }
+#function tables { psql -c "SELECT * FROM pg_catalog.pg_tables"; }
 
 # Zoom meetings
 # Using icalBuddy to read calendar event descriptions, with Zoom meeting IDs embedded

@@ -4,47 +4,20 @@ filetype off                  " required!
 set backspace=2 " make backspace work like most other programs
 set backspace=indent,eol,start
 
-" set the runtime path to include Vundle and initialize
-"set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#begin()
+" Optional plugins
+"'mileszs/ack.vim'
+"'scrooloose/nerdtree'
+"'danro/rename.vim'
+"'majutsushi/tagbar'
+"'terryma/vim-multiple-cursors'
+"'benmills/vimux'
+"'jgdavey/vim-turbux'
+"'vim-ruby/vim-ruby'
+"'MarcWeber/vim-addon-mw-utils'
+"'honza/vim-snippets'
+"'Lokaltog/vim-distinguished'
+"'scrooloose/syntastic'
 
-" let Vundle manage Vundle, required
-"Plugin 'VundleVim/Vundle.vim'
-"Plugin 'tpope/vim-fugitive'
-"Plugin 'mileszs/ack.vim'
-"Plugin 'fishman/ctags'
-"Plugin 'kien/ctrlp.vim'
-"Plugin 'tacahiroy/ctrlp-funky'
-"Plugin 'scrooloose/nerdtree'
-"Plugin 'danro/rename.vim'
-"Plugin 'majutsushi/tagbar'
-"Plugin 'tomtom/tcomment_vim'
-"Plugin 'tpope/vim-rails'
-"Plugin 'terryma/vim-multiple-cursors'
-"Plugin 'benmills/vimux'
-"Plugin 'jgdavey/vim-turbux'
-"Plugin 'vim-ruby/vim-ruby'
-"Plugin 'MarcWeber/vim-addon-mw-utils'
-"Plugin 'honza/vim-snippets'
-"Plugin 'Lokaltog/vim-distinguished'
-"Plugin 'scrooloose/syntastic'
-"Plugin 'tpope/vim-surround'
-"Plugin 'elixir-lang/vim-elixir'
-
-" All of your Plugins must be added before the following line
-"call vundle#end()            " required
-"filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 set number
 set hlsearch
