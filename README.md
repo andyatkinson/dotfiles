@@ -1,37 +1,30 @@
 # dotfiles
 
-This is how I set up my mac for development. Primarily Ruby on Rails web development. Other environments that are supported are Python, Node, Go.
+This is how I set up Mac OS for development.
 
- * dotfiles (vim with plugins, tmux, mysql, postgresql, etc.)
- * bash, iTerm, tmux, installed tmux plugin manager manually
+ * Mac OS <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>.
+  * Manually remap Caps Lock to Control
+  * Enable tap to click on touch pad
+  * Other customizations in this file: e.g. key repeat rata
+  * `xcode-select --install` to install compilation tools
+ * Vim with native plugin management
+ * iTerm
+ * tmux with plugins
+ * [Fish shell](https://fishshell.com/)
  * homebrew formulas in `Brewfile`
- * Node installed from their website
  * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
- * [npm](https://npmjs.org/) (node packages)
- * OS X <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>. Customize OS X.
  * gems that are used system wide, are in `gems`
-
-The bash directory has various bash shell scripts and configuration. Make sure to install the dotfiles.
-
-`xcode-select --install` will need to be run manually before any gem native extensions can be built, for example, the Nokogiri gem.
 
 
 ## Installation
 
-Clone this directory and run one or more of the following rake tasks.
-
-Install Vundle. [instructions](https://github.com/gmarik/Vundle.vim)
-
-To reinstall vim plugins, delete `~/.vim/bundle` and clone vundle, then run `vim +PluginInstall +qall` on the command line.
+Clone this directory and run one or more installation Rake tasks
 
 ```sh
 $ rake -T
 rake dotfiles       # install the dotfiles into home directory
-rake npm            # install npm packages
 rake os_x_defaults  # replace OS X defaults
 ```
-
-Note: `brew bundle` has been deprecated. For now the `Brewfile` serves as a list of packages.
 
 ## Release notes
 
@@ -58,7 +51,6 @@ Puma 2.9.1 (specify opt-dir or can configure bundler)
 
 ## Extras
 
-  * Download [Source Code Pro](https://github.com/adobe/source-code-pro) and set iTerm preferences to use it
   * [OS X shortcuts](http://mattgemmell.com/mac-keyboard-shortcuts/)
 
 ## OS X
@@ -176,13 +168,6 @@ Interesting help:
 | pgrep -f | -f is to match against full argument list, typically need this for a backgrounded rails console process name
 | ctrl-o-o | open last location <https://dev.to/jovica/3-little-known-but-useful-vim-tips-1pbg>
 
-## Vundle
-
-Clone Vundle.
-
-```sh
-:PluginInstall
-```
 
 ## bash
 
@@ -266,19 +251,6 @@ h # help
 m # toggle main view (useful to jump back and forth between code details and commit titles)
 ```
 
-## [ngrok](https://ngrok.com/)
-
-```sh
-ngrok start <server> # where <server> is defined in ~/.ngrok
-ngrok 3000 # serve a rails app on the default port
-ngrok -help
-open http://localhost:4040 # real-time interface to inbound requests
-```
-
-Symlink the file in to the following location: `~/.ngrok2/ngrok.yml`
-
-`ln -s "$PWD/ngrok.yml" "$HOME/.ngrok2/ngrok.yml"`
-
 ## [jrnl](http://maebert.github.io/jrnl/)
 
 Default config file: `~/.config/jrnl/jrnl.yaml`
@@ -295,18 +267,6 @@ jrnl --edit # edit old entries (unencrypted file)
 ```sh
 option-command-right arrow # right half
 option-command-f # full screen
-```
-
-## rbenv
-
-Installed `rbenv` from GitHub, but then `brew install ruby-build` for the `rbenv install` command.
-
-```sh
-rbenv install -l # list installable versions
-rbenv install 2.1.4 # install specific version
-rbenv version
-brew upgrade --HEAD ruby-build
-rbenv versions # list installed rubies
 ```
 
 ## Slack
@@ -404,8 +364,6 @@ open -a "IntelliJ IDEA" # open application when running Docker
 ```
 
 Plugin: Key Promoter
-
-## MS Teams
 
 ## VS Code
 
