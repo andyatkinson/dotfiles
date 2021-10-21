@@ -47,8 +47,8 @@
   grog = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
   originbrs = ls-remote --heads origin  | sed 's?.*refs/heads/??'
 [rerere]
-	enabled = true
-	autoupdate = true
+  enabled = true
+  autoupdate = true
 [grep]
   extendRegexp = true
   lineNumber = true
@@ -61,16 +61,16 @@
 [branch]
   autosetuprebase = always
 [url "https://github.com"]
-	insteadOf = git://github.com
+  insteadOf = git://github.com
 [url "https://github.com/"]
-	insteadOf = git://github.com:
+  insteadOf = git://github.com:
 [url "https://"]
-	insteadOf = git://
+  insteadOf = git://
 [merge]
-	conflictstyle = diff3
+  conflictstyle = diff3
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true

@@ -18,7 +18,6 @@ set backspace=indent,eol,start
 "'Lokaltog/vim-distinguished'
 "'scrooloose/syntastic'
 
-
 set number
 set hlsearch
 set incsearch
@@ -67,7 +66,6 @@ syntax on
 colorscheme distinguished
 
 filetype plugin indent on
-runtime macros/matchit.vim
 
 let mapleader = ","
 let g:mapleader = ","
