@@ -20,6 +20,7 @@ This is how I set up Mac OS for development.
  * iTerm
  * tmux with plugins
  * [Fish shell](https://fishshell.com/)
+   * <https://github.com/oh-my-fish/oh-my-fish>
  * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
  * Git
    * Global Git aliases/config in `gitconfig`
@@ -489,3 +490,5 @@ https://macdown.uranusjr.com/faq/#unidentified
 ## Fish shell
 
 * `Ctrl-f` - complete a suggestion
+* `fish_config` to launch the web based configuration
+* `omf install boxfish`
