@@ -105,6 +105,7 @@ pssh # parallel ssh
 lnav # log file viewer
 
 # cask
+cask install iterm2
 cask install macdown # Mac OS Markdown editor
 ```
 
@@ -484,3 +485,7 @@ https://macdown.uranusjr.com/faq/#unidentified
 <https://cli.github.com/>
 
 * `gh pr create [flags]`
+
+## Fish shell
+
+* `Ctrl-f` - complete a suggestion
