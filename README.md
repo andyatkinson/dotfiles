@@ -26,6 +26,7 @@ This is how I set up Mac OS for development.
  * Git
    * Global Git aliases/config in `gitconfig`
    * Global Git ignore in `gitignore`
+  * Fuzzy Finder <https://github.com/junegunn/fzf>
 
 ## Installation
 
@@ -499,3 +500,7 @@ https://macdown.uranusjr.com/faq/#unidentified
 * `Ctrl-f` - complete a suggestion
 * `fish_config` to launch the web based configuration
 * `omf install boxfish`
+
+## Fuzzy Finder
+
+* `history | fzf`

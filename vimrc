@@ -4,6 +4,9 @@ filetype off                  " required!
 set backspace=2 " make backspace work like most other programs
 set backspace=indent,eol,start
 
+" fzf - enable fuzzy finder in vim
+set rtp+=/usr/local/opt/fzf
+
 " Optional plugins
 "'mileszs/ack.vim'
 "'scrooloose/nerdtree'
