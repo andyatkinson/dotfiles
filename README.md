@@ -21,6 +21,7 @@ This is how I set up Mac OS for development.
  * tmux with plugins
  * [Fish shell](https://fishshell.com/)
    * <https://github.com/oh-my-fish/oh-my-fish>
+   * fisher
  * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
  * Git
    * Global Git aliases/config in `gitconfig`
@@ -76,6 +77,11 @@ gpg
 redis
 tldr
 jrnl
+
+# cask
+brew tap homebrew/cask-versions
+brew update
+brew tap caskroom/cask
 
 # less critical
 nginx
