@@ -500,7 +500,17 @@ https://macdown.uranusjr.com/faq/#unidentified
 * `Ctrl-f` - complete a suggestion
 * `fish_config` to launch the web based configuration
 * `omf install boxfish`
+* `cdh` plus letter or number, or `dirh` - list directory history
+* With background `jobs`, use `fg %1` to foreground job 1
 
 ## Fuzzy Finder
 
 * `history | fzf`
+
+## ripgrep
+
+<https://mariusschulz.com/blog/fast-searching-with-ripgrep>
+
+* `rg 'TODO' app/models` search the models directory
+* `rg --files-with-matches 'TODO' app/models/` # only files, or `-l`
+* `rg --files-with-matches 'TODO' app/models/ --sort path`
