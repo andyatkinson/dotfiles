@@ -77,11 +77,11 @@ alias killjobs="kill -9 `jobs -ps`"
 
 # misc OS X
 alias da='~/Projects/dotfiles/bash/domainavailable'
-alias fline="for file (*(ND-.)) IFS= read -re < $file" # cat first line for all files in this dir
+
+# TODO convert to function, problematic in fish shell
+#alias fline="for file (*(ND-.)) IFS= read -re < $file" # cat first line for all files in this dir
 alias mute='osascript -e "set Volume 0"'
 alias lowvol='osascript -e "set Volume 0.01"'
-alias cal="gcal" # gcal highlights the current day, install gcal via homebrew
-alias dimensions="sips -g pixelHeight -g pixelWidth " # specify path/to/image after alias
 alias camera="sudo killall VDCAssistant"
 alias dropthemic="sudo killall coreaudiod"
 
@@ -89,7 +89,6 @@ alias dropthemic="sudo killall coreaudiod"
 alias openvpn="/usr/local/bin/pgrep racoon | xargs sudo kill -9; osascript ~/Projects/applescripts/openvpn.applescript"
 
 alias pserver="open http://localhost:8080/ && python -m SimpleHTTPServer 8080"
-alias whatsrunning="lsof -i"
 alias ports='sudo lsof -iTCP -sTCP:LISTEN -P'
 alias myip='ifconfig|grep -A 4 "en0"|grep -oe "[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}.[[:digit:]]\{2,3\}[[:space:]]"|pbcopy;echo "copied IP to clipboard: ";pbpaste'
 alias cleannastydesktop="rm ~/Desktop/Screen\ shot\ *"
@@ -99,7 +98,8 @@ alias loghead="for file in log/*; do; echo "$file\n--"; head $file; echo "--\n";
 # nginx
 alias nstop="pgrep nginx | xargs sudo kill -9"
 alias nrestart="pgrep nginx | xargs sudo kill -9 && sudo /usr/local/sbin/nginx"
-alias nginx_error_log="tail -f /usr/local/Cellar/nginx/$(nginx -v 2>&1 | sed -En 's/.*([0-9]{1}\.[0-9]{1}\.[0-9]{1}$)/\1/p')/logs/error.log"
+#broken in fish shell 2021-10-20
+#alias nginx_error_log="tail -f /usr/local/Cellar/nginx/$(nginx -v 2>&1 | sed -En 's/.*([0-9]{1}\.[0-9]{1}\.[0-9]{1}$)/\1/p')/logs/error.log"
 
 # memcached
 alias mcd='memcached -d -l 127.0.0.1 -p 11211'
@@ -117,38 +117,27 @@ alias pglog="tail -f /usr/local/var/postgres/server.log"
 # installed postgres.app on OS X
 alias pgrestart="pg_ctl restart -D '/Users/andy/Library/Application Support/Postgres/var-9.3' -m fast"
 
-alias mvim="mvim -v"
 alias dnsflush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 alias flushdns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias rubyscript='printf "#!/usr/bin/env ruby \n\nprint \"Hello from a Ruby script!\"\n" >> ruby_script; chmod +x ruby_script; ./ruby_script'
-alias reload="source ~/.bash_profile"
-
-# https://github.com/fcambus/ansiweather
-# https://news.ycombinator.com/item?id=6587234
-# Update 2019: https://dev.to/mrtnrdl/my-favourite-aliases-39nn?utm_source=additional_box&utm_medium=internal&utm_campaign=regular&booster_org=
-alias weather="curl http://wttr.in/Minneapolis"
-
-# use OS X QuickLook to open files from terminal
-alias qlf='qlmanage -p "$@" >> /dev/null'
 
 # tmux aliases
-alias tmux="TERM=screen-256color-bce tmux"
+#alias tmux="TERM=screen-256color-bce tmux"
 alias ta="tmux attach"
 alias tls="tmux ls"
-alias tmn="tmux new-session -t stuff"
 
 # misc
 # bounce wi-fi (ifconfig showed it is en0 on MBP)
-alias wifi="sudo ifconfig en0 down && sudo ifconfig en0 up"
+#broken 2021-10-20 fix this one seems useful
+#alias wifi="sudo ifconfig en0 down && sudo ifconfig en0 up"
 alias du="du -h" # human readable size
 alias jl="jrnl -n10"
-alias dbox="cd ~/Dropbox"
 alias isodate='date -u +"%Y-%m-%dT%H:%M:%SZ"'
 
 alias readme="cd ~/Projects/dotfiles && vim README.md"
 alias js="jekyll serve"
 alias today='icalBuddy -f -iep "title,datetime" -po "datetime,title" -df "%RD" eventsToday'
 
+# TODO convert this to a function
 # OS X Back Up Photobooth Pics
 alias photobooth="cp ~/Pictures/Photo\ Booth\ Library/Pictures/* ~/Dropbox/photobooth-pics/" # set up ~/Dropbox/photobooth-pics/
 

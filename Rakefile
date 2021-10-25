@@ -4,7 +4,7 @@ desc "install the dotfiles into home directory"
 task :dotfiles do
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README.md shortcuts.md ngrok.yml chrome_extensions.md].include?(file)
+    next if %w[Rakefile README.md config.fish].include?(file)
 
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all
@@ -27,15 +27,8 @@ task :dotfiles do
       link_file(file)
     end
   end
-end
 
-desc "install npm packages"
-task :npm do
-  # should add /usr/local/bin/coffee
-  npm_packages = %w[ coffee-script grunt grunt-cli grunt-ember-templates bower browserify tldr ]
-  npm_packages.each do |package|
-    system "npm install -g #{package}"
-  end
+  link_fish_config
 end
 
 desc "replace OS X defaults"
@@ -73,14 +66,21 @@ task :os_x_defaults do
   system %Q{defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false}
 end
 
-
 private
-  def replace_file(file)
-    system %Q{rm "$HOME/.#{file}"}
-    link_file(file)
-  end
 
-  def link_file(file)
-    puts "linking ~/.#{file}"
-    system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
-  end
+def replace_file(file)
+  system %Q{rm "$HOME/.#{file}"}
+  link_file(file)
+end
+
+def link_file(file)
+  puts "linking ~/.#{file}"
+  system %Q{ln -s "$PWD/#{file}" "$HOME/.#{file}"}
+end
+
+def link_fish_config
+  local_config = "config.fish"
+  fish_config = File.join(ENV['HOME'], ".config", "fish", "config.fish")
+  puts "linking #{fish_config}"
+  system %Q{ln -sf "$PWD/#{local_config}" #{fish_config}}
+end

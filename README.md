@@ -1,39 +1,50 @@
 # dotfiles
 
-This is how I set up my mac for development. Primarily Ruby on Rails web development. Other environments that are supported are Python, Node, Go.
+This is how I set up Mac OS for development.
 
- * dotfiles (vim with plugins, tmux, mysql, postgresql, etc.)
- * bash, iTerm, tmux, installed tmux plugin manager manually
- * homebrew formulas in `Brewfile`
- * Node installed from their website
+## Summary
+
+ * Mac OS <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>.
+   * Manually remap Caps Lock to Control
+   * Manually enable Control with Accessibility + Zoom + Scroll to zoom in
+   * Enable tap to click on touch pad
+   * Other customizations in this file: e.g. key repeat rata
+   * `xcode-select --install` to install compilation tools
+ * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
+   * `ctags` to navigate files
+   * tpope/vim-rails
+   * <git@github.com:junegunn/fzf.vim.git>
+   * <git@github.com:tpope/vim-fugitive.git>
+   * <git@github.com:vim-ruby/vim-ruby.git>
+   * tcomment
+ * iTerm
+ * tmux with plugins
+ * [Fish shell](https://fishshell.com/)
+   * <https://github.com/oh-my-fish/oh-my-fish>
+   * fisher
  * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
- * [npm](https://npmjs.org/) (node packages)
- * OS X <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>. Customize OS X.
- * gems that are used system wide, are in `gems`
-
-The bash directory has various bash shell scripts and configuration. Make sure to install the dotfiles.
-
-`xcode-select --install` will need to be run manually before any gem native extensions can be built, for example, the Nokogiri gem.
-
+ * Git
+   * Global Git aliases/config in `gitconfig`
+   * Global Git ignore in `gitignore`
+  * Fuzzy Finder <https://github.com/junegunn/fzf>
 
 ## Installation
 
-Clone this directory and run one or more of the following rake tasks.
-
-Install Vundle. [instructions](https://github.com/gmarik/Vundle.vim)
-
-To reinstall vim plugins, delete `~/.vim/bundle` and clone vundle, then run `vim +PluginInstall +qall` on the command line.
+Clone this directory and run one or more installation Rake tasks
 
 ```sh
 $ rake -T
 rake dotfiles       # install the dotfiles into home directory
-rake npm            # install npm packages
 rake os_x_defaults  # replace OS X defaults
 ```
 
-Note: `brew bundle` has been deprecated. For now the `Brewfile` serves as a list of packages.
-
 ## Release notes
+
+2021-10-20
+
+Overhaul of setup for 2021 development on a Mac.
+Introduction of new things: GH CLI, Fish shell
+Removed: ctrl-p, ctrl-p funky, tagbar, mustache templating, goyo vim, ack vim
 
 2017-03-24
 `:PluginUpdate` was run to update all plugins. Should convert this setup to native plugin management soon.
@@ -51,14 +62,65 @@ Puma 2.9.1 (specify opt-dir or can configure bundler)
 <https://github.com/puma/puma/issues/783>
 `gem install puma -v '2.9.1' -- --with-opt-dir=/usr/local/opt/openssl`
 
+## Homebrew
+
+```
+# critcal
+rbenv
+ack
+nvm
+git
+bash-completion
+tmux
+reattach-to-user-namespace
+ctags
+gpg
+redis
+tldr
+jrnl
+
+# cask
+brew tap homebrew/cask-versions
+brew update
+brew tap caskroom/cask
+
+# less critical
+nginx
+python
+wkhtmltopdf
+wget
+proctools
+fortune
+htop
+watch
+gcal
+dos2unix
+jq
+mplayer
+tree
+markdown
+tig
+hg
+ranger
+ngrok
+httpie
+pgcli
+ical-buddy
+readline
+pyenv # manage python version
+wrk # load testing, use wrk2
+pssh # parallel ssh
+lnav # log file viewer
+
+# cask
+cask install iterm2
+cask install macdown # Mac OS Markdown editor
+```
+
 
 ## Extras
 
-  * Download [Source Code Pro](https://github.com/adobe/source-code-pro) and set iTerm preferences to use it
-  * [ansiweather](https://github.com/fcambus/ansiweather) should be cloned to `~/Projects` so that alias `weather` works. Configuration is done with the `ansiweatherrc` file.
   * [OS X shortcuts](http://mattgemmell.com/mac-keyboard-shortcuts/)
-  * [Sequel Pro](http://www.sequelpro.com/)
-  * [PG Commander](https://eggerapps.at/pgcommander/)
 
 ## OS X
 
@@ -175,13 +237,6 @@ Interesting help:
 | pgrep -f | -f is to match against full argument list, typically need this for a backgrounded rails console process name
 | ctrl-o-o | open last location <https://dev.to/jovica/3-little-known-but-useful-vim-tips-1pbg>
 
-## Vundle
-
-Clone Vundle.
-
-```sh
-:PluginInstall
-```
 
 ## bash
 
@@ -207,6 +262,8 @@ Clone Vundle.
 ## Google Chrome
 
   * [Chrome keyboard shortcuts](https://developers.google.com/chrome-developer-tools/docs/shortcuts)
+  * Vimium plugin
+
 
 ```sh
 cmd-option-i # toggle web inspector
@@ -263,19 +320,6 @@ h # help
 m # toggle main view (useful to jump back and forth between code details and commit titles)
 ```
 
-## [ngrok](https://ngrok.com/)
-
-```sh
-ngrok start <server> # where <server> is defined in ~/.ngrok
-ngrok 3000 # serve a rails app on the default port
-ngrok -help
-open http://localhost:4040 # real-time interface to inbound requests
-```
-
-Symlink the file in to the following location: `~/.ngrok2/ngrok.yml`
-
-`ln -s "$PWD/ngrok.yml" "$HOME/.ngrok2/ngrok.yml"`
-
 ## [jrnl](http://maebert.github.io/jrnl/)
 
 Default config file: `~/.config/jrnl/jrnl.yaml`
@@ -292,18 +336,6 @@ jrnl --edit # edit old entries (unencrypted file)
 ```sh
 option-command-right arrow # right half
 option-command-f # full screen
-```
-
-## rbenv
-
-Installed `rbenv` from GitHub, but then `brew install ruby-build` for the `rbenv install` command.
-
-```sh
-rbenv install -l # list installable versions
-rbenv install 2.1.4 # install specific version
-rbenv version
-brew upgrade --HEAD ruby-build
-rbenv versions # list installed rubies
 ```
 
 ## Slack
@@ -402,13 +434,12 @@ open -a "IntelliJ IDEA" # open application when running Docker
 
 Plugin: Key Promoter
 
-## MS Teams
-
 ## VS Code
 
 - `Shift-command-V` opens preview but in same window
 - `Command-K + V` opens side by side markdown preview for `.md` file
 - Column selection: `shift-option` + mouse
+- Format SQL queries: <https://stackoverflow.com/a/66873825>
 
 ## Zoom
 
@@ -457,3 +488,30 @@ gore # Go lang REPL
 
 Markdown editor for OS X. Workaround for being a unidentified developer:
 https://macdown.uranusjr.com/faq/#unidentified
+
+## GitHub CLI
+
+<https://cli.github.com/>
+
+* `gh pr create [flags]`
+
+## Fish shell
+
+* `Ctrl-f` - complete a suggestion
+* `fish_config` to launch the web based configuration
+* `omf install boxfish`
+* `cdh` plus letter or number, or `dirh` - list directory history
+* With background `jobs`, use `fg %1` to foreground job 1
+
+## Fuzzy Finder
+
+* `vim (fzf)`
+* `history | fzf`
+
+## ripgrep
+
+<https://mariusschulz.com/blog/fast-searching-with-ripgrep>
+
+* `rg 'TODO' app/models` search the models directory
+* `rg --files-with-matches 'TODO' app/models/` # only files, or `-l`
+* `rg --files-with-matches 'TODO' app/models/ --sort path`
