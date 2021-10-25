@@ -6,6 +6,7 @@ This is how I set up Mac OS for development.
 
  * Mac OS <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>.
    * Manually remap Caps Lock to Control
+   * Manually enable Control with Accessibility + Zoom + Scroll to zoom in
    * Enable tap to click on touch pad
    * Other customizations in this file: e.g. key repeat rata
    * `xcode-select --install` to install compilation tools
