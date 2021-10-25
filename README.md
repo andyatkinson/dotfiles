@@ -27,6 +27,7 @@ This is how I set up Mac OS for development.
    * Global Git aliases/config in `gitconfig`
    * Global Git ignore in `gitignore`
   * Fuzzy Finder <https://github.com/junegunn/fzf>
+  * ripgrep (rg)
 
 ## Installation
 
@@ -436,10 +437,11 @@ Plugin: Key Promoter
 
 ## VS Code
 
+- Marp for VS Code
 - `Shift-command-V` opens preview but in same window
 - `Command-K + V` opens side by side markdown preview for `.md` file
 - Column selection: `shift-option` + mouse
-- Format SQL queries: <https://stackoverflow.com/a/66873825>
+- Format SQL queries: SQL Tools <https://stackoverflow.com/a/66873825>
 
 ## Zoom
 
@@ -512,6 +514,6 @@ https://macdown.uranusjr.com/faq/#unidentified
 
 <https://mariusschulz.com/blog/fast-searching-with-ripgrep>
 
-* `rg 'TODO' app/models` search the models directory
-* `rg --files-with-matches 'TODO' app/models/` # only files, or `-l`
-* `rg --files-with-matches 'TODO' app/models/ --sort path`
+* `rg TODO app/models` search the models directory
+* `rg --files-with-matches TODO app/models/` # only files, or `-l`
+* `rg --files-with-matches TODO app/models/ --sort path`

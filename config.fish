@@ -62,3 +62,11 @@ alias gdh "git diff HEAD" # diff the unstaged changes
 alias gdm "git diff master"
 alias gdms "git diff master --stat"
 alias gdmss "git diff master --shortstat"
+
+
+
+##### FUNCTIONS #####
+
+function dict
+  open dict:///"$argv"
+end
