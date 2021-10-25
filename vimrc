@@ -19,7 +19,8 @@ set rtp+=/usr/local/opt/fzf
 "'MarcWeber/vim-addon-mw-utils'
 "'honza/vim-snippets'
 "'Lokaltog/vim-distinguished'
-"'scrooloose/syntastic'
+"'scrooloose/syntastic' === Note: remove key mappings too if this remains
+"unused
 
 set number
 set hlsearch
@@ -38,7 +39,11 @@ set shiftwidth=2
 set autoindent
 set history=1000
 set undolevels=1000
+
 set wildignore=*.swp,*.bak
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
+set wildignore+=*/lib/ext/*
+
 set title
 set nobackup " never let Vim write a backup file! http://nvie.com/posts/how-i-boosted-my-vim/
 set noswapfile
@@ -53,7 +58,6 @@ set spelllang=en_us
 set wildmode=longest,list " set up bash-style tab-completion
 set grepprg=ack
 set scrolloff=9999 " set cursor in middle of the screen when searching
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip  " MacOSX/Linux
 set splitbelow " http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
 set splitright
 set formatoptions-=or " disable automatic comment prefix
@@ -105,8 +109,6 @@ vmap <D-]> >gv
 " recognize .md files as markdown files
 " au BufRead,BufNewFile *.md set filetype=markdown
 
-nmap <F8> :TagbarToggle<CR>
-
 " use ~/.vimbuffer file to copy and paste between vim instances
 vmap <C-c> :w! ~/.vimbuffer<CR>
 nmap <C-c> :.w! ~/.vimbuffer<CR>
@@ -116,29 +118,9 @@ map <C-v><C-v> :r ~/.vimbuffer<CR>
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
-" CtrlP plugin mappings https://github.com/kien/ctrlp.vim
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_show_hidden = 1
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-nmap <leader>p :CtrlP<cr>
-nmap <leader>b :CtrlPBuffer<cr>
-" Re-use the nerdtree window
-let g:ctrlp_dont_split = 'nerdtree'
-
-" Ctrlp-funky function matching, ctrl-p plugin
-" https://github.com/tacahiroy/ctrlp-funky
-nmap <leader>f :CtrlPFunky<CR>
-set wildignore+=*/lib/ext/*
 
 map! jk <ESC>:w<ESC>
 
-" coffeescript
-" autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
-
-" mustache and handlebars vim plugin
-" https://github.com/mustache/vim-mustache-handlebars
-let g:mustache_abbreviations = 1
 
 " faster navigation between split windows
 " http://od-eon.com/blogs/kaunghtet/vim-working-multiple-split-windows/
@@ -147,15 +129,12 @@ nmap <C-k> <C-w>k
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
 
-" goyo https://github.com/junegunn/goyo.vim
-nnoremap <silent> <leader>z :Goyo<cr>
 
 nnoremap <leader><leader> <c-^>
 
 " don't open man page
 nnoremap K <Nop>
 
-nmap <leader>a :Ack<space>
 map <silent> <leader>g :Git blame<cr>
 
 " for cscope
@@ -173,6 +152,7 @@ nnoremap <silent> ct :!ctags -R .<CR>
 
 let g:zipPlugin_ext = '*.zip,*.jar,*.xpi,*.ja,*.war,*.ear,*.celzip,*.oxt,*.kmz,*.wsz,*.xap,*.docx,*.docm,*.dotx,*.dotm,*.potx,*.potm,*.ppsx,*.ppsm,*.pptx,*.pptm,*.ppam,*.sldx,*.thmx,*.crtx,*.vdw,*.glox,*.gcsx,*.gqsx'
 
+" 2021: delete this if it's unused
 " http://blog.joncairns.com/2014/10/evaluate-ruby-or-any-command-and-insert-into-vim-buffers/
 function! InsertCommand(command)
   redir => output
@@ -205,22 +185,12 @@ nmap <leader>r :redraw!<CR>
 " copy file path to clipboard! http://stackoverflow.com/a/954336/126688
 noremap <silent> <F4> :let @+=expand("%:p")<CR>
 
-let g:jsx_ext_required = 0 " Allow JSX in normal JS files
-
 let g:syntastic_javascript_checkers = ['eslint']
 
 " https://jaxbot.me/articles/setting-up-vim-for-react-js-jsx-02-03-2015
 let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 
-let g:ctrlp_use_caching = 0
-if executable('ag')
-    set grepprg=ag\ --nogroup\ --nocolor
+nmap <C-P> :FZF<CR>
 
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-else
-  let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
-  let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<space>', '<cr>', '<2-LeftMouse>'],
-    \ }
-endif
+nmap <leader>p :FZF<cr>

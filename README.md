@@ -13,8 +13,7 @@ This is how I set up Mac OS for development.
  * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
    * `ctags` to navigate files
    * tpope/vim-rails
-   * kien/ctrlp
-   * <https://github.com/tacahiroy/ctrlp-funky>
+   * <git@github.com:junegunn/fzf.vim.git>
    * <git@github.com:tpope/vim-fugitive.git>
    * <git@github.com:vim-ruby/vim-ruby.git>
    * tcomment
@@ -44,8 +43,8 @@ rake os_x_defaults  # replace OS X defaults
 2021-10-20
 
 Overhaul of setup for 2021 development on a Mac.
-
 Introduction of new things: GH CLI, Fish shell
+Removed: ctrl-p, ctrl-p funky, tagbar, mustache templating, goyo vim, ack vim
 
 2017-03-24
 `:PluginUpdate` was run to update all plugins. Should convert this setup to native plugin management soon.
