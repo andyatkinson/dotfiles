@@ -505,6 +505,7 @@ https://macdown.uranusjr.com/faq/#unidentified
 
 ## Fuzzy Finder
 
+* `vim (fzf)`
 * `history | fzf`
 
 ## ripgrep
