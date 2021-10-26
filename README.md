@@ -112,6 +112,7 @@ pyenv # manage python version
 wrk # load testing, use wrk2
 pssh # parallel ssh
 lnav # log file viewer
+brew tap heroku/brew && brew install heroku
 
 # cask
 cask install iterm2
