@@ -80,11 +80,6 @@ redis
 tldr
 jrnl
 
-# cask
-brew tap homebrew/cask-versions
-brew update
-brew tap caskroom/cask
-
 # less critical
 nginx
 python
@@ -115,8 +110,15 @@ lnav # log file viewer
 brew tap heroku/brew && brew install heroku
 
 # cask
-cask install iterm2
-cask install macdown # Mac OS Markdown editor
+brew tap homebrew/cask-versions
+brew update
+brew tap caskroom/cask
+
+# cask Mac OS apps
+install --cask rectangle
+install --cask iterm2
+install --cask macdown # Mac OS Markdown editor
+install --cask dropbox
 ```
 
 
@@ -518,3 +520,7 @@ https://macdown.uranusjr.com/faq/#unidentified
 * `rg TODO app/models` search the models directory
 * `rg --files-with-matches TODO app/models/` # only files, or `-l`
 * `rg --files-with-matches TODO app/models/ --sort path`
+
+## Rectangle
+
+<https://github.com/rxhanson/Rectangle>
