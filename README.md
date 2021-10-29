@@ -10,6 +10,7 @@ This is how I set up Mac OS for development.
    * Enable tap to click on touch pad
    * Other customizations in this file: e.g. key repeat rata
    * `xcode-select --install` to install compilation tools
+   * Uninstall `Garage Band`, `Pages` etc. on a work machine where they won't be used
  * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
    * `ctags` to navigate files
    * tpope/vim-rails
@@ -499,6 +500,11 @@ https://macdown.uranusjr.com/faq/#unidentified
 <https://cli.github.com/>
 
 * `gh pr create [flags]`
+
+## GitHub
+
+* `T`
+* `Command-K`
 
 ## Fish shell
 

@@ -33,15 +33,15 @@ end
 
 desc "replace OS X defaults"
 task :os_x_defaults do
-  #1 thanks! https://gist.github.com/saetia/1623487
-  #1
-  ## Set a shorter Delay until key repeat
+  # thanks! https://gist.github.com/saetia/1623487
+  # Fonts
+  # Set a shorter Delay until key repeat
   system %Q{defaults write NSGlobalDomain InitialKeyRepeat -int 12}
 
   puts "changing key repeat rate. normal minimum is 2 (30ms). Set to 0, 1, or 2."
   # Set a blazingly fast keyboard repeat rate
   system %Q{defaults write NSGlobalDomain KeyRepeat -int 1}
-  #system %Q{defaults write -g KeyRepeat -int 0}
+  # system %Q{defaults write -g KeyRepeat -int 0}
 
   puts "disable sound effect when changing volume. Requires log-out/log-in to take effect."
   system %Q{defaults write -g com.apple.sound.beep.feedback -integer 0}
@@ -64,6 +64,16 @@ task :os_x_defaults do
 
   puts "allow key repeat in intellij idea editor"
   system %Q{defaults write com.jetbrains.intellij ApplePressAndHoldEnabled -bool false}
+
+  # Fixing blurry fonts https://www.cleverfiles.com/help/mac-fonts-text-blurry.html
+  # I thought "3" looked the best between disabled completely and the max value.
+  # Particularly noticed in the OS top left area fonts on a LG 32" 4K monitor.
+  # Would still prefer it to be more crisp but this is not a Retina display
+  puts "Disable font smoothing - maybe in Mac OS Big Sur"
+  #system %Q{defaults -currentHost write -g AppleFontSmoothing -int 0}
+  system %Q{defaults -currentHost write -g AppleFontSmoothing -int 3}
+
+
 end
 
 private
