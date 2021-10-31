@@ -120,6 +120,7 @@ install --cask rectangle
 install --cask iterm2
 install --cask macdown # Mac OS Markdown editor
 install --cask dropbox
+install --cask lyricsx
 ```
 
 
