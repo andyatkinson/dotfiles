@@ -191,6 +191,12 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 
+" opens ":Files" search across files
 nmap <C-P> :FZF<CR>
-
 nmap <leader>p :FZF<cr>
+
+" Fuzzy finder, search within a file
+nnoremap <silent> <Leader>f :Rg<CR>
+
+" Fuzzy finder, search for files within buffers list
+nnoremap <silent> <Leader>b :Buffers<CR>

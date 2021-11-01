@@ -28,6 +28,7 @@ This is how I set up Mac OS for development.
    * Global Git aliases/config in `gitconfig`
    * Global Git ignore in `gitignore`
   * Fuzzy Finder <https://github.com/junegunn/fzf>
+    * <https://dev.to/iggredible/how-to-search-faster-in-vim-with-fzf-vim-36ko>
   * ripgrep (rg)
 
 ## Installation
@@ -530,6 +531,8 @@ https://macdown.uranusjr.com/faq/#unidentified
 
 * `vim (fzf)`
 * `history | fzf`
+* `:Rg` within Vim to search within files
+* `:Buffers`
 
 ## ripgrep
 
