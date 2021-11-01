@@ -5,7 +5,7 @@ This is how I set up Mac OS for development.
 ## Summary
 
  * Mac OS <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>.
-   * Manually remap Caps Lock to Control
+   * Manually remap Caps Lock to Control, for each keyboard!
    * Manually enable Control with Accessibility + Zoom + Scroll to zoom in
    * Enable tap to click on touch pad
    * Other customizations in this file: e.g. key repeat rata
@@ -121,6 +121,7 @@ install --cask iterm2
 install --cask macdown # Mac OS Markdown editor
 install --cask dropbox
 install --cask lyricsx
+brew install --cask lunar # adjust brightness of LG display
 ```
 
 
