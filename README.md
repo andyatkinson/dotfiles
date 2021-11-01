@@ -40,7 +40,16 @@ rake dotfiles       # install the dotfiles into home directory
 rake os_x_defaults  # replace OS X defaults
 ```
 
+## Fonts
+
+* [11 Best Programming Fonts](https://itnext.io/11-best-programming-fonts-724283a9ed57)
+  * I'm trying out `Hack`
+
 ## Release notes
+
+2021-11-01
+
+Added Fonts
 
 2021-10-20
 
