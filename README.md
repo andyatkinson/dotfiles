@@ -338,7 +338,8 @@ m # toggle main view (useful to jump back and forth between code details and com
 
 ## [jrnl](http://maebert.github.io/jrnl/)
 
-Default config file: `~/.config/jrnl/jrnl.yaml`
+* Default config file: `~/.config/jrnl/jrnl.yaml`
+* Configure editor in the config file
 
 ```sh
 jrnl # enter compose mode
