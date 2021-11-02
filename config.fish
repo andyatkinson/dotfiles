@@ -1,5 +1,5 @@
 
-set -g CDPATH ~/Projects:~/Dropbox
+set -g CDPATH . ~/Projects ~/Dropbox
 
 set -U fish_user_paths /usr/local/bin $fish_user_paths
 
