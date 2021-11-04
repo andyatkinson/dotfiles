@@ -11,6 +11,7 @@ This is how I set up Mac OS for development.
    * Other customizations in this file: e.g. key repeat rata
    * `xcode-select --install` to install compilation tools
    * Uninstall `Garage Band`, `Pages` etc. on a work machine where they won't be used
+   * Make the bottom dock useful - remove all the content creation apps that aren't used
  * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
    * `ctags` to navigate files
    * tpope/vim-rails
