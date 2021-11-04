@@ -90,6 +90,7 @@ gpg
 redis
 tldr
 jrnl
+glow
 
 # less critical
 nginx
@@ -545,3 +546,23 @@ https://macdown.uranusjr.com/faq/#unidentified
 ## Rectangle
 
 <https://github.com/rxhanson/Rectangle>
+
+## glow
+
+Command line Markdown!
+
+Set a config file to set a pager and other stuff
+
+* `glow --config`
+* Edit that file with:
+
+```
+# show local files only; no network (TUI-mode only)
+local: true
+# mouse support (TUI-mode only)
+mouse: true
+# use pager to display markdown
+pager: true
+# word-wrap at width
+width: 80
+```
