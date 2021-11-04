@@ -15,6 +15,8 @@ fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
 # Set the colors of directories and files https://stackoverflow.com/a/25563976
 set -Ux LSCOLORS gxfxbEaEBxxEhEhBaDaCaD
 
+# Set Editor
+set -Ux EDITOR vim
 
 ### Aliases https://stackoverflow.com/a/2763014
 alias b "bundle"

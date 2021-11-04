@@ -14,9 +14,9 @@ This is how I set up Mac OS for development.
  * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
    * `ctags` to navigate files
    * tpope/vim-rails
-   * <git@github.com:junegunn/fzf.vim.git>
-   * <git@github.com:tpope/vim-fugitive.git>
-   * <git@github.com:vim-ruby/vim-ruby.git>
+   * git@github.com:junegunn/fzf.vim.git
+   * git@github.com:tpope/vim-fugitive.git
+   * git@github.com:vim-ruby/vim-ruby.git
    * tcomment
  * iTerm
  * tmux with plugins
