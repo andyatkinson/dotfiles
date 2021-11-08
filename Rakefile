@@ -29,6 +29,7 @@ task :dotfiles do
   end
 
   link_fish_config
+  link_jrnl_config
 end
 
 desc "replace OS X defaults"
@@ -93,4 +94,11 @@ def link_fish_config
   fish_config = File.join(ENV['HOME'], ".config", "fish", "config.fish")
   puts "linking #{fish_config}"
   system %Q{ln -sf "$PWD/#{local_config}" #{fish_config}}
+end
+
+def link_jrnl_config
+  local_config = "jrnl.yaml"
+  jrnl_config = File.join(ENV['HOME'], ".config", "jrnl", "jrnl.yaml")
+  puts "linking #{jrnl_config}"
+  system %Q{ln -sf "$PWD/#{local_config}" #{jrnl_config}}
 end
