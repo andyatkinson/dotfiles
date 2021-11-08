@@ -74,6 +74,9 @@ task :os_x_defaults do
   #system %Q{defaults -currentHost write -g AppleFontSmoothing -int 0}
   system %Q{defaults -currentHost write -g AppleFontSmoothing -int 3}
 
+  # app switcher on both screens
+  system %Q{defaults write com.apple.Dock appswitcher-all-displays -bool true
+  killall Dock}
 
 end
 
