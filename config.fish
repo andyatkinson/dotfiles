@@ -72,3 +72,15 @@ alias gdmss "git diff master --shortstat"
 function dict
   open dict:///"$argv"
 end
+
+### Ruby time
+alias bers "bundle exec rails server"
+alias berc "bundle exec rails console"
+
+function be
+  bundle exec $argv
+end
+
+function bersp
+  bundle exec rspec $argv
+end
