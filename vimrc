@@ -8,8 +8,6 @@ set backspace=indent,eol,start
 set rtp+=/usr/local/opt/fzf
 
 " Optional plugins
-"'mileszs/ack.vim'
-"'scrooloose/nerdtree'
 "'danro/rename.vim'
 "'majutsushi/tagbar'
 "'terryma/vim-multiple-cursors'
@@ -18,9 +16,6 @@ set rtp+=/usr/local/opt/fzf
 "'vim-ruby/vim-ruby'
 "'MarcWeber/vim-addon-mw-utils'
 "'honza/vim-snippets'
-"'Lokaltog/vim-distinguished'
-"'scrooloose/syntastic' === Note: remove key mappings too if this remains
-"unused
 
 set number
 set hlsearch
@@ -69,8 +64,8 @@ syntax sync minlines=256 " http://stackoverflow.com/a/7187629/126688
 syntax enable
 syntax on
 
-" disable managing this via vundle plugin
-colorscheme distinguished
+set background=dark
+colorscheme PaperColor
 
 filetype plugin indent on
 

@@ -13,12 +13,13 @@ This is how I set up Mac OS for development.
    * Uninstall `Garage Band`, `Pages` etc. on a work machine where they won't be used
    * Make the bottom dock useful - remove all the content creation apps that aren't used
  * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
-   * `ctags` to navigate files
-   * tpope/vim-rails
-   * git@github.com:junegunn/fzf.vim.git
-   * git@github.com:tpope/vim-fugitive.git
-   * git@github.com:vim-ruby/vim-ruby.git
-   * tcomment
+   ```
+   git@github.com:tpope/vim-rails.git
+   git@github.com:junegunn/fzf.vim.git
+   git@github.com:tpope/vim-fugitive.git
+   git@github.com:vim-ruby/vim-ruby.git
+   git@github.com:tomtom/tcomment_vim.git
+   ```
  * iTerm
  * tmux with plugins
  * [Fish shell](https://fishshell.com/)

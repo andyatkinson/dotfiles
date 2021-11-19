@@ -1,4 +1,3 @@
-
 set -g CDPATH . ~/Projects ~/Dropbox
 
 set -U fish_user_paths /usr/local/bin $fish_user_paths
@@ -13,7 +12,7 @@ rbenv rehash >/dev/null 2>&1
 fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Set the colors of directories and files https://stackoverflow.com/a/25563976
-set -Ux LSCOLORS gxfxbEaEBxxEhEhBaDaCaD
+set -Ux LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
 
 # Set Editor
 set -Ux EDITOR vim
