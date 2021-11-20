@@ -25,6 +25,8 @@ This is how I set up Mac OS for development.
  * [Fish shell](https://fishshell.com/)
    * <https://github.com/oh-my-fish/oh-my-fish>
    * fisher
+   * `fisher install jorgebucaran/nvm.fish`
+     * `nvm install latest`
  * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
  * Git
    * Global Git aliases/config in `gitconfig`
