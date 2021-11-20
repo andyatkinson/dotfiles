@@ -80,8 +80,8 @@ Puma 2.9.1 (specify opt-dir or can configure bundler)
 
 ```
 # critcal
+ripgrep
 rbenv
-ack
 nvm
 git
 bash-completion
