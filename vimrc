@@ -7,16 +7,6 @@ set backspace=indent,eol,start
 " fzf - enable fuzzy finder in vim
 set rtp+=/usr/local/opt/fzf
 
-" Optional plugins
-"'danro/rename.vim'
-"'majutsushi/tagbar'
-"'terryma/vim-multiple-cursors'
-"'benmills/vimux'
-"'jgdavey/vim-turbux'
-"'vim-ruby/vim-ruby'
-"'MarcWeber/vim-addon-mw-utils'
-"'honza/vim-snippets'
-
 set number
 set hlsearch
 set incsearch
@@ -63,6 +53,7 @@ set lazyredraw
 syntax sync minlines=256 " http://stackoverflow.com/a/7187629/126688
 syntax enable
 syntax on
+set re=2
 
 set background=dark
 colorscheme PaperColor
