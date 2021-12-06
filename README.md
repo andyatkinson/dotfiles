@@ -138,6 +138,7 @@ install --cask macdown # Mac OS Markdown editor
 install --cask dropbox
 install --cask lyricsx
 brew install --cask lunar # adjust brightness of LG display
+brew install --cask sourcetree
 ```
 
 
