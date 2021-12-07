@@ -1,5 +1,11 @@
 require 'rake'
 
+desc "Install"
+task :install do
+  Rake::Task['dotfiles'].invoke
+  Rake::Task['mac_os_defaults'].invoke
+end
+
 desc "install the dotfiles into home directory"
 task :dotfiles do
   replace_all = false
@@ -32,8 +38,8 @@ task :dotfiles do
   link_jrnl_config
 end
 
-desc "replace OS X defaults"
-task :os_x_defaults do
+desc "Set Mac OS defaults"
+task :mac_os_defaults do
   # thanks! https://gist.github.com/saetia/1623487
   # Fonts
   # Set a shorter Delay until key repeat
@@ -78,6 +84,10 @@ task :os_x_defaults do
   system %Q{defaults write com.apple.Dock appswitcher-all-displays -bool true
   killall Dock}
 
+  # "Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)"
+  # via https://gist.github.com/DAddYE/2108403
+  puts "Enable full keyboard access for all controls"
+  system %Q{defaults write NSGlobalDomain AppleKeyboardUIMode -int 3}
 end
 
 private

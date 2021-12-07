@@ -43,7 +43,13 @@ Clone this directory and run one or more installation Rake tasks
 ```sh
 $ rake -T
 rake dotfiles       # install the dotfiles into home directory
-rake os_x_defaults  # replace OS X defaults
+rake mac_os_defaults  # replace OS X defaults
+```
+
+Or simply:
+
+```sh
+rake install
 ```
 
 ## Fonts
