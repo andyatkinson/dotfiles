@@ -2,6 +2,8 @@ set -g CDPATH . ~/Projects ~/Dropbox
 
 set -U fish_user_paths /usr/local/bin $fish_user_paths
 
+source ~/.localrc
+
 # rbenv support fish shell
 # https://github.com/rbenv/rbenv/issues/195
 set PATH $HOME/.rbenv/bin $PATH
@@ -63,6 +65,9 @@ alias gdh "git diff HEAD" # diff the unstaged changes
 alias gdm "git diff master"
 alias gdms "git diff master --stat"
 alias gdmss "git diff master --shortstat"
+
+# tmux
+alias tls "tmux ls"
 
 
 
