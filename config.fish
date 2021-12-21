@@ -2,6 +2,10 @@ set -g CDPATH . ~/Projects ~/Dropbox
 
 set -U fish_user_paths /usr/local/bin $fish_user_paths
 
+set -g FZF_DEFAULT_OPTS "--height 40% --layout=reverse --border"
+set -g FZF_DEFAULT_COMMAND "rg --files --no-ignore --hidden --follow --glob '!.git/*,node_modules/*,lurker/*,public/*,vendor/*,tmp/*'"
+set -g FZF_CTRL_T_COMMAND "(FZF_DEFAULT_COMMAND)"
+
 source ~/.localrc
 
 # rbenv support fish shell
@@ -33,16 +37,13 @@ alias v "vim ."
 # ls
 alias ls "ls -laAFGh"
 alias ll "ls -l"
-alias la 'ls -A'
+alias la "ls -A"
 
 # git
 alias gl "git pull"
 alias glr "git pull --rebase"
-alias gp 'git push'
-alias gpom 'git push origin master'
-alias gphm 'git push heroku master'
+alias gpom "git push origin master"
 alias gpoh 'git push origin head'
-alias gpohm 'git push origin master && git push heroku master'
 alias gc 'git commit'
 alias gcam 'git commit --all -m'
 alias gcm 'git checkout master'
@@ -60,6 +61,7 @@ alias gmc "git merge --continue"
 
 # git diff
 alias gd "git diff"
+alias gdc "git diff --cached"
 alias gds "git diff --staged"
 alias gdh "git diff HEAD" # diff the unstaged changes
 alias gdm "git diff master"
@@ -68,7 +70,6 @@ alias gdmss "git diff master --shortstat"
 
 # tmux
 alias tls "tmux ls"
-
 
 
 ##### FUNCTIONS #####
