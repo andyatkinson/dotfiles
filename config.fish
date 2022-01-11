@@ -88,3 +88,12 @@ end
 function bersp
   bundle exec rspec $argv
 end
+
+## Database functions
+function columns
+  psql --dbname db/onboardiq_dev -c "select column_name from information_schema.columns where table_name = '$argv'";
+end
+
+function tables
+  psql --dbname $argv -c "SELECT tablename FROM pg_catalog.pg_tables where schemaname = 'public'";
+end
