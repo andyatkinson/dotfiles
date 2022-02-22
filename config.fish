@@ -19,6 +19,12 @@ set -Ux LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
 # Set Editor
 set -Ux EDITOR vim
 
+
+# Install krew
+# https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+# And Neat `kubectl krew install neat`
+set -gx PATH $PATH $HOME/.krew/bin
+
 ### Aliases https://stackoverflow.com/a/2763014
 alias b "bundle"
 alias c "clear"
