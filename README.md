@@ -20,6 +20,7 @@ This is how I set up Mac OS for development.
    git@github.com:vim-ruby/vim-ruby.git
    git@github.com:tomtom/tcomment_vim.git
    git@github.com:NLKNguyen/papercolor-theme.git
+   git@github.com:preservim/nerdtree.git
    ```
  * iTerm
  * tmux with plugins
