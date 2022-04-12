@@ -2,3 +2,5 @@
 --tag-relative=yes
 --exclude=.git
 --exclude=log
+--exclude=node_modules
+--exclude=vendor
