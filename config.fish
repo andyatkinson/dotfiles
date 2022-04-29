@@ -95,6 +95,11 @@ function bersp
   bundle exec rspec $argv
 end
 
+### Mac OS hipster
+function hipster
+  cat /System/Library/PrivateFrameworks/NotesShared.framework/Versions/A/Resources/Hipster.words | sed 's/ /\n/g' | sort -R | head -n1
+end
+
 ## Database functions
 function columns
   psql --dbname db/onboardiq_dev -c "select column_name from information_schema.columns where table_name = '$argv'";
