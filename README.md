@@ -294,11 +294,13 @@ Interesting help:
 
   * [Chrome keyboard shortcuts](https://developers.google.com/chrome-developer-tools/docs/shortcuts)
   * Vimium plugin
+  * Start typing an URL, there is a menu option "Switch to this tab" lower down, when there is an open tab that matches the URL
 
 
 ```sh
-cmd-option-i # toggle web inspector
+cmd-option-i     # toggle web inspector
 option-command-u # open page source
+cmd-shift-a      # Search open tabs!
 ```
 
 ## iTerm
