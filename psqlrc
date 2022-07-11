@@ -4,3 +4,5 @@
 \set HISTFILE ~/.psql_history- :HOST - :DBNAME
 \set HISTSIZE 2000
 \timing
+
+\pset border 2
