@@ -292,9 +292,13 @@ Interesting help:
 
 ## Google Chrome
 
+Workflow goal: avoid opening duplicate tabs:
+
+* Start typing a URL, use "Switch to this tab" when there is a match
+* `cmd-shift-a` open up the built-in tab search, if google calendar is already open, use that tab
+
   * [Chrome keyboard shortcuts](https://developers.google.com/chrome-developer-tools/docs/shortcuts)
   * Vimium plugin
-  * Start typing an URL, there is a menu option "Switch to this tab" lower down, when there is an open tab that matches the URL
 
 
 ```sh
