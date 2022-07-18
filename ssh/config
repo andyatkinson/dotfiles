@@ -1,0 +1,11 @@
+#
+# https://apple.stackexchange.com/a/220012
+# Note: not "sshd" config, but the client config
+#
+# set in /etc/ssh/ssh_config
+#
+# ServerAliveInterval 10
+#
+# For killing it when it gets hang up, you can use the ssh escape character
+# ~.
+#
