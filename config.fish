@@ -1,5 +1,7 @@
 set -g CDPATH . ~/Projects ~/Dropbox
 
+set -g JAVA_HOME (/usr/libexec/java_home)
+
 set -U fish_user_paths /usr/local/bin $fish_user_paths
 
 source ~/.localrc
@@ -12,6 +14,9 @@ rbenv rehash >/dev/null 2>&1
 
 # postgres.app CLI tools
 fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
+
+# Java
+fish_add_path (/usr/libexec/java_home)
 
 # Set the colors of directories and files https://stackoverflow.com/a/25563976
 set -Ux LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
@@ -108,3 +113,5 @@ end
 function tables
   psql --dbname $argv -c "SELECT tablename FROM pg_catalog.pg_tables where schemaname = 'public'";
 end
+
+source /usr/local/opt/asdf/libexec/asdf.fish

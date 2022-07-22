@@ -54,6 +54,7 @@
   lineNumber = true
 [core]
   excludesfile = ~/.gitignore
+	editor = vim
 [web]
   browser = open
 [help]

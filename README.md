@@ -320,22 +320,23 @@ Cmd-option-arrow # move between the split panes
 
 ## tmux
 
-```sh
-tmux new-session -s dev_logs # start a new session named dev_logs
-reset # reset, useful when text stops showing up
-tmux attach-session -t 0 # attach to session 0
-mux commands # tmuxinator commands list
-mux list # tmuxinator list
-ctrl-b space # switch to next tmux pane layout
-leader + h # terminate a stuck SSH session
-prefix + c # new window
-prefix + , # rename a window
-```
+[Tmux cheat sheet](https://tmuxcheatsheet.com). I use a leader of `Ctrl b`. I also use `screen` which uses `ctrl a`.
 
-Tmux plugin manager (install this manually)
-<https://github.com/tmux-plugins/tpm>
+| Command| Description|
+| ----------- | ----------- |
+| leader + w | preview sessions, especially helpful for unnamed sessions |
+| tmux new-session -s dev_logs | start a new session named dev_logs |
+| reset | reset, useful when text stops showing up |
+| tmux attach-session -t 0 | attach to session 0 |
+| leader space # switch to next tmux pane layout
+| leader + h | terminate a stuck SSH session |
+| prefix + c | new window |
+| prefix + , | rename a window |
 
-Inside of tmux, run `Prefix-I` (capital "I") to install plugins.
+
+* Tmux plugin manager (install this manually) <https://github.com/tmux-plugins/tpm>
+* Inside of tmux, run `Prefix-I` (capital "I") to install plugins.
+
 
 ## snippets
 
@@ -585,3 +586,7 @@ pager: true
 # word-wrap at width
 width: 80
 ```
+
+## `asdf`
+
+A version manager for lots of things
