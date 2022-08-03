@@ -332,6 +332,12 @@ Cmd-option-arrow # move between the split panes
 | leader + h | terminate a stuck SSH session |
 | prefix + c | new window |
 | prefix + , | rename a window |
+| prefix + $ | rename a session |
+
+Or [rename session from terminal](https://superuser.com/a/428025):
+
+- tmux rename-session [-t current-name] [new-name]
+
 
 
 * Tmux plugin manager (install this manually) <https://github.com/tmux-plugins/tpm>
