@@ -10,7 +10,7 @@ desc "install the dotfiles into home directory"
 task :dotfiles do
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[archived Rakefile README.md config.fish].include?(file)
+    next if %w[ssh archived Rakefile README.md config.fish].include?(file)
 
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all

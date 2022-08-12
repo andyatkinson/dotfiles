@@ -114,4 +114,8 @@ function tables
   psql --dbname $argv -c "SELECT tablename FROM pg_catalog.pg_tables where schemaname = 'public'";
 end
 
+function kill_all_jobs
+  jobs -p | sudo xargs kill -9
+end
+
 source /usr/local/opt/asdf/libexec/asdf.fish
