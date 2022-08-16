@@ -31,7 +31,7 @@
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
   today = log --stat --since='1 Day Ago' --graph --pretty=short --abbrev-commit --date=relative
   mine = log -n 5 --author=$(whoami)
-  irr = !git co master && git pull --rebase && git co - && git rebase --ignore-date -i origin/master
+  ir = !git co master && git pull --rebase && git co - && git rebase --ignore-date -i origin/master
   irm = !git co main && git pull --rebase && git co - && git rebase --ignore-date -i origin/main
   cp = cherry-pick
   g = grep --break --heading --line-number

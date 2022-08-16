@@ -88,9 +88,10 @@ function dict
   open dict:///"$argv"
 end
 
-### Ruby time
-alias bers "bundle exec rails server"
-alias berc "bundle exec rails console"
+### Ruby on Rails time
+alias rs "bundle exec rails server"
+alias rc "bundle exec rails console"
+alias mig "bin/rails db:migrate && bin/rails db:migrate RAILS_ENV=test"
 
 function be
   bundle exec $argv
