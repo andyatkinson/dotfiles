@@ -81,7 +81,6 @@ alias gdmss "git diff master --shortstat"
 alias tls "tmux ls"
 
 
-
 ##### FUNCTIONS #####
 
 function dict
@@ -108,11 +107,11 @@ end
 
 ## Database functions
 function columns
-  psql --dbname db/onboardiq_dev -c "select column_name from information_schema.columns where table_name = '$argv'";
+  psql --dbname $argv[1] "select column_name from information_schema.columns where table_name = \'$argv[2]\';";
 end
 
 function tables
-  psql --dbname $argv -c "SELECT tablename FROM pg_catalog.pg_tables where schemaname = 'public'";
+  psql --dbname $argv -c "SELECT tablename FROM pg_catalog.pg_tables where schemaname = 'public';";
 end
 
 function kill_all_jobs

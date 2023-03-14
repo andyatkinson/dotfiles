@@ -1,4 +1,5 @@
 require 'rake'
+require 'fileutils'
 
 desc "Install"
 task :install do
@@ -35,7 +36,7 @@ task :dotfiles do
   end
 
   link_fish_config
-  link_jrnl_config
+  link_jrnl_config # jrnl is command-line journaling
 end
 
 desc "Set Mac OS defaults"
@@ -109,9 +110,13 @@ def link_fish_config
   system %Q{ln -sf "$PWD/#{local_config}" #{fish_config}}
 end
 
+# jrnl is a command-line journal application I use for quick notes
+# The notes are kept in a plain text file, and the file is backed up with Dropbox
 def link_jrnl_config
-  local_config = "jrnl.yaml"
-  jrnl_config = File.join(ENV['HOME'], ".config", "jrnl", "jrnl.yaml")
-  puts "linking #{jrnl_config}"
-  system %Q{ln -sf "$PWD/#{local_config}" #{jrnl_config}}
+  local_config = "jrnl.yaml" # local config, specifies Dropbox file location
+  system %Q{mkdir -p "$HOME/.config"}
+  jrnl_config_path = File.join(ENV['HOME'], ".config", "jrnl", "jrnl.yaml")
+  FileUtils.touch(jrnl_config_path)
+  puts "linking #{jrnl_config_path}"
+  system %Q{ln -sf "$PWD/#{local_config}" #{jrnl_config_path}}
 end

@@ -10,7 +10,7 @@ encrypt: false
 highlight: true
 indent_character: '|'
 journals:
-  default: /Users/anatki/Dropbox/journal.txt
+  default: ~/Dropbox/journal.txt
 linewrap: 79
 tagsymbols: '@'
 template: false

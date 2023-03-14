@@ -23,7 +23,7 @@ This is how I set up Mac OS for development.
    git@github.com:preservim/nerdtree.git
    ```
  * iTerm
- * tmux with plugins
+ * tmux
  * [Fish shell](https://fishshell.com/)
    * <https://github.com/oh-my-fish/oh-my-fish>
    * fisher
@@ -39,6 +39,8 @@ This is how I set up Mac OS for development.
 
 ## Installation
 
+Make sure `ENV['HOME']` points at the home directory.
+
 Clone this directory and run one or more installation Rake tasks
 
 ```sh
@@ -47,7 +49,7 @@ rake dotfiles       # install the dotfiles into home directory
 rake mac_os_defaults  # replace OS X defaults
 ```
 
-Or simply:
+Or to run all:
 
 ```sh
 rake install
@@ -326,22 +328,18 @@ Cmd-option-arrow # move between the split panes
 | ----------- | ----------- |
 | leader + w | preview sessions, especially helpful for unnamed sessions |
 | tmux new-session -s dev_logs | start a new session named dev_logs |
-| reset | reset, useful when text stops showing up |
 | tmux attach-session -t 0 | attach to session 0 |
-| leader space # switch to next tmux pane layout
 | leader + h | terminate a stuck SSH session |
-| prefix + c | new window |
-| prefix + , | rename a window |
-| prefix + $ | rename a session |
+| leader + $ | rename a session |
 
 Or [rename session from terminal](https://superuser.com/a/428025):
 
 - tmux rename-session [-t current-name] [new-name]
 
+| leader + c | new window |
+| leader + , | rename a window |
+| leader + space | switch to next pane layout |
 
-
-* Tmux plugin manager (install this manually) <https://github.com/tmux-plugins/tpm>
-* Inside of tmux, run `Prefix-I` (capital "I") to install plugins.
 
 
 ## snippets
@@ -596,3 +594,7 @@ width: 80
 ## `asdf`
 
 A version manager for lots of things
+
+## SSH
+
+Manually set `/etc/ssh/ssh_config`, this is not automatically installed
