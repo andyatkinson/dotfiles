@@ -1,5 +1,7 @@
 \encoding unicode
 \set PROMPT1 '%n@%M:%>%x %/# '
 \set PROMPT2 ''
-\set HISTFILE ~/.psql_history- :HOST - :DBNAME
-\set HISTSIZE 2000
+
+
+# https://askubuntu.com/a/1039394
+\setenv PAGER 'less -S'
