@@ -3,5 +3,4 @@
 \set PROMPT2 ''
 
 
-# https://askubuntu.com/a/1039394
 \setenv PAGER 'less -S'
