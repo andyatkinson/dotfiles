@@ -24,7 +24,6 @@ set -Ux LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
 # Set Editor
 set -Ux EDITOR vim
 
-
 # Install krew
 # https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 # And Neat `kubectl krew install neat`
@@ -83,15 +82,6 @@ alias tls "tmux ls"
 
 ##### FUNCTIONS #####
 
-function dict
-  open dict:///"$argv"
-end
-
-### Ruby on Rails time
-alias rs "bundle exec rails server"
-alias rc "bundle exec rails console"
-alias mig "bin/rails db:migrate && bin/rails db:migrate RAILS_ENV=test"
-
 function be
   bundle exec $argv
 end
@@ -119,3 +109,17 @@ function kill_all_jobs
 end
 
 source /usr/local/opt/asdf/libexec/asdf.fish
+
+## Credit: https://github.com/fish-shell/fish-shell/issues/8604#issuecomment-1169638533
+## Remove from path
+## Use fish_add_path to add, or this function to remove entries
+## e.g.
+# After upgrading Postgres, I removed this version-specific /bin path from $PATH
+# `remove_path /Applications/Postgres.app/Contents/Versions/15/bin`
+#
+function remove_path
+  if set -l index (contains -i "$argv" $fish_user_paths)
+    set -e fish_user_paths[$index]
+    echo "Removed $argv from the path"
+  end
+end
