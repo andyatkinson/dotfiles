@@ -105,6 +105,7 @@ end
 
 def link_fish_config
   local_config = "config.fish"
+  system %Q{mkdir -p "$HOME/.config/fish"}
   fish_config = File.join(ENV['HOME'], ".config", "fish", "config.fish")
   puts "linking #{fish_config}"
   system %Q{ln -sf "$PWD/#{local_config}" #{fish_config}}
@@ -114,7 +115,7 @@ end
 # The notes are kept in a plain text file, and the file is backed up with Dropbox
 def link_jrnl_config
   local_config = "jrnl.yaml" # local config, specifies Dropbox file location
-  system %Q{mkdir -p "$HOME/.config"}
+  system %Q{mkdir -p "$HOME/.config/jrnl"}
   jrnl_config_path = File.join(ENV['HOME'], ".config", "jrnl", "jrnl.yaml")
   FileUtils.touch(jrnl_config_path)
   puts "linking #{jrnl_config_path}"
