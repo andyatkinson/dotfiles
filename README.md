@@ -29,10 +29,8 @@ This is how I set up Mac OS for development.
  * iTerm
  * tmux
  * [Fish shell](https://fishshell.com/)
+   * <https://stackoverflow.com/a/70203456/126688>
    * <https://github.com/oh-my-fish/oh-my-fish>
-   * fisher
-   * `fisher install jorgebucaran/nvm.fish`
-     * `nvm install latest`
  * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
  * Git
    * Global Git aliases/config in `gitconfig`
@@ -50,7 +48,7 @@ Clone this directory and run one or more installation Rake tasks
 ```sh
 $ rake -T
 rake dotfiles       # install the dotfiles into home directory
-rake mac_os_defaults  # replace OS X defaults
+rake macos_defaults  # replace OS X defaults
 ```
 
 Or to run all:

@@ -11,17 +11,11 @@ set -Ux LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
 # Set Editor
 set -Ux EDITOR vim
 
-# Install krew
-# https://krew.sigs.k8s.io/docs/user-guide/setup/install/
-# And Neat `kubectl krew install neat`
-set -gx PATH $PATH $HOME/.krew/bin
-
 ### Aliases https://stackoverflow.com/a/2763014
 alias b "bundle"
 alias c "clear"
 alias d "cd ~/Projects/dotfiles && vim ."
 alias g "git"
-alias j "jrnl"
 alias p "cd ~/Projects && ls"
 alias t "tmux"
 alias u "cd .."
@@ -69,13 +63,6 @@ alias tls "tmux ls"
 
 ##### FUNCTIONS #####
 
-function be
-  bundle exec $argv
-end
-
-function bersp
-  bundle exec rspec $argv
-end
 
 ### Mac OS hipster
 function hipster

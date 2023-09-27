@@ -39,8 +39,8 @@ task :dotfiles do
   link_jrnl_config # jrnl is command-line journaling
 end
 
-desc "Set Mac OS defaults"
-task :mac_os_defaults do
+desc "Set macOS defaults"
+task :macos_defaults do
   # thanks! https://gist.github.com/saetia/1623487
   # Fonts
   # Set a shorter Delay until key repeat
@@ -77,7 +77,7 @@ task :mac_os_defaults do
   # I thought "3" looked the best between disabled completely and the max value.
   # Particularly noticed in the OS top left area fonts on a LG 32" 4K monitor.
   # Would still prefer it to be more crisp but this is not a Retina display
-  puts "Disable font smoothing - maybe in Mac OS Big Sur"
+  puts "Disable font smoothing - maybe in macOS Big Sur"
   #system %Q{defaults -currentHost write -g AppleFontSmoothing -int 0}
   system %Q{defaults -currentHost write -g AppleFontSmoothing -int 3}
 
