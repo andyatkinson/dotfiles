@@ -2,8 +2,6 @@ set -g CDPATH . ~/Projects ~/Dropbox
 
 set -U fish_user_paths /usr/local/bin $fish_user_paths
 
-source ~/.localrc
-
 # postgres.app CLI tools
 fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
 
