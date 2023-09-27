@@ -14,13 +14,17 @@ This is how I set up Mac OS for development.
    * Make the bottom dock useful - remove all the content creation apps that aren't used
  * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
    ```
-   git@github.com:tpope/vim-rails.git
-   git@github.com:junegunn/fzf.vim.git
-   git@github.com:tpope/vim-fugitive.git
-   git@github.com:vim-ruby/vim-ruby.git
-   git@github.com:tomtom/tcomment_vim.git
-   git@github.com:NLKNguyen/papercolor-theme.git
-   git@github.com:preservim/nerdtree.git
+   mkdir ~/.vim/pack/plugins/start/
+
+   cd ~/.vim/pack/plugins/start/
+
+   git clone git@github.com:tpope/vim-rails.git
+   git clone git@github.com:junegunn/fzf.vim.git
+   git clone git@github.com:tpope/vim-fugitive.git
+   git clone git@github.com:vim-ruby/vim-ruby.git
+   git clone git@github.com:tomtom/tcomment_vim.git
+   git clone git@github.com:NLKNguyen/papercolor-theme.git
+   git clone git@github.com:preservim/nerdtree.git
    ```
  * iTerm
  * tmux
