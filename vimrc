@@ -5,7 +5,7 @@ set backspace=2 " make backspace work like most other programs
 set backspace=indent,eol,start
 
 " fzf - enable fuzzy finder in vim
-set rtp+=/usr/local/opt/fzf
+set rtp+=/opt/homebrew/opt/fzf
 
 set number
 set hlsearch
