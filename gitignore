@@ -42,3 +42,5 @@ tags
 .bundle
 vendor/bundle
 .DS_Store
+
+.git-blame-ignore-revs
