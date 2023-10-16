@@ -498,6 +498,13 @@ command-shift-v # toggle video
 
 `tldr` as an improvement or supplement to `man`, with examples, e.g. `tldr curl`
 
+## Maven
+
+```sh
+mvn -Dtest=com.andy.AwesomeTest test # run specific test
+mvn clean compile exec:java # compile & boot app
+```
+
 ## Go lang
 
 ```sh

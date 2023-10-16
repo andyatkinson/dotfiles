@@ -1,9 +1,20 @@
 set -g CDPATH . ~/Projects ~/Dropbox
 
+set -g JAVA_HOME (/usr/libexec/java_home)
+
 set -U fish_user_paths /usr/local/bin $fish_user_paths
+
+# rbenv support fish shell
+# https://github.com/rbenv/rbenv/issues/195
+set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/shims $PATH
+rbenv rehash >/dev/null 2>&1
 
 # postgres.app CLI tools
 fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
+
+# Java
+fish_add_path (/usr/libexec/java_home)
 
 # Set the colors of directories and files https://stackoverflow.com/a/25563976
 set -Ux LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
@@ -81,6 +92,8 @@ end
 function kill_all_jobs
   jobs -p | sudo xargs kill -9
 end
+
+source /usr/local/opt/asdf/libexec/asdf.fish
 
 ## Credit: https://github.com/fish-shell/fish-shell/issues/8604#issuecomment-1169638533
 ## Remove from path
