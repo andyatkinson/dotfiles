@@ -4,7 +4,7 @@ require 'fileutils'
 desc "Install"
 task :install do
   Rake::Task['dotfiles'].invoke
-  Rake::Task['mac_os_defaults'].invoke
+  Rake::Task['macos_defaults'].invoke
 end
 
 desc "install the dotfiles into home directory"

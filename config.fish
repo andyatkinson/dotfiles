@@ -4,11 +4,10 @@ set -g JAVA_HOME (/usr/libexec/java_home)
 
 set -U fish_user_paths /usr/local/bin $fish_user_paths
 
-# rbenv support fish shell
-# https://github.com/rbenv/rbenv/issues/195
-set PATH $HOME/.rbenv/bin $PATH
-set PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null 2>&1
+# rbenv installed via homebrew
+# Load rbenv automatically by appending
+# the following to ~/.config/fish/config.fish:
+status --is-interactive; and rbenv init - fish | source
 
 # postgres.app CLI tools
 fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
