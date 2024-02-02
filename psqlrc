@@ -2,5 +2,10 @@
 \set PROMPT1 '%n@%M:%>%x %/# '
 \set PROMPT2 ''
 
+\pset border 1
+\pset format wrapped
+\pset linestyle unicode
 
 \setenv PAGER 'less -S'
+
+/* \setenv PAGER pspg */

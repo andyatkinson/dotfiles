@@ -186,3 +186,7 @@ nnoremap <silent> <Leader>f :Rg<CR>
 
 " Fuzzy finder, search for files within buffers list
 nnoremap <silent> <Leader>b :Buffers<CR>
+
+" Format SQL files
+" https://github.com/darold/pgFormatter
+au FileType sql setl formatprg=/usr/local/bin/pg_format\ -
