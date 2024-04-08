@@ -13,6 +13,7 @@ This is how I set up Mac OS for development.
    * Uninstall `Garage Band`, `Pages` etc. on a work machine where they won't be used
    * Make the bottom dock useful - remove all the content creation apps that aren't used
  * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
+ * https://github.com/itchyny/lightline.vim
    ```
    mkdir ~/.vim/pack/plugins/start/
 
@@ -38,6 +39,7 @@ This is how I set up Mac OS for development.
   * Fuzzy Finder <https://github.com/junegunn/fzf>
     * <https://dev.to/iggredible/how-to-search-faster-in-vim-with-fzf-vim-36ko>
   * ripgrep (rg)
+  * Formatting SQL using pg_format (brew install pgformatter) from Vim with a selection <https://www.endpointdev.com/blog/2022/04/formatting-sql-vim-pgformat/>
 
 ## Installation
 
@@ -342,6 +344,10 @@ Or [rename session from terminal](https://superuser.com/a/428025):
 | leader + , | rename a window |
 | leader + space | switch to next pane layout |
 
+Reload configuration:
+tmux source ~/.tmux.conf
+
+leader + I (capital "I") to install plugins
 
 
 ## snippets
@@ -485,7 +491,7 @@ Plugin: Key Promoter
 - `Shift-command-V` opens preview but in same window
 - `Command-K + V` opens side by side markdown preview for `.md` file
 - Column selection: `shift-option` + mouse
-- Format SQL queries: SQL Tools <https://stackoverflow.com/a/66873825>
+- iuFormat SQL queries: SQL Tools <https://stackoverflow.com/a/66873825>
 
 ## Zoom
 

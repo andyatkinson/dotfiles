@@ -2,7 +2,7 @@ set -g CDPATH . ~/Projects ~/Dropbox
 
 set -g JAVA_HOME (/usr/libexec/java_home)
 
-set -U fish_user_paths /usr/local/bin $fish_user_paths
+set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
 
 # rbenv installed via homebrew
 # Load rbenv automatically by appending
@@ -92,8 +92,6 @@ function kill_all_jobs
   jobs -p | sudo xargs kill -9
 end
 
-source /usr/local/opt/asdf/libexec/asdf.fish
-
 ## Credit: https://github.com/fish-shell/fish-shell/issues/8604#issuecomment-1169638533
 ## Remove from path
 ## Use fish_add_path to add, or this function to remove entries
@@ -108,4 +106,9 @@ function remove_path
   end
 end
 
+source /opt/homebrew/opt/asdf/libexec/asdf.fish
+
 status --is-interactive; and rbenv init - fish | source
+
+fish_add_path ~/.pgenv/bin
+fish_add_path ~/.pgenv/pgsql/bin
