@@ -40,7 +40,7 @@ This is how I set up Mac OS for development.
   * Fuzzy Finder <https://github.com/junegunn/fzf>
     * <https://dev.to/iggredible/how-to-search-faster-in-vim-with-fzf-vim-36ko>
   * ripgrep (rg)
-  * Formatting SQL using pg_format (brew install pgformatter) from Vim with a selection <https://www.endpointdev.com/blog/2022/04/formatting-sql-vim-pgformat/>
+  * Formatting SQL using `pg_format` (`brew install pgformatter`) from Vim: <https://www.endpointdev.com/blog/2022/04/formatting-sql-vim-pgformat/>, make selection, then: `!pg_format`
 
 ## Installation
 
@@ -492,7 +492,7 @@ Plugin: Key Promoter
 - `Shift-command-V` opens preview but in same window
 - `Command-K + V` opens side by side markdown preview for `.md` file
 - Column selection: `shift-option` + mouse
-- iuFormat SQL queries: SQL Tools <https://stackoverflow.com/a/66873825>
+- Format SQL queries: SQL Tools <https://stackoverflow.com/a/66873825>
 
 ## Zoom
 
@@ -608,4 +608,7 @@ A version manager for lots of things
 
 Manually set `/etc/ssh/ssh_config`, this is not automatically installed
 
-
+## Microphone
+```sh
+osascript -e "set volume input volume 95"
+```
