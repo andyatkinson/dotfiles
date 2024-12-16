@@ -16,7 +16,7 @@ This is how I set up Mac OS for development.
  * Vim: Attempted coc LSP and removed: <https://github.com/neoclide/coc.nvim>
  * https://github.com/itchyny/lightline.vim
    ```
-   mkdir ~/.vim/pack/plugins/start/
+   mkdir -p ~/.vim/pack/plugins/start/
 
    cd ~/.vim/pack/plugins/start/
 

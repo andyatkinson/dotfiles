@@ -43,8 +43,9 @@ desc "Set macOS defaults"
 task :macos_defaults do
   # thanks! https://gist.github.com/saetia/1623487
   # Fonts
-  # Set a shorter Delay until key repeat
-  system %Q{defaults write NSGlobalDomain InitialKeyRepeat -int 12}
+  value = 12
+  puts "Set a shorter Delay until key repeat - #{value}"
+  system %Q{defaults write NSGlobalDomain InitialKeyRepeat -int #{value}}
 
   puts "changing key repeat rate. normal minimum is 2 (30ms). Set to 0, 1, or 2."
   # Set a blazingly fast keyboard repeat rate

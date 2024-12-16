@@ -112,3 +112,7 @@ status --is-interactive; and rbenv init - fish | source
 
 fish_add_path ~/.pgenv/bin
 fish_add_path ~/.pgenv/pgsql/bin
+
+function kill_puma
+  ps -ef |grep puma | grep -v grep |  awk '{print $2}' | sudo xargs kill -9
+end
