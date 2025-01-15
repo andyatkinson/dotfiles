@@ -612,3 +612,9 @@ Manually set `/etc/ssh/ssh_config`, this is not automatically installed
 ```sh
 osascript -e "set volume input volume 95"
 ```
+
+## JSON
+`:% !jq .`
+
+## Shottr
+<https://shottr.cc>

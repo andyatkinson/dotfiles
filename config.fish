@@ -106,7 +106,7 @@ function remove_path
   end
 end
 
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
+set -gx PATH $HOME/.asdf/shims $PATH
 
 status --is-interactive; and rbenv init - fish | source
 
@@ -116,3 +116,9 @@ fish_add_path ~/.pgenv/pgsql/bin
 function kill_puma
   ps -ef |grep puma | grep -v grep |  awk '{print $2}' | sudo xargs kill -9
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/andy/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/andy/Downloads/google-cloud-sdk/path.fish.inc'; end
+
+# Created by `pipx` on 2024-09-13 19:54:19
+set PATH $PATH /Users/andy/.local/bin

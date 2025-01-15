@@ -69,7 +69,7 @@
 [url "https://"]
   insteadOf = git://
 [merge]
-  conflictstyle = diff3
+	conflictstyle = diff3
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -80,3 +80,5 @@
   verbose = true
 [blame]
 	ignoreRevsFile = .git-blame-ignore-revs
+[init]
+	defaultBranch = main
