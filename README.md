@@ -1,9 +1,7 @@
 # dotfiles
-
 This is how I set up Mac OS for development.
 
 ## Summary
-
  * Mac OS <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>.
    * Manually remap Caps Lock to Control, for each keyboard!
    * Manually enable Control with Accessibility + Zoom + Scroll to zoom in
@@ -43,7 +41,6 @@ This is how I set up Mac OS for development.
   * Formatting SQL using `pg_format` (`brew install pgformatter`) from Vim: <https://www.endpointdev.com/blog/2022/04/formatting-sql-vim-pgformat/>, make selection, then: `!pg_format`
 
 ## Installation
-
 Make sure `ENV['HOME']` points at the home directory.
 
 Clone this directory and run one or more installation Rake tasks
@@ -61,12 +58,11 @@ rake install
 ```
 
 ## Fonts
-
 * [11 Best Programming Fonts](https://itnext.io/11-best-programming-fonts-724283a9ed57)
   * I'm trying out `Hack`
 
 ## Release notes
-
+2025-02-13 Updates
 2021-11-01
 
 Added Fonts
@@ -94,7 +90,6 @@ Puma 2.9.1 (specify opt-dir or can configure bundler)
 `gem install puma -v '2.9.1' -- --with-opt-dir=/usr/local/opt/openssl`
 
 ## Homebrew
-
 ```
 # critcal
 ripgrep
@@ -110,6 +105,7 @@ redis
 tldr
 jrnl
 glow
+gh
 
 # less critical
 nginx
@@ -155,14 +151,11 @@ brew install --cask lunar # adjust brightness of LG display
 brew install --cask sourcetree
 ```
 
-
 ## Extras
-
-  * [OS X shortcuts](http://mattgemmell.com/mac-keyboard-shortcuts/)
+* [OS X shortcuts](http://mattgemmell.com/mac-keyboard-shortcuts/)
 
 ## OS X
-
-  * Remap caps lock to control
+* Remap caps lock to control
 
 | Command      | Description |
 | ----------- | ----------- |
@@ -172,7 +165,6 @@ brew install --cask sourcetree
 | command-alt-h | hide other applications' windows, alt is fn+opt |
 
 ## vim
-
 Interesting help:
 `:help opening-window`
 
@@ -315,9 +307,8 @@ cmd-shift-a      # Search open tabs!
 ```
 
 ## iTerm
-
-  * Use Source Code Pro font
-  * Profile > Keys > Left option key acts as "+Esc"
+* Use Source Code Pro font
+* Profile > Keys > Left option key acts as "+Esc"
 
 ```sh
 Cmd-/ # show cursor
@@ -326,7 +317,6 @@ Cmd-option-arrow # move between the split panes
 ```
 
 ## tmux
-
 [Tmux cheat sheet](https://tmuxcheatsheet.com). I use a leader of `Ctrl b`. I also use `screen` which uses `ctrl a`.
 
 | Command| Description|
@@ -352,7 +342,6 @@ leader + I (capital "I") to install plugins
 
 
 ## snippets
-
 Snippets directory `~/.vim/bundle/vim-snippets/snippets`
 
 ```sh
@@ -363,7 +352,6 @@ div # can use this for markup too
 ```
 
 ## [tig](https://github.com/jonas/tig)
-
 ```sh
 git log | tig
 git diff master | tig
@@ -372,7 +360,6 @@ m # toggle main view (useful to jump back and forth between code details and com
 ```
 
 ## [jrnl](http://maebert.github.io/jrnl/)
-
 * Default config file: `~/.config/jrnl/jrnl.yaml`
 * Configure editor in the config file
 
@@ -384,14 +371,12 @@ jrnl --edit # edit old entries (unencrypted file)
 ```
 
 ## [spectacle](http://spectacleapp.com/)
-
 ```sh
 option-command-right arrow # right half
 option-command-f # full screen
 ```
 
 ## Slack
-
 ```sh
 +:... # plus sign plus "colon" to pull up Emoji reactions, will react to most recent post
 up arrow key # edit last message
@@ -406,7 +391,6 @@ command-left/right bracket # move between channels
 ```
 
 ## Microsoft Teams
-
 [Keyboard Shortcuts for MS Teams](https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2?ui=en-us&rs=en-us&ad=us)
 
 I use it on Mac OS but swap "command" for "control" on Windows.
@@ -423,7 +407,6 @@ option-arrow up/down # navigate items vertically under org
 ```
 
 ## Xcode and simulator
-
 ```sh
 command-shift-o # fuzzy find files by name (open quickly), colon line number (e.g. ":42" to open line 42)
 command-b # build
@@ -462,7 +445,6 @@ redis-cli flushdb # dump everything in redis
 ```
 
 ## IntelliJ OS X
-
 IdeaVim action list: <https://gist.github.com/zchee/9c78f91cc5ad771c1f5d>
 
 ```sh
@@ -487,7 +469,6 @@ open -a "IntelliJ IDEA" # open application when running Docker
 Plugin: Key Promoter
 
 ## VS Code
-
 - Marp for VS Code
 - `Shift-command-V` opens preview but in same window
 - `Command-K + V` opens side by side markdown preview for `.md` file
@@ -495,41 +476,34 @@ Plugin: Key Promoter
 - Format SQL queries: SQL Tools <https://stackoverflow.com/a/66873825>
 
 ## Zoom
-
 ```sh
 command-shift-a # toggle audio
 command-shift-v # toggle video
 ```
 
 ## Man pages
-
 `tldr` as an improvement or supplement to `man`, with examples, e.g. `tldr curl`
 
 ## Maven
-
 ```sh
 mvn -Dtest=com.andy.AwesomeTest test # run specific test
 mvn clean compile exec:java # compile & boot app
 ```
 
 ## Go lang
-
 ```sh
 gore # Go lang REPL
 ```
 
 ## Homebrew
-
 * `brew list`
 * `brew cask list` # OS X
 * `brew deps --tree --installed`
 
 ## pyenv
-
 * `pyenv versions`
 
 ## Windows
-
 * Windows Terminal. `iTerm` like. `Ctrl-Tab` to switch between tabs.
 * Use WSL 2. Requires a newer Windows build. This link helps debug Windows Update problems via log files and clears a cache. <https://www.howtogeek.com/416169/how-to-fix-what-needs-your-attention-windows-10-setup-errors/>
 * My preference: Remap Caps to Ctrl. This can be done with Keyboard Manager in PowerToys.
@@ -538,23 +512,19 @@ gore # Go lang REPL
 * Chrome with Vimium, AdBlock, 1Password
 
 ## MacDown
-
 Markdown editor for OS X. Workaround for being a unidentified developer:
 https://macdown.uranusjr.com/faq/#unidentified
 
 ## GitHub CLI
-
 <https://cli.github.com/>
 
 * `gh pr create [flags]`
 
 ## GitHub
-
 * `T`
 * `Command-K`
 
 ## Fish shell
-
 * `Ctrl-f` - complete a suggestion
 * `fish_config` to launch the web based configuration
 * `omf install boxfish`
@@ -562,14 +532,12 @@ https://macdown.uranusjr.com/faq/#unidentified
 * With background `jobs`, use `fg %1` to foreground job 1
 
 ## Fuzzy Finder
-
 * `vim (fzf)`
 * `history | fzf`
 * `:Rg` within Vim to search within files
 * `:Buffers`
 
 ## ripgrep
-
 <https://mariusschulz.com/blog/fast-searching-with-ripgrep>
 
 * `rg TODO app/models` search the models directory
@@ -577,11 +545,9 @@ https://macdown.uranusjr.com/faq/#unidentified
 * `rg --files-with-matches TODO app/models/ --sort path`
 
 ## Rectangle
-
 <https://github.com/rxhanson/Rectangle>
 
 ## glow
-
 Command line Markdown!
 
 Set a config file to set a pager and other stuff
@@ -601,18 +567,15 @@ width: 80
 ```
 
 ## `asdf`
-
 A version manager for lots of things
 
 ## SSH
-
 Manually set `/etc/ssh/ssh_config`, this is not automatically installed
 
 ## Microphone
 ```sh
 osascript -e "set volume input volume 95"
 ```
-
 ## JSON
 `:% !jq .`
 
