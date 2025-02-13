@@ -55,7 +55,7 @@
   lineNumber = true
 [core]
   excludesfile = ~/.gitignore
-	editor = vim
+  editor = vim
 [web]
   browser = open
 [help]
@@ -69,16 +69,16 @@
 [url "https://"]
   insteadOf = git://
 [merge]
-	conflictstyle = diff3
+  conflictstyle = diff3
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [commit]
   verbose = true
 [blame]
-	ignoreRevsFile = .git-blame-ignore-revs
+  ignoreRevsFile = .git-blame-ignore-revs
 [init]
-	defaultBranch = main
+  defaultBranch = main

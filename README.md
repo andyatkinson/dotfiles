@@ -518,7 +518,8 @@ https://macdown.uranusjr.com/faq/#unidentified
 ## GitHub CLI
 <https://cli.github.com/>
 
-* `gh pr create [flags]`
+- `gh pr create [flags]`
+- `gh browse -b (git branch --show-current)`
 
 ## GitHub
 * `T`

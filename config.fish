@@ -70,6 +70,7 @@ alias gdmss "git diff master --shortstat"
 # tmux
 alias tls "tmux ls"
 
+alias gbo "gh browse -b (git branch --show-current)"
 
 ##### FUNCTIONS #####
 
