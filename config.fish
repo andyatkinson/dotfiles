@@ -71,6 +71,7 @@ alias gdmss "git diff master --shortstat"
 alias tls "tmux ls"
 
 alias gbo "gh browse -b (git branch --show-current)"
+alias gbp "git push origin head && gh pr create --draft --fill"
 
 ##### FUNCTIONS #####
 
