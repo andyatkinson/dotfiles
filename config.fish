@@ -118,6 +118,10 @@ function kill_puma
   ps -ef |grep puma | grep -v grep |  awk '{print $2}' | sudo xargs kill -9
 end
 
+function trim
+  sed -i '' -e :a -e '/^\n*$/{$d;N;ba' -e '}' db/structure.sql
+end
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/andy/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/andy/Downloads/google-cloud-sdk/path.fish.inc'; end
 
