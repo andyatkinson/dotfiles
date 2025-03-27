@@ -122,8 +122,28 @@ function trim
   sed -i '' -e :a -e '/^\n*$/{$d;N;ba' -e '}' db/structure.sql
 end
 
+function git-dir-dates
+  for dir in */
+    set last_commit_date (git log -1 --format="%ci" -- $dir ^/dev/null)
+    if test -n "$last_commit_date"
+      echo "$last_commit_date  $dir"
+    end
+  end | sort -r
+end
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/andy/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/andy/Downloads/google-cloud-sdk/path.fish.inc'; end
 
 # Created by `pipx` on 2024-09-13 19:54:19
 set PATH $PATH /Users/andy/.local/bin
+
+# Run from branch with db/structure.sql conflicts
+function recommit_structure
+  git co develop
+  git pull origin develop
+  git co -
+  git checkout develop -- db/structure.sql
+  git commit -m "Reset file"
+  git merge --no-edit develop
+  git rebase develop --interactive
+end
