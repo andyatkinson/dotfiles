@@ -2,43 +2,45 @@
 This is how I set up Mac OS for development.
 
 ## Summary
- * Mac OS <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>.
-   * Manually remap Caps Lock to Control, for each keyboard!
-   * Manually enable Control with Accessibility + Zoom + Scroll to zoom in
-   * Enable tap to click on touch pad
-   * Other customizations in this file: e.g. key repeat rata
-   * `xcode-select --install` to install compilation tools
-   * Uninstall `Garage Band`, `Pages` etc. on a work machine where they won't be used
-   * Make the bottom dock useful - remove all the content creation apps that aren't used
- * Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
- * Vim: Attempted coc LSP and removed: <https://github.com/neoclide/coc.nvim>
- * https://github.com/itchyny/lightline.vim
-   ```
-   mkdir -p ~/.vim/pack/plugins/start/
+* Mac OS <a href='http://en.wikipedia.org/wiki/Defaults_(software)'>defaults</a>.
+* Manually remap Caps Lock to Control, for each keyboard!
+* Manually enable Control with Accessibility + Zoom + Scroll to zoom in
+* Enable tap to click on touch pad
+* Other customizations in this file: e.g. key repeat rata
+* `xcode-select --install` to install compilation tools
+* Uninstall `Garage Band`, `Pages` etc. on a work machine where they won't be used
+* Make the bottom dock useful - remove all the content creation apps that aren't used
+* Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
+* Vim: Attempted coc LSP and removed: <https://github.com/neoclide/coc.nvim>
+* https://github.com/itchyny/lightline.vim
 
-   cd ~/.vim/pack/plugins/start/
+```sh
+mkdir -p ~/.vim/pack/plugins/start/
 
-   git clone git@github.com:tpope/vim-rails.git
-   git clone git@github.com:junegunn/fzf.vim.git
-   git clone git@github.com:tpope/vim-fugitive.git
-   git clone git@github.com:vim-ruby/vim-ruby.git
-   git clone git@github.com:tomtom/tcomment_vim.git
-   git clone git@github.com:NLKNguyen/papercolor-theme.git
-   git clone git@github.com:preservim/nerdtree.git
-   ```
- * iTerm
- * tmux
- * [Fish shell](https://fishshell.com/)
-   * <https://stackoverflow.com/a/70203456/126688>
-   * <https://github.com/oh-my-fish/oh-my-fish>
- * PostgreSQL installed as [Postgres.app](https://postgresapp.com)
- * Git
-   * Global Git aliases/config in `gitconfig`
-   * Global Git ignore in `gitignore`
-  * Fuzzy Finder <https://github.com/junegunn/fzf>
-    * <https://dev.to/iggredible/how-to-search-faster-in-vim-with-fzf-vim-36ko>
-  * ripgrep (rg)
-  * Formatting SQL using `pg_format` (`brew install pgformatter`) from Vim: <https://www.endpointdev.com/blog/2022/04/formatting-sql-vim-pgformat/>, make selection, then: `!pg_format`
+cd ~/.vim/pack/plugins/start/
+
+git clone git@github.com:tpope/vim-rails.git
+git clone git@github.com:junegunn/fzf.vim.git
+git clone git@github.com:tpope/vim-fugitive.git
+git clone git@github.com:vim-ruby/vim-ruby.git
+git clone git@github.com:tomtom/tcomment_vim.git
+git clone git@github.com:NLKNguyen/papercolor-theme.git
+git clone git@github.com:preservim/nerdtree.git
+```
+
+* iTerm
+* tmux
+* [Fish shell](https://fishshell.com/)
+* <https://stackoverflow.com/a/70203456/126688>
+* <https://github.com/oh-my-fish/oh-my-fish>
+* PostgreSQL installed as [Postgres.app](https://postgresapp.com)
+* Git
+* Global Git aliases/config in `gitconfig`
+* Global Git ignore in `gitignore`
+* Fuzzy Finder <https://github.com/junegunn/fzf>
+* <https://dev.to/iggredible/how-to-search-faster-in-vim-with-fzf-vim-36ko>
+* ripgrep (rg)
+* Formatting SQL using `pg_format` (`brew install pgformatter`) from Vim: <https://www.endpointdev.com/blog/2022/04/formatting-sql-vim-pgformat/>, make selection, then: `!pg_format`
 
 ## Installation
 Make sure `ENV['HOME']` points at the home directory.
@@ -59,7 +61,7 @@ rake install
 
 ## Fonts
 * [11 Best Programming Fonts](https://itnext.io/11-best-programming-fonts-724283a9ed57)
-  * I'm trying out `Hack`
+* I'm trying out `Hack`
 
 ## Release notes
 2025-02-13 Updates
@@ -296,8 +298,8 @@ Workflow goal: avoid opening duplicate tabs:
 * Start typing a URL, use "Switch to this tab" when there is a match
 * `cmd-shift-a` open up the built-in tab search, if google calendar is already open, use that tab
 
-  * [Chrome keyboard shortcuts](https://developers.google.com/chrome-developer-tools/docs/shortcuts)
-  * Vimium plugin
+* [Chrome keyboard shortcuts](https://developers.google.com/chrome-developer-tools/docs/shortcuts)
+* Vimium plugin
 
 
 ```sh
@@ -339,6 +341,11 @@ Reload configuration:
 tmux source ~/.tmux.conf
 
 leader + I (capital "I") to install plugins
+
+[Tmux resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+
+- Save: `prefix + Ctrl-s`
+- Restore: `prefix + Ctrl-r`
 
 
 ## snippets
@@ -508,7 +515,7 @@ gore # Go lang REPL
 * Use WSL 2. Requires a newer Windows build. This link helps debug Windows Update problems via log files and clears a cache. <https://www.howtogeek.com/416169/how-to-fix-what-needs-your-attention-windows-10-setup-errors/>
 * My preference: Remap Caps to Ctrl. This can be done with Keyboard Manager in PowerToys.
 * Currently using Ubuntu 18.04 with WSL 2
-  * Use `wsl` commands `--set-version` to convert an existing distribution or `--set-default-version` for all new distributions
+* Use `wsl` commands `--set-version` to convert an existing distribution or `--set-default-version` for all new distributions
 * Chrome with Vimium, AdBlock, 1Password
 
 ## MacDown
