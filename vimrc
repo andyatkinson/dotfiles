@@ -41,7 +41,9 @@ set laststatus=2
 set statusline=%<%F\ %h%m%r\ %y%=%{v:register}\ %-14.(%l,%c%V%)\ %P
 set spelllang=en_us
 set wildmode=longest,list " set up bash-style tab-completion
-set grepprg=ack
+" use ripgrep for :grep, then run ":copen" to populate the quickfix list
+set grepprg=rg\ --vimgrep
+set grepformat=%f:%l:%c:%m
 set scrolloff=9999 " set cursor in middle of the screen when searching
 set splitbelow " http://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
 set splitright
