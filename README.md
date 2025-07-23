@@ -328,6 +328,7 @@ Cmd-option-arrow # move between the split panes
 | tmux attach-session -t 0 | attach to session 0 |
 | leader + h | terminate a stuck SSH session |
 | leader + $ | rename a session |
+| leader + :kill-pane | kill a stuck pane |
 
 Or [rename session from terminal](https://superuser.com/a/428025):
 
@@ -343,10 +344,8 @@ tmux source ~/.tmux.conf
 leader + I (capital "I") to install plugins
 
 [Tmux resurrect](https://github.com/tmux-plugins/tmux-resurrect)
-
 - Save: `prefix + Ctrl-s`
 - Restore: `prefix + Ctrl-r`
-
 
 ## snippets
 Snippets directory `~/.vim/bundle/vim-snippets/snippets`
