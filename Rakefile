@@ -122,3 +122,12 @@ def link_jrnl_config
   puts "linking #{jrnl_config_path}"
   system %Q{ln -sf "$PWD/#{local_config}" #{jrnl_config_path}}
 end
+
+def link_nvim_config
+  local_config = "init.lua"
+  system %Q{mkdir -p "$HOME/.config/nvim"}
+  config_path = File.join(ENV['HOME'], ".config", "nvim", "init.lua")
+  FileUtils.touch(config_path)
+  puts "linking #{config_path}"
+  system %Q{ln -sf "$PWD/#{local_config}" #{config_path}}
+end
