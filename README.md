@@ -588,3 +588,14 @@ osascript -e "set volume input volume 95"
 
 ## Shottr
 <https://shottr.cc>
+
+## Neovim
+
+Macvim plugins guide:
+- [x] git clone git@github.com:tpope/vim-rails.git
+- [x] git clone git@github.com:junegunn/fzf.vim.git (plus `brew install fzf`)
+- [x] git clone git@github.com:tpope/vim-fugitive.git
+- [x] git clone git@github.com:vim-ruby/vim-ruby.git
+- Works, or can switch to native Lua `mini.comment` git clone git@github.com:tomtom/tcomment_vim.git
+- [x] git clone git@github.com:NLKNguyen/papercolor-theme.git
+- Same, or switch to nvim-tree.lua, git clone git@github.com:preservim/nerdtree.git
