@@ -6,11 +6,11 @@ This is how I set up Mac OS for development.
 * Manually remap Caps Lock to Control, for each keyboard!
 * Manually enable Control with Accessibility + Zoom + Scroll to zoom in
 * Enable tap to click on touch pad
-* Other customizations in this file: e.g. key repeat rata
+* Other customizations in this file: e.g. key repeat rate
 * `xcode-select --install` to install compilation tools
 * Uninstall `Garage Band`, `Pages` etc. on a work machine where they won't be used
 * Make the bottom dock useful - remove all the content creation apps that aren't used
-* Vim 8 (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
+* Vim 9.x (mac version) with native packages [install](https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53)
 * Vim: Attempted coc LSP and removed: <https://github.com/neoclide/coc.nvim>
 * https://github.com/itchyny/lightline.vim
 
@@ -54,7 +54,6 @@ rake macos_defaults  # replace OS X defaults
 ```
 
 Or to run all:
-
 ```sh
 rake install
 ```
@@ -62,15 +61,17 @@ rake install
 ## Fonts
 * [11 Best Programming Fonts](https://itnext.io/11-best-programming-fonts-724283a9ed57)
 * I'm trying out `Hack`
+- Using JetBrains Mono
 
 ## Release notes
-2025-02-13 Updates
-2021-11-01
+2025-08-07
+New things: Neovim, init.lua, equivalent plugins exploring, mapping keyboard shortcuts, GhosTTY, mise, direnv
+- Copy and paste in terminal, Neovim, OS clipboard
 
-Added Fonts
+2025-02-13 Updates
+2021-11-01 Added Fonts
 
 2021-10-20
-
 Overhaul of setup for 2021 development on a Mac.
 Introduction of new things: GH CLI, Fish shell
 Removed: ctrl-p, ctrl-p funky, tagbar, mustache templating, goyo vim, ack vim
