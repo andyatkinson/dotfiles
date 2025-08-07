@@ -96,21 +96,24 @@ Puma 2.9.1 (specify opt-dir or can configure bundler)
 ```
 # critcal
 ripgrep
-rbenv
-nvm
 git
 bash-completion
 tmux
-reattach-to-user-namespace
 ctags
-gpg
-redis
 tldr
-jrnl
-glow
 gh
+fzf
+macvim
+pg_format
 
 # less critical
+jrnl
+glow
+gpg
+redis
+reattach-to-user-namespace # not sure this is still needed (2025)
+rbenv
+nvm
 nginx
 python
 wkhtmltopdf
@@ -170,7 +173,6 @@ brew install --cask sourcetree
 ## vim
 Interesting help:
 `:help opening-window`
-
 
 | Command      | Description |
 | ----------- | ----------- |
@@ -272,7 +274,6 @@ Interesting help:
 
 
 ## bash
-
 | Command      | Description |
 | ----------- | ----------- |
 | ctrl-l | clear line
@@ -293,15 +294,11 @@ Interesting help:
 | less +F path/to/log | "follow" the log file, ctrl-c to go in to search mode, "F" to return to following
 
 ## Google Chrome
-
 Workflow goal: avoid opening duplicate tabs:
-
 * Start typing a URL, use "Switch to this tab" when there is a match
 * `cmd-shift-a` open up the built-in tab search, if google calendar is already open, use that tab
-
 * [Chrome keyboard shortcuts](https://developers.google.com/chrome-developer-tools/docs/shortcuts)
 * Vimium plugin
-
 
 ```sh
 cmd-option-i     # toggle web inspector
@@ -309,8 +306,8 @@ option-command-u # open page source
 cmd-shift-a      # Search open tabs!
 ```
 
-## iTerm
-* Use Source Code Pro font
+## iTerm2
+* Use Source Code Pro font (replaced with JetBrains Mono)
 * Profile > Keys > Left option key acts as "+Esc"
 
 ```sh
@@ -348,7 +345,7 @@ leader + I (capital "I") to install plugins
 - Save: `prefix + Ctrl-s`
 - Restore: `prefix + Ctrl-r`
 
-## snippets
+## Vim snippets
 Snippets directory `~/.vim/bundle/vim-snippets/snippets`
 
 ```sh
@@ -369,7 +366,6 @@ m # toggle main view (useful to jump back and forth between code details and com
 ## [jrnl](http://maebert.github.io/jrnl/)
 * Default config file: `~/.config/jrnl/jrnl.yaml`
 * Configure editor in the config file
-
 ```sh
 jrnl # enter compose mode
 jrnl @tag # list entries that include tag
@@ -425,11 +421,9 @@ command-shift-j # show file in project navigator
 ```
 
 ## [Httpie](https://github.com/jakubroztocil/httpie)
-
 * `tldr httpie` (or just use `curl`)
 
 ## [showterm](http://showterm.io/)
-
 Terminal screencasting!
 
 ```sh
@@ -437,7 +431,6 @@ showterm [command]
 ```
 
 ## [lnav](http://lnav.org)
-
 Fancy log file viewer with cool features: <http://lnav.org/features/>
 
 ```sh
@@ -574,7 +567,7 @@ pager: true
 width: 80
 ```
 
-## `asdf`
+## asdf
 A version manager for lots of things
 
 ## SSH
@@ -584,14 +577,15 @@ Manually set `/etc/ssh/ssh_config`, this is not automatically installed
 ```sh
 osascript -e "set volume input volume 95"
 ```
-## JSON
+## jq / JSON
+Viewing JSON in Vim:
 `:% !jq .`
 
 ## Shottr
+Screenshots!
 <https://shottr.cc>
 
 ## Neovim
-
 Macvim plugins guide:
 - [x] git clone git@github.com:tpope/vim-rails.git
 - [x] git clone git@github.com:junegunn/fzf.vim.git (plus `brew install fzf`)
