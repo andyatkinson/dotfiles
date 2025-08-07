@@ -7,7 +7,11 @@ set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
 # rbenv installed via homebrew
 # Load rbenv automatically by appending
 # the following to ~/.config/fish/config.fish:
-status --is-interactive; and rbenv init - fish | source
+if status --is-interactive
+    if type -q rbenv
+        rbenv init - fish | source
+    end
+end
 
 # postgres.app CLI tools
 fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
@@ -109,8 +113,6 @@ function remove_path
 end
 
 set -gx PATH $HOME/.asdf/shims $PATH
-
-status --is-interactive; and rbenv init - fish | source
 
 fish_add_path ~/.pgenv/bin
 fish_add_path ~/.pgenv/pgsql/bin
