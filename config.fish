@@ -1,6 +1,6 @@
 set -g CDPATH . ~/Projects ~/Dropbox
 
-set -g JAVA_HOME (/usr/libexec/java_home)
+# set -g JAVA_HOME (/usr/libexec/java_home)
 
 set -U fish_user_paths /opt/homebrew/bin $fish_user_paths
 
@@ -17,7 +17,7 @@ end
 fish_add_path /Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Java
-fish_add_path (/usr/libexec/java_home)
+# fish_add_path (/usr/libexec/java_home)
 
 # Set the colors of directories and files https://stackoverflow.com/a/25563976
 set -Ux LSCOLORS gxBxhxDxfxhxhxhxhxcxcx
