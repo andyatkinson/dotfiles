@@ -150,3 +150,4 @@ function recommit_structure
   git merge --no-edit develop
   git rebase develop --interactive
 end
+~/.local/bin/mise activate fish | source

@@ -99,7 +99,7 @@ ripgrep
 git
 bash-completion
 tmux
-ctags
+universal-ctags # instead of ctags?
 tldr
 gh
 fzf
@@ -176,6 +176,7 @@ Interesting help:
 
 | Command      | Description |
 | ----------- | ----------- |
+| :Tags | Open tags with FZF |
 | de | delete to the end of the current word, INCLUDING the last character |
 | ce | change until the end of word |
 | 2dd | delete 2 lines |
@@ -185,10 +186,8 @@ Interesting help:
 | gf | jump to code under cursor, rails.vim adds more
 | jj | insert mode to normal mode
 | jjj | insert mode to normal mode and write buffer
-| leader-z | goyo writing mode
 | Ctrl-n | on top of a word, enable multiple cursors match
 | Ctrl-p | next match with multiple cursors, ctrl-x to skip a match
-| F8 | tagbar :TagbarToggle
 | Ctrl-c | in normal mode, writes to ~/.vimbuffer (copy and paste between instances)
 | Ctrl-v v | paste from ~/.vimbuffer
 | Ctrl-p | normal mode, CtrlP find
@@ -344,6 +343,15 @@ leader + I (capital "I") to install plugins
 [Tmux resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 - Save: `prefix + Ctrl-s`
 - Restore: `prefix + Ctrl-r`
+
+## screen
+```sh
+screen -S session_name
+ctrl-a d # detach
+screen -ls # list sessions
+screen -r <session> # re-attach to session
+screen -XS <session> quit
+```
 
 ## Vim snippets
 Snippets directory `~/.vim/bundle/vim-snippets/snippets`

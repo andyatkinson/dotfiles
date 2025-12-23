@@ -192,3 +192,6 @@ nnoremap <silent> <Leader>b :Buffers<CR>
 " Format SQL files
 " https://github.com/darold/pgFormatter
 au FileType sql setl formatprg=/usr/local/bin/pg_format\ -
+
+" Abbreviations
+:ab bb require 'byebug';byebug
