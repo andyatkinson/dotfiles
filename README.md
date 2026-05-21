@@ -340,6 +340,15 @@ tmux source ~/.tmux.conf
 
 leader + I (capital "I") to install plugins
 
+When messed up (e.g. lost mouse scrolling), try these:
+- `tmux refresh-client -S`
+- `reset`
+```sh
+tmux set -g mouse off
+tmux set -g mouse on
+```
+Or try detach (ctrl-b d) and re-attach
+
 [Tmux resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 - Save: `prefix + Ctrl-s`
 - Restore: `prefix + Ctrl-r`
