@@ -353,6 +353,9 @@ Or try detach (ctrl-b d) and re-attach
 - Save: `prefix + Ctrl-s`
 - Restore: `prefix + Ctrl-r`
 
+Swap pane with next one:
+`Ctrl-b }`
+
 ## screen
 ```sh
 screen -S session_name
